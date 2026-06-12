@@ -32,11 +32,11 @@ function loadStore() {
   try {
     if (fs.existsSync(DATA_FILE)) {
       const d = JSON.parse(fs.readFileSync(DATA_FILE, "utf8"));
-      console.log("✅ Loaded: RD=" + Object.keys(d.rd || {}).length + " receipts, Sysco=" + Object.keys(d.sysco || {}).length + " orders");
-      return { rd: d.rd || {}, sysco: d.sysco || {}, lastUpdated: d.lastUpdated || null };
+      console.log("✅ Loaded: RD=" + Object.keys(d.rd || {}).length + " receipts, Sysco=" + Object.keys(d.sysco || {}).length + " orders, Imperial=" + Object.keys(d.imperial || {}).length + " invoices");
+      return { rd: d.rd || {}, sysco: d.sysco || {}, imperial: d.imperial || {}, lastUpdated: d.lastUpdated || null };
     }
   } catch (e) { console.log("Load error:", e.message); }
-  return { rd: {}, sysco: {}, lastUpdated: null };
+  return { rd: {}, sysco: {}, imperial: {}, lastUpdated: null };
 }
 
 const store = { ...loadStore(), log: [], scraping: false, progress: "" };
@@ -67,7 +67,7 @@ process.on("unhandledRejection", (e) => {
 
 function saveStore() {
   try {
-    fs.writeFileSync(DATA_FILE, JSON.stringify({ rd: store.rd, sysco: store.sysco, lastUpdated: store.lastUpdated }));
+    fs.writeFileSync(DATA_FILE, JSON.stringify({ rd: store.rd, sysco: store.sysco, imperial: store.imperial, lastUpdated: store.lastUpdated }));
   } catch (e) { console.log("Save error:", e.message); }
 }
 
@@ -97,7 +97,7 @@ async function githubCommit(filePath, content, message) {
 async function backupToGitHub() {
   if (!process.env.GITHUB_TOKEN || !process.env.GITHUB_REPO) return;
   try {
-    const encoded = Buffer.from(JSON.stringify({ rd: store.rd, sysco: store.sysco, lastUpdated: store.lastUpdated }, null, 2)).toString("base64");
+    const encoded = Buffer.from(JSON.stringify({ rd: store.rd, sysco: store.sysco, imperial: store.imperial, lastUpdated: store.lastUpdated }, null, 2)).toString("base64");
     const ok = await githubCommit("backup/foodcost.json", encoded, "Food cost backup " + new Date().toISOString().slice(0, 10));
     log(ok ? "✅ GitHub backup committed" : "❌ GitHub backup failed");
   } catch (e) { log("Backup error: " + e.message); }
@@ -119,6 +119,7 @@ async function restoreFromGitHub() {
     const data = JSON.parse(Buffer.from(j.content, "base64").toString("utf8"));
     store.rd = data.rd || {};
     store.sysco = data.sysco || {};
+    store.imperial = data.imperial || {};
     store.lastUpdated = data.lastUpdated || null;
     saveStore();
     log("✅ Restored from GitHub: RD=" + Object.keys(store.rd).length + " Sysco=" + Object.keys(store.sysco).length);
@@ -871,6 +872,186 @@ async function scrapeSyscoOrders() {
   }
 }
 
+// ── Imperial Dade invoices scraper ───────────────────────────────────────────
+// All Imperial Dade purchases are supplies/packaging, so no line items needed —
+// just invoice number, date, total, and account from the list. Reads BOTH tabs
+// (Open and Paid) so invoices never vanish when 30-day autopay flips them to Paid.
+async function scrapeImperialInvoices() {
+  log("🟣 Imperial Dade: starting...");
+  store.progress = "Logging into Imperial Dade...";
+  let browser;
+  const results = { added: 0, updated: 0, skipped: 0 };
+  try {
+    browser = await launchBrowser();
+    const page = await browser.newPage();
+    await page.setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36");
+    page.setDefaultTimeout(30000);
+
+    // Going straight to /invoices redirects to login when signed out
+    await page.goto("https://www.imperialdade.com/invoices", { waitUntil: "domcontentloaded", timeout: 45000 }).catch(() => {});
+    await new Promise(r => setTimeout(r, 5000));
+
+    const needsLogin = await page.evaluate(() => !!document.querySelector('input[type="password"]'));
+    if (needsLogin) {
+      const emailSel = 'input[type="email"], input[name*="email" i], input[name*="user" i], input[id*="email" i], input[id*="user" i], input[type="text"]';
+      await page.waitForSelector(emailSel, { timeout: 20000 });
+      await page.click(emailSel);
+      await page.keyboard.type(process.env.IMPERIAL_EMAIL, { delay: 50 });
+      await page.click('input[type="password"]');
+      await page.keyboard.type(process.env.IMPERIAL_PASSWORD, { delay: 50 });
+      const submitted = await page.evaluate(() => {
+        const btn = document.querySelector('button[type="submit"], input[type="submit"]') ||
+          Array.from(document.querySelectorAll("button")).find(b => /sign in|log in|login/i.test(b.textContent));
+        if (btn) { btn.click(); return true; }
+        return false;
+      });
+      if (!submitted) await page.keyboard.press("Enter");
+      await page.waitForNavigation({ waitUntil: "domcontentloaded", timeout: 30000 }).catch(() => {});
+      await new Promise(r => setTimeout(r, 4000));
+    }
+    log("Imperial: logged in, URL=" + page.url());
+    if (!page.url().includes("/invoices")) {
+      await page.goto("https://www.imperialdade.com/invoices", { waitUntil: "domcontentloaded", timeout: 30000 }).catch(() => {});
+      await new Promise(r => setTimeout(r, 5000));
+    }
+
+    // Widen the date-range dropdown (defaults to "Last 1 month") so backfill reaches May
+    async function widenRange() {
+      const picked = await page.evaluate(() => {
+        const sel = document.querySelector("select");
+        if (sel) {
+          const opts = Array.from(sel.options);
+          const best = opts.find(o => /3 month/i.test(o.textContent)) ||
+                       opts.find(o => /6 month/i.test(o.textContent)) ||
+                       opts[opts.length - 1];
+          if (best) { sel.value = best.value; sel.dispatchEvent(new Event("change", { bubbles: true })); return "select: " + best.textContent.trim(); }
+        }
+        // custom dropdown: click the "Last X month(s)" trigger, then pick "Last 3 months"
+        const trigger = Array.from(document.querySelectorAll("button, div, span"))
+          .filter(el => /Last \d+ month/i.test(el.textContent) && el.textContent.length < 30)
+          .sort((a, b) => a.textContent.length - b.textContent.length)[0];
+        if (trigger) { trigger.click(); return "clicked trigger"; }
+        return "no range control found";
+      });
+      if (picked === "clicked trigger") {
+        await new Promise(r => setTimeout(r, 1500));
+        const opt = await page.evaluate(() => {
+          const els = Array.from(document.querySelectorAll("li, div, span, button, option"))
+            .filter(el => /Last [36] months/i.test(el.textContent.trim()) && el.textContent.length < 25);
+          els.sort((a, b) => a.textContent.length - b.textContent.length);
+          if (els.length) { els[0].click(); return els[0].textContent.trim(); }
+          return null;
+        });
+        log("Imperial: range option = " + (opt || "not found"));
+      } else {
+        log("Imperial: range = " + picked);
+      }
+      await new Promise(r => setTimeout(r, 4000));
+    }
+
+    // Parse invoice rows from the current tab. Desktop layout is a TABLE:
+    //   Naan & Curry - PR93817 | 42052933 | [PO] | 06/11/26 | 07/11/26 | $415.34 | $415.34
+    // The FIRST date in a row is always the Invoice Date (Open: invoice→due;
+    // Paid: invoice→payment) — per owner instruction, invoice date is what we track.
+    async function parseTab(tabName) {
+      await widenRange();
+      // scroll to force any lazy-loaded rows to render
+      for (let s = 0; s < 12; s++) {
+        await page.evaluate(() => window.scrollBy(0, 700));
+        await new Promise(r => setTimeout(r, 300));
+      }
+      await new Promise(r => setTimeout(r, 1500));
+      const found = await page.evaluate(() => {
+        const out = [];
+        const seen = new Set();
+        const rows = Array.from(document.querySelectorAll("tr, [class*='row'], li"));
+        rows.forEach(el => {
+          const t = (el.innerText || "").replace(/\n/g, " ").trim();
+          if (t.length > 400) return; // container, not a row
+          const acct = t.match(/\b(PR\d{4,})\b/);
+          const invNo = t.match(/\b(\d{8})\b/);
+          const dates = t.match(/\b\d{2}\/\d{2}\/\d{2}\b/g);
+          const monies = t.match(/\$[\d,]+\.\d{2}/g);
+          if (!acct || !invNo || !dates || !monies) return;
+          if (seen.has(invNo[1])) return;
+          seen.add(invNo[1]);
+          const d = dates[0]; // FIRST date = Invoice Date in both tabs
+          out.push({
+            invoiceNo: invNo[1],
+            account: acct[1],
+            date: "20" + d.slice(6, 8) + "-" + d.slice(0, 2) + "-" + d.slice(3, 5),
+            total: parseFloat(monies[0].replace(/[$,]/g, "")),
+          });
+        });
+        // fallback: mobile/card layout with per-card labels
+        if (out.length === 0) {
+          const text = document.body.innerText;
+          const re = /(\d{8})\s+Naan\s*&\s*Curry\s*-\s*(PR\d+)[\s\S]{0,260}?Invoice Date\s+(\d{2})\/(\d{2})\/(\d{2})[\s\S]{0,260}?Invoice Total\s+\$([\d,]+\.\d{2})/g;
+          let m;
+          while ((m = re.exec(text)) !== null) {
+            if (seen.has(m[1])) continue;
+            seen.add(m[1]);
+            out.push({ invoiceNo: m[1], account: m[2], date: "20" + m[5] + "-" + m[3] + "-" + m[4], total: parseFloat(m[6].replace(/,/g, "")) });
+          }
+        }
+        return out;
+      });
+      log("Imperial [" + tabName + "]: " + found.length + " invoices on page");
+      return found;
+    }
+
+    const openInvoices = await parseTab("Open");
+
+    // Switch to the Paid tab
+    const paidClicked = await page.evaluate(() => {
+      const els = Array.from(document.querySelectorAll("button, a, div, span, li"))
+        .filter(el => el.textContent.trim() === "Paid" && el.textContent.length < 12);
+      if (els.length) { els[0].click(); return true; }
+      return false;
+    });
+    let paidInvoices = [];
+    if (paidClicked) {
+      await new Promise(r => setTimeout(r, 5000));
+      paidInvoices = await parseTab("Paid");
+    } else {
+      log("Imperial: ⚠️ Paid tab not found — only Open invoices captured this run");
+    }
+
+    const all = [
+      ...openInvoices.map(i => ({ ...i, status: "open" })),
+      ...paidInvoices.map(i => ({ ...i, status: "paid" })),
+    ];
+    for (const inv of all) {
+      if (!inv.date || inv.date < BACKFILL_START) { results.skipped++; continue; }
+      const existing = store.imperial[inv.invoiceNo];
+      if (existing) {
+        if (existing.status !== inv.status) {
+          existing.status = inv.status;
+          results.updated++;
+          log("Imperial: invoice " + inv.invoiceNo + " status → " + inv.status);
+        } else { results.skipped++; }
+        continue;
+      }
+      store.imperial[inv.invoiceNo] = {
+        invoiceNo: inv.invoiceNo,
+        date: inv.date,
+        total: inv.total,
+        account: inv.account,
+        status: inv.status,
+      };
+      results.added++;
+      log("Imperial: ✅ saved invoice " + inv.invoiceNo + " (" + inv.date + ") $" + inv.total + " [" + inv.account + ", " + inv.status + "]");
+    }
+    log("✅ Imperial Dade done: +" + results.added + " new, " + results.updated + " status updates, " + results.skipped + " skipped");
+    return results;
+  } catch (e) {
+    log("Imperial FATAL: " + e.message);
+    return results;
+  } finally {
+    if (browser) { try { await browser.close(); } catch {} }
+  }
+}
+
 // ── Scrape orchestrator ───────────────────────────────────────────────────────
 async function runScrape(source = "all") {
   if (store.scraping) { log("⏭️ Scrape skipped — already running"); return; }
@@ -886,6 +1067,15 @@ async function runScrape(source = "all") {
       try { await withTimeout(scrapeSyscoOrders(), 900000, "Sysco orders"); }
       catch (e) { log("❌ Sysco: " + e.message); }
       saveStore();
+    }
+    if (source === "imperial" || source === "all") {
+      if (process.env.IMPERIAL_EMAIL && process.env.IMPERIAL_PASSWORD) {
+        try { await withTimeout(scrapeImperialInvoices(), 300000, "Imperial Dade"); }
+        catch (e) { log("❌ Imperial: " + e.message); }
+        saveStore();
+      } else {
+        log("⏭️ Imperial Dade skipped — IMPERIAL_EMAIL / IMPERIAL_PASSWORD not set in Railway");
+      }
     }
     store.lastUpdated = new Date().toISOString();
     saveStore();
@@ -936,7 +1126,7 @@ function buildDashboard(range) {
   const clampFrom = from < BACKFILL_START ? BACKFILL_START : from;
 
   const catTotals = {};
-  CATEGORIES.forEach(c => { catTotals[c] = { rd: 0, sysco: 0 }; });
+  CATEGORIES.forEach(c => { catTotals[c] = { rd: 0, sysco: 0, imp: 0 }; });
 
   let rdTotal = 0, rdItemSum = 0, rdInvoices = 0;
   const rdList = [];
@@ -945,7 +1135,7 @@ function buildDashboard(range) {
     rdInvoices++;
     rdTotal += inv.total || 0;
     (inv.items || []).forEach(it => {
-      catTotals[it.category] = catTotals[it.category] || { rd: 0, sysco: 0 };
+      catTotals[it.category] = catTotals[it.category] || { rd: 0, sysco: 0, imp: 0 };
       catTotals[it.category].rd += it.price;
       rdItemSum += it.price;
     });
@@ -966,24 +1156,41 @@ function buildDashboard(range) {
     locTotals[ord.location].total += ord.total || 0;
     locTotals[ord.location].orders++;
     (ord.items || []).forEach(it => {
-      catTotals[it.category] = catTotals[it.category] || { rd: 0, sysco: 0 };
+      catTotals[it.category] = catTotals[it.category] || { rd: 0, sysco: 0, imp: 0 };
       catTotals[it.category].sysco += it.total;
     });
     syscoList.push({ vendor: "sysco", key: ord.orderNo, date: ord.deliveryDate, label: "Order " + ord.orderNo, sub: ord.location + " · " + (ord.items || []).length + " items", total: ord.total || 0, items: ord.items || [] });
   });
 
+  // Imperial Dade — all supplies, no line items, rolls into grand total
+  let imperialTotal = 0, imperialInvoices = 0;
+  const imperialList = [];
+  Object.values(store.imperial || {}).forEach(inv => {
+    if (!inv.date || inv.date < clampFrom || inv.date > to) return;
+    imperialInvoices++;
+    imperialTotal += inv.total || 0;
+    catTotals["Supplies"].imp += inv.total || 0;
+    imperialList.push({
+      vendor: "imperial", key: inv.invoiceNo, date: inv.date,
+      label: "Invoice " + inv.invoiceNo,
+      sub: "Imperial Dade · Supplies · " + (inv.status === "paid" ? "paid" : "autopay pending"),
+      total: inv.total || 0, items: [],
+    });
+  });
+
   const r2 = (n) => Math.round(n * 100) / 100;
   const categories = CATEGORIES
-    .map(c => ({ name: c, rd: r2(catTotals[c].rd), sysco: r2(catTotals[c].sysco), total: r2(catTotals[c].rd + catTotals[c].sysco) }))
+    .map(c => ({ name: c, rd: r2(catTotals[c].rd), sysco: r2(catTotals[c].sysco), imp: r2(catTotals[c].imp), total: r2(catTotals[c].rd + catTotals[c].sysco + catTotals[c].imp) }))
     .filter(c => c.total !== 0)
     .sort((a, b) => b.total - a.total);
 
-  const invoices = [...rdList, ...syscoList].sort((a, b) => b.date.localeCompare(a.date));
+  const invoices = [...rdList, ...syscoList, ...imperialList].sort((a, b) => b.date.localeCompare(a.date));
 
   return {
     range, from: clampFrom, to, label,
-    rdTotal: r2(rdTotal), syscoTotal: r2(syscoTotal), grandTotal: r2(rdTotal + syscoTotal),
-    rdInvoices, syscoOrders, rdTaxAdj,
+    rdTotal: r2(rdTotal), syscoTotal: r2(syscoTotal), imperialTotal: r2(imperialTotal),
+    grandTotal: r2(rdTotal + syscoTotal + imperialTotal),
+    rdInvoices, syscoOrders, imperialInvoices, rdTaxAdj,
     categories,
     locations: SYSCO_LOCATIONS.map(l => ({ name: l.name, total: r2(locTotals[l.name].total), orders: locTotals[l.name].orders })).sort((a, b) => b.total - a.total),
     invoices,
@@ -1007,6 +1214,7 @@ app.get("/api/status", (req, res) => {
     lastUpdated: store.lastUpdated,
     rdReceipts: Object.keys(store.rd).length,
     syscoOrders: Object.keys(store.sysco).length,
+    imperialInvoices: Object.keys(store.imperial || {}).length,
     logEntries: store.log.length,
     log: limit ? store.log.slice(0, limit) : store.log,
   });
@@ -1042,7 +1250,7 @@ app.get("/api/force-backup", async (req, res) => {
 app.get("/api/clear", (req, res) => {
   const { vendor, key } = req.query;
   if (!vendor || !key) return res.status(400).json({ error: "vendor and key required" });
-  const bucket = vendor === "rd" ? store.rd : store.sysco;
+  const bucket = vendor === "rd" ? store.rd : vendor === "imperial" ? store.imperial : store.sysco;
   if (bucket[key]) {
     delete bucket[key];
     saveStore();
