@@ -468,6 +468,40 @@ async function scrapeRdReceipts() {
     const inRange = rows.filter(r => r.date && r.date >= BACKFILL_START);
     log("RD: " + inRange.length + "/" + rows.length + " receipts on/after " + BACKFILL_START);
 
+    // Skip receipts already stored — grouped by (date, total). A group is skipped
+    // ONLY when the list shows no more receipts than we already have for that exact
+    // date+total combo. If a group has anything unaccounted for, EVERY receipt in it
+    // gets downloaded and the invoice-number dedupe discards the repeats — so 3-4
+    // same-day receipts (even with identical totals) can never be missed.
+    const storedCounts = {};
+    Object.values(store.rd).forEach(inv => {
+      if (!inv.date) return;
+      const key = inv.date + "|" + (Math.round((inv.total || 0) * 100) / 100).toFixed(2);
+      storedCounts[key] = (storedCounts[key] || 0) + 1;
+    });
+    const groups = {};
+    const toDownload = [];
+    inRange.forEach(row => {
+      if (row.total == null) { toDownload.push(row); return; } // unparsable total → always fetch
+      const key = row.date + "|" + row.total.toFixed(2);
+      (groups[key] = groups[key] || []).push(row);
+    });
+    let skippedKnown = 0;
+    Object.entries(groups).forEach(([key, groupRows]) => {
+      const have = storedCounts[key] || 0;
+      if (groupRows.length <= have) {
+        skippedKnown += groupRows.length; // fully accounted for — safe to skip
+      } else {
+        toDownload.push(...groupRows); // anything new in the group → fetch them all
+      }
+    });
+    results.skipped += skippedKnown;
+    log("RD: " + skippedKnown + " already stored (download skipped), " + toDownload.length + " to fetch");
+    if (toDownload.length === 0) {
+      log("✅ RD receipts done: nothing new — no downloads needed");
+      return results;
+    }
+
     // Set up CDP download capture as a fallback for JS-triggered downloads
     const dlDir = "/tmp/rd_downloads";
     fs.rmSync(dlDir, { recursive: true, force: true });
@@ -475,9 +509,9 @@ async function scrapeRdReceipts() {
     const client = await page.target().createCDPSession();
     await client.send("Page.setDownloadBehavior", { behavior: "allow", downloadPath: dlDir }).catch(() => {});
 
-    for (let i = 0; i < inRange.length; i++) {
-      const row = inRange[i];
-      store.progress = "Downloading RD receipt " + (i + 1) + "/" + inRange.length + " (" + row.date + ")...";
+    for (let i = 0; i < toDownload.length; i++) {
+      const row = toDownload[i];
+      store.progress = "Downloading RD receipt " + (i + 1) + "/" + toDownload.length + " (" + row.date + ")...";
       try {
         let csvText = null;
 
