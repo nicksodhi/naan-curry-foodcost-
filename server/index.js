@@ -1077,23 +1077,44 @@ async function scrapeImperialInvoices() {
     // "Search open invoices" to "Search paid invoices" when the tab actually changes.
     // Without verification we'd re-parse the Open list and corrupt statuses.
     let onPaidTab = false;
-    for (let attempt = 0; attempt < 3 && !onPaidTab; attempt++) {
-      const clicked = await page.evaluate((n) => {
-        const els = Array.from(document.querySelectorAll("button, a, div, span, li"))
-          .filter(el => el.textContent.trim() === "Paid");
-        if (!els.length) return false;
-        // try a different candidate each attempt, also try its clickable parent
-        const el = els[Math.min(n, els.length - 1)];
-        (el.closest("button") || el.closest("a") || el).click();
-        return true;
-      }, attempt);
-      if (!clicked) break;
-      for (let w = 0; w < 8; w++) {
+    const verifyPaid = async () => {
+      for (let w = 0; w < 6; w++) {
         await new Promise(r => setTimeout(r, 1500));
-        onPaidTab = await page.evaluate(() => /Search paid invoices|Payment\s*Date/i.test(document.body.innerText) && !/Search open invoices/i.test(document.body.innerText));
-        if (onPaidTab) break;
+        const ok = await page.evaluate(() => /Search paid invoices/i.test(document.body.innerText) ||
+          !!document.querySelector('[role="tab"][aria-selected="true"][id*="paid" i]'));
+        if (ok) return true;
       }
-      if (!onPaidTab) log("Imperial: Paid tab click attempt " + (attempt + 1) + " — view didn't change");
+      return false;
+    };
+    for (let attempt = 0; attempt < 3 && !onPaidTab; attempt++) {
+      // The Paid tab is a Radix <button role="tab" id="radix-..-trigger-paid"> —
+      // target it precisely, click with the real mouse (Radix needs pointer events)
+      const rect = await page.evaluate(() => {
+        let cands = Array.from(document.querySelectorAll('[role="tab"]'))
+          .filter(el => /trigger-paid/i.test(el.id) || el.textContent.trim() === "Paid");
+        if (!cands.length) cands = Array.from(document.querySelectorAll("button, a, div, span, li"))
+          .filter(el => el.textContent.trim() === "Paid");
+        if (!cands.length) return null;
+        const el = cands[0];
+        el.scrollIntoView({ block: "center" });
+        const r = el.getBoundingClientRect();
+        return { x: r.x + r.width / 2, y: r.y + r.height / 2 };
+      });
+      if (!rect) break;
+      await new Promise(r => setTimeout(r, 600));
+      await page.mouse.click(rect.x, rect.y);
+      onPaidTab = await verifyPaid();
+      if (!onPaidTab) {
+        // keyboard fallback — Radix tabs activate on focus + Enter/Space
+        await page.evaluate(() => {
+          const tab = Array.from(document.querySelectorAll('[role="tab"]'))
+            .find(el => /trigger-paid/i.test(el.id) || el.textContent.trim() === "Paid");
+          if (tab) tab.focus();
+        });
+        await page.keyboard.press("Enter");
+        onPaidTab = await verifyPaid();
+      }
+      if (!onPaidTab) log("Imperial: Paid tab attempt " + (attempt + 1) + " (mouse + keyboard) — view didn't change");
     }
     let paidInvoices = [];
     if (onPaidTab) {
