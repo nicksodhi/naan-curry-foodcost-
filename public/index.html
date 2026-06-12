@@ -19,6 +19,8 @@
     --sysco-bg: #eef2fd;
     --rd: #0f8a4d;
     --rd-bg: #ecf7f1;
+    --imp: #7a45d6;
+    --imp-bg: #f3eefc;
     --amber-bg: #fff7e8;
     --amber: #b97f10;
     --radius: 18px;
@@ -89,6 +91,16 @@
   .share-bar { display: flex; height: 8px; border-radius: 99px; overflow: hidden; margin-top: 14px; background: var(--line); }
   .share-bar .s-rd { background: var(--rd); }
   .share-bar .s-sy { background: var(--sysco); }
+  .share-bar .s-im { background: var(--imp); }
+
+  /* Imperial Dade — slim third-vendor strip under the split */
+  .imp-strip {
+    display: flex; justify-content: space-between; align-items: center;
+    background: var(--imp-bg); border-radius: 12px; padding: 12px 14px; margin-top: 10px;
+  }
+  .imp-strip .v-name { font-size: 14px; font-weight: 700; color: var(--imp); }
+  .imp-strip .v-sub { font-size: 12.5px; color: var(--ink-2); margin-top: 2px; }
+  .imp-strip .v-amt { font-size: 20px; font-weight: 800; color: #5a30a8; letter-spacing: -0.4px; }
 
   /* Categories */
   .cat { padding: 12px 0; border-bottom: 1px solid var(--line); }
@@ -99,9 +111,10 @@
   .cat .bar { display: flex; height: 9px; border-radius: 99px; overflow: hidden; background: #f0f0f3; }
   .cat .b-rd { background: var(--rd); }
   .cat .b-sy { background: var(--sysco); }
+  .cat .b-im { background: var(--imp); }
   .cat .row2 { display: flex; gap: 14px; margin-top: 6px; font-size: 13px; color: var(--ink-2); }
   .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 5px; vertical-align: 1px; }
-  .dot.rd { background: var(--rd); } .dot.sy { background: var(--sysco); }
+  .dot.rd { background: var(--rd); } .dot.sy { background: var(--sysco); } .dot.im { background: var(--imp); }
 
   /* Locations */
   .loc { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--line); }
@@ -120,6 +133,7 @@
   }
   .inv .tag.rd { background: var(--rd-bg); color: var(--rd); }
   .inv .tag.sysco { background: var(--sysco-bg); color: var(--sysco); }
+  .inv .tag.imperial { background: var(--imp-bg); color: var(--imp); }
   .inv .mid { flex: 1; min-width: 0; }
   .inv .i-label { font-size: 15px; font-weight: 600; }
   .inv .i-sub { font-size: 13px; color: var(--ink-2); margin-top: 1px; }
@@ -226,21 +240,30 @@ function render() {
   let html = "";
 
   // Grand total
-  html += '<div class="card grand"><div class="eyebrow">Total Food Cost · ' + esc(d.label) + "</div>" +
+  const counts = [];
+  if (d.rdInvoices) counts.push(d.rdInvoices + " RD");
+  if (d.syscoOrders) counts.push(d.syscoOrders + " Sysco");
+  if (d.imperialInvoices) counts.push(d.imperialInvoices + " Imperial Dade");
+  html += '<div class="card grand"><div class="eyebrow">Total Cost · ' + esc(d.label) + "</div>" +
     '<div class="num">' + fmt(d.grandTotal) + "</div>" +
-    '<div class="meta">' + niceDate(d.from) + " – " + niceDate(d.to) + " · " +
-    d.rdInvoices + " RD receipt" + (d.rdInvoices === 1 ? "" : "s") + " · " +
-    d.syscoOrders + " Sysco order" + (d.syscoOrders === 1 ? "" : "s") + "</div></div>";
+    '<div class="meta">' + niceDate(d.from) + " – " + niceDate(d.to) +
+    (counts.length ? " · " + counts.join(" · ") : "") + "</div></div>";
 
-  // Vendor split
-  const total = d.rdTotal + d.syscoTotal;
-  const rdPct = total > 0 ? Math.round((d.rdTotal / total) * 100) : 0;
+  // Vendor split — RD and Sysco side by side, Imperial Dade as a slim strip below
+  const total = d.rdTotal + d.syscoTotal + (d.imperialTotal || 0);
+  const pct = (v) => total > 0 ? Math.round((v / total) * 100) : 0;
+  const rdPct = pct(d.rdTotal), syPct = pct(d.syscoTotal), imPct = Math.max(0, 100 - rdPct - syPct);
   html += '<div class="card"><div class="eyebrow">By Vendor</div><div class="split">' +
     '<div class="half rd"><div class="v-name">Restaurant Depot</div><div class="v-amt">' + fmt(d.rdTotal) + "</div>" +
     '<div class="v-sub">' + rdPct + "% of spend</div></div>" +
     '<div class="half sysco"><div class="v-name">Sysco</div><div class="v-amt">' + fmt(d.syscoTotal) + "</div>" +
-    '<div class="v-sub">' + (100 - rdPct) + "% of spend</div></div></div>" +
-    '<div class="share-bar"><div class="s-rd" style="width:' + rdPct + '%"></div><div class="s-sy" style="width:' + (100 - rdPct) + '%"></div></div></div>';
+    '<div class="v-sub">' + syPct + "% of spend</div></div></div>";
+  if (d.imperialTotal > 0 || d.imperialInvoices > 0) {
+    html += '<div class="imp-strip"><div><div class="v-name">Imperial Dade</div><div class="v-sub">Supplies · ' +
+      d.imperialInvoices + " invoice" + (d.imperialInvoices === 1 ? "" : "s") + " · " + imPct + '% of spend</div></div>' +
+      '<div class="v-amt">' + fmt(d.imperialTotal) + "</div></div>";
+  }
+  html += '<div class="share-bar"><div class="s-rd" style="width:' + rdPct + '%"></div><div class="s-sy" style="width:' + syPct + '%"></div><div class="s-im" style="width:' + imPct + '%"></div></div></div>';
 
   // Categories
   if (d.categories.length) {
@@ -248,11 +271,15 @@ function render() {
     html += '<div class="card"><div class="eyebrow">By Category</div>';
     d.categories.forEach(c => {
       const w = maxCat > 0 ? (c.total / maxCat) * 100 : 0;
+      const imp = c.imp || 0;
       const rdW = c.total > 0 ? (c.rd / c.total) * w : 0;
-      const syW = w - rdW;
+      const syW = c.total > 0 ? (c.sysco / c.total) * w : 0;
+      const imW = Math.max(0, w - rdW - syW);
+      let legend = '<span><span class="dot rd"></span>RD ' + fmtShort(c.rd) + '</span><span><span class="dot sy"></span>Sysco ' + fmtShort(c.sysco) + "</span>";
+      if (imp > 0) legend += '<span><span class="dot im"></span>ID ' + fmtShort(imp) + "</span>";
       html += '<div class="cat"><div class="row1"><span class="c-name">' + esc(c.name) + '</span><span class="c-amt">' + fmt(c.total) + "</span></div>" +
-        '<div class="bar"><div class="b-rd" style="width:' + rdW + '%"></div><div class="b-sy" style="width:' + syW + '%"></div></div>' +
-        '<div class="row2"><span><span class="dot rd"></span>RD ' + fmtShort(c.rd) + '</span><span><span class="dot sy"></span>Sysco ' + fmtShort(c.sysco) + "</span></div></div>";
+        '<div class="bar"><div class="b-rd" style="width:' + rdW + '%"></div><div class="b-sy" style="width:' + syW + '%"></div><div class="b-im" style="width:' + imW + '%"></div></div>' +
+        '<div class="row2">' + legend + "</div></div>";
     });
     if (d.rdTaxAdj && Math.abs(d.rdTaxAdj) >= 0.01) {
       html += '<div class="cat"><div class="row1"><span class="c-name" style="color:var(--ink-2)">Tax &amp; adjustments</span><span class="c-amt" style="color:var(--ink-2)">' + fmt(d.rdTaxAdj) + "</span></div></div>";
@@ -278,7 +305,7 @@ function render() {
     list.forEach(inv => {
       const open = openInvoices.has(inv.vendor + inv.key);
       html += '<div class="inv' + (open ? " open" : "") + '" onclick="toggleInv(\'' + inv.vendor + esc(inv.key) + '\')">' +
-        '<div class="top"><span class="tag ' + inv.vendor + '">' + (inv.vendor === "rd" ? "RD" : "SYSCO") + "</span>" +
+        '<div class="top"><span class="tag ' + inv.vendor + '">' + (inv.vendor === "rd" ? "RD" : inv.vendor === "imperial" ? "ID" : "SYSCO") + "</span>" +
         '<div class="mid"><div class="i-label">' + esc(inv.label) + " · " + niceDate(inv.date) + '</div><div class="i-sub">' + esc(inv.sub) + "</div></div>" +
         '<div class="i-amt">' + fmt(inv.total) + "</div></div>";
       if (inv.items && inv.items.length) {
