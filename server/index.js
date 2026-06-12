@@ -41,6 +41,17 @@ function loadStore() {
 
 const store = { ...loadStore(), log: [], scraping: false, progress: "" };
 
+// Crash guards — log instead of dying so /api/status always shows what happened
+process.on("uncaughtException", (e) => {
+  console.log("💥 uncaughtException: " + (e && e.stack ? e.stack : e));
+  store.log.unshift({ time: new Date().toISOString(), msg: "💥 uncaughtException: " + (e && e.message ? e.message : e) });
+  store.scraping = false;
+});
+process.on("unhandledRejection", (e) => {
+  console.log("💥 unhandledRejection: " + (e && e.stack ? e.stack : e));
+  store.log.unshift({ time: new Date().toISOString(), msg: "💥 unhandledRejection: " + (e && e.message ? e.message : e) });
+});
+
 function saveStore() {
   try {
     fs.writeFileSync(DATA_FILE, JSON.stringify({ rd: store.rd, sysco: store.sysco, lastUpdated: store.lastUpdated }));
@@ -311,13 +322,24 @@ function parseRdReceipt(text) {
 
 // ── Browser ───────────────────────────────────────────────────────────────────
 async function launchBrowser() {
+  log("🌐 Loading Chromium module...");
   const chromium = require("@sparticuz/chromium");
   const puppeteer = require("puppeteer-core");
+  log("🌐 Extracting Chromium binary (memory-heavy step)...");
   const execPath = await chromium.executablePath();
-  return puppeteer.launch({
-    args: [...chromium.args, "--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--single-process"],
+  log("🌐 Launching browser at " + execPath + "...");
+  const browser = await puppeteer.launch({
+    args: [
+      ...chromium.args,
+      "--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage",
+      "--disable-gpu", "--single-process", "--no-zygote",
+      "--renderer-process-limit=1", "--disable-extensions",
+      "--js-flags=--max-old-space-size=256",
+    ],
     executablePath: execPath, headless: chromium.headless, timeout: 30000,
   });
+  log("🌐 Browser launched OK (mem: " + Math.round(process.memoryUsage().rss / 1048576) + "MB node rss)");
+  return browser;
 }
 
 function withTimeout(p, ms, name) {
