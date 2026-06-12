@@ -162,12 +162,13 @@
 
   <div class="pills">
     <button class="pill active" data-range="month" onclick="setRange('month')">Current Month</button>
+    <button class="pill" data-range="lastmonth" onclick="setRange('lastmonth')">Last Month</button>
     <button class="pill" data-range="7" onclick="setRange('7')">7 Days</button>
     <button class="pill" data-range="30" onclick="setRange('30')">30 Days</button>
   </div>
 
   <div id="content"></div>
-  <div class="foot">Tracking since Jun 1, 2026 · Auto-updates daily at 5 PM</div>
+  <div class="foot">Tracking since May 1, 2026 · Auto-updates daily at 5 PM</div>
 </div>
 
 <script>
@@ -211,10 +212,14 @@ function render() {
   updateChrome();
 
   if (d.grandTotal === 0 && d.invoices.length === 0) {
+    const beforeTracking = d.to < "2026-05-01";
     document.getElementById("content").innerHTML =
       '<div class="card"><div class="empty"><div class="big">🧾</div>' +
-      "No invoices yet for " + esc(d.label) + ".<br>Run the first pull to load everything since June 1." +
-      '<br><button onclick="trigger()">Pull invoices now</button></div></div>';
+      (beforeTracking
+        ? "No data for " + esc(d.label) + " — tracking starts May 1, 2026.<br>This view fills in once a tracked month rolls over."
+        : "No invoices yet for " + esc(d.label) + ".<br>Run the first pull to load everything since May 1." +
+          '<br><button onclick="trigger()">Pull invoices now</button>') +
+      "</div></div>";
     return;
   }
 
