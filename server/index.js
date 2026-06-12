@@ -557,49 +557,64 @@ async function getActiveSyscoAccount(page) {
 // Switches the Sysco account and VERIFIES the header actually changed.
 // Returns true only when the target account is confirmed active.
 async function switchSyscoAccount(page, loc) {
-  const current = await getActiveSyscoAccount(page);
+  // Wait for the header to render the active account — the first switch after
+  // login fires while the page is still loading, so poll instead of reading once
+  let current = null;
+  for (let w = 0; w < 12; w++) {
+    current = await getActiveSyscoAccount(page);
+    if (current) break;
+    await new Promise(r => setTimeout(r, 1000));
+  }
   if (current === loc.match) { log("Sysco: already on " + loc.name); return true; }
 
-  // Open the switcher — click the innermost header element showing the account
-  await page.evaluate(() => {
-    const els = Array.from(document.querySelectorAll("button, a, div, span"))
-      .filter(el => /\(017-\d{6}\)/.test(el.textContent) && el.textContent.length < 120);
-    if (!els.length) return false;
-    els.sort((a, b) => a.textContent.length - b.textContent.length);
-    const t = els[0];
-    (t.closest("button") || t).click();
-    return true;
-  });
+  for (let attempt = 0; attempt < 2; attempt++) {
+    // Open the switcher — click the innermost header element showing the account
+    await page.evaluate(() => {
+      const els = Array.from(document.querySelectorAll("button, a, div, span"))
+        .filter(el => /\(017-\d{6}\)/.test(el.textContent) && el.textContent.length < 120);
+      if (!els.length) return false;
+      els.sort((a, b) => a.textContent.length - b.textContent.length);
+      const t = els[0];
+      (t.closest("button") || t).click();
+      return true;
+    });
 
-  // Poll for the panel to render the target account number (#017-XXXXXX format)
-  let panelReady = false;
-  for (let w = 0; w < 12; w++) {
-    await new Promise(r => setTimeout(r, 1000));
-    panelReady = await page.evaluate((match) => document.body.innerText.includes("#017-" + match), loc.match);
-    if (panelReady) break;
-  }
-  if (!panelReady) { log("Sysco: ⚠️ switcher panel never showed #017-" + loc.match); return false; }
-
-  // Click the target account row (innermost match, climbed to its card)
-  await page.evaluate((match) => {
-    const els = Array.from(document.querySelectorAll("div, li, button, a, span, p, h3, h4"))
-      .filter(el => el.textContent.includes("#017-" + match) && el.textContent.length < 250);
-    if (!els.length) return false;
-    els.sort((a, b) => a.textContent.length - b.textContent.length);
-    let target = els[0];
-    for (let up = 0; up < 5 && target; up++) {
-      if (/NAAN AND CURRY/i.test(target.textContent)) break;
-      target = target.parentElement;
+    // Poll for the panel to render the target account number (#017-XXXXXX format)
+    let panelReady = false;
+    for (let w = 0; w < 12; w++) {
+      await new Promise(r => setTimeout(r, 1000));
+      panelReady = await page.evaluate((match) => document.body.innerText.includes("#017-" + match), loc.match);
+      if (panelReady) break;
     }
-    (target || els[0]).click();
-    return true;
-  }, loc.match);
+    if (!panelReady) {
+      log("Sysco: ⚠️ switcher panel attempt " + (attempt + 1) + " didn't show #017-" + loc.match);
+      await page.keyboard.press("Escape").catch(() => {});
+      await new Promise(r => setTimeout(r, 2500));
+      continue;
+    }
 
-  // Verify the header now shows the target account
-  for (let w = 0; w < 15; w++) {
-    await new Promise(r => setTimeout(r, 1000));
-    const active = await getActiveSyscoAccount(page);
-    if (active === loc.match) return true;
+    // Click the target account row (innermost match, climbed to its card)
+    await page.evaluate((match) => {
+      const els = Array.from(document.querySelectorAll("div, li, button, a, span, p, h3, h4"))
+        .filter(el => el.textContent.includes("#017-" + match) && el.textContent.length < 250);
+      if (!els.length) return false;
+      els.sort((a, b) => a.textContent.length - b.textContent.length);
+      let target = els[0];
+      for (let up = 0; up < 5 && target; up++) {
+        if (/NAAN AND CURRY/i.test(target.textContent)) break;
+        target = target.parentElement;
+      }
+      (target || els[0]).click();
+      return true;
+    }, loc.match);
+
+    // Verify the header now shows the target account
+    for (let w = 0; w < 15; w++) {
+      await new Promise(r => setTimeout(r, 1000));
+      const active = await getActiveSyscoAccount(page);
+      if (active === loc.match) return true;
+    }
+    log("Sysco: ⚠️ clicked #017-" + loc.match + " but header didn't change (attempt " + (attempt + 1) + ")");
   }
   return false;
 }
@@ -651,6 +666,10 @@ async function scrapeSyscoOrders() {
     }).catch(() => {});
     await new Promise(r => setTimeout(r, 1500));
 
+    // Land on the orders page first — stable header for the account switcher
+    await page.goto("https://shop.sysco.com/app/orders", { waitUntil: "domcontentloaded", timeout: 30000 }).catch(() => {});
+    await new Promise(r => setTimeout(r, 5000));
+
     for (const loc of SYSCO_LOCATIONS) {
       store.progress = "Sysco: switching to " + loc.name + "...";
       try {
@@ -660,47 +679,54 @@ async function scrapeSyscoOrders() {
           log("Sysco: ⏭️ SKIPPING " + loc.name + " — account switch not verified (prevents mislabeled orders)");
           continue;
         }
-        await new Promise(r => setTimeout(r, 2000));
+        await new Promise(r => setTimeout(r, 4000));
 
-        // Orders page
-        await page.goto("https://shop.sysco.com/app/orders", { waitUntil: "domcontentloaded", timeout: 30000 }).catch(() => {});
-        await new Promise(r => setTimeout(r, 6000));
-
-        // Collect Delivered order numbers + delivery dates from the Historical list
-        const orders = await page.evaluate(() => {
-          const out = [];
-          const body = document.body.innerText;
-          // Pattern per row: ... Delivered ... 4165361 ... 06/06/2026 ... $623.15
-          const rowEls = Array.from(document.querySelectorAll("tr, [class*='row'], li"));
-          const seen = new Set();
-          rowEls.forEach(el => {
-            const t = el.innerText || "";
-            if (!/Delivered/i.test(t)) return;
-            const onum = t.match(/\b(\d{7})\b/);
-            const date = t.match(/\b(\d{2})\/(\d{2})\/(\d{4})\b/);
-            const total = t.match(/\$([\d,]+\.\d{2})/);
-            if (onum && date && !seen.has(onum[1])) {
-              seen.add(onum[1]);
-              out.push({
-                orderNo: onum[1],
-                deliveryDate: date[3] + "-" + date[1] + "-" + date[2],
-                listTotal: total ? parseFloat(total[1].replace(/,/g, "")) : null,
+        // Orders page — retry to survive reloads triggered by the account switch
+        let orders = [];
+        for (let attempt = 0; attempt < 3; attempt++) {
+          try {
+            await page.goto("https://shop.sysco.com/app/orders", { waitUntil: "domcontentloaded", timeout: 30000 });
+            await new Promise(r => setTimeout(r, 6000));
+            orders = await page.evaluate(() => {
+              const out = [];
+              const body = document.body.innerText;
+              // Pattern per row: ... Delivered ... 4165361 ... 06/06/2026 ... $623.15
+              const rowEls = Array.from(document.querySelectorAll("tr, [class*='row'], li"));
+              const seen = new Set();
+              rowEls.forEach(el => {
+                const t = el.innerText || "";
+                if (!/Delivered/i.test(t)) return;
+                const onum = t.match(/\b(\d{7})\b/);
+                const date = t.match(/\b(\d{2})\/(\d{2})\/(\d{4})\b/);
+                const total = t.match(/\$([\d,]+\.\d{2})/);
+                if (onum && date && !seen.has(onum[1])) {
+                  seen.add(onum[1]);
+                  out.push({
+                    orderNo: onum[1],
+                    deliveryDate: date[3] + "-" + date[1] + "-" + date[2],
+                    listTotal: total ? parseFloat(total[1].replace(/,/g, "")) : null,
+                  });
+                }
               });
-            }
-          });
-          // fallback: parse from text if structured rows missed
-          if (out.length === 0) {
-            const re = /Delivered\s+(\d{7})\s+(\d{2})\/(\d{2})\/(\d{4})[\s\S]{0,80}?\$([\d,]+\.\d{2})/g;
-            let m;
-            while ((m = re.exec(body)) !== null) {
-              if (!seen.has(m[1])) {
-                seen.add(m[1]);
-                out.push({ orderNo: m[1], deliveryDate: m[4] + "-" + m[2] + "-" + m[3], listTotal: parseFloat(m[5].replace(/,/g, "")) });
+              // fallback: parse from text if structured rows missed
+              if (out.length === 0) {
+                const re = /Delivered\s+(\d{7})\s+(\d{2})\/(\d{2})\/(\d{4})[\s\S]{0,80}?\$([\d,]+\.\d{2})/g;
+                let m;
+                while ((m = re.exec(body)) !== null) {
+                  if (!seen.has(m[1])) {
+                    seen.add(m[1]);
+                    out.push({ orderNo: m[1], deliveryDate: m[4] + "-" + m[2] + "-" + m[3], listTotal: parseFloat(m[5].replace(/,/g, "")) });
+                  }
+                }
               }
-            }
+              return out;
+            });
+            break;
+          } catch (e) {
+            log("Sysco [" + loc.name + "]: orders list attempt " + (attempt + 1) + " failed — " + e.message);
+            await new Promise(r => setTimeout(r, 4000));
           }
-          return out;
-        });
+        }
         const newOrders = orders.filter(o => o.deliveryDate >= BACKFILL_START && !store.sysco[o.orderNo]);
         log("Sysco [" + loc.name + "]: " + orders.length + " delivered orders visible, " + newOrders.length + " new since " + BACKFILL_START);
 
@@ -940,6 +966,20 @@ app.get("/api/status", (req, res) => {
     logEntries: store.log.length,
     log: limit ? store.log.slice(0, limit) : store.log,
   });
+});
+
+// One long plain-text log, oldest at top → newest at bottom. Easy to read & share.
+app.get("/api/log", (req, res) => {
+  const lines = store.log.slice().reverse().map(e => {
+    const t = e.time.replace("T", " ").slice(5, 19); // MM-DD HH:MM:SS
+    return t + "  " + e.msg;
+  });
+  res.type("text/plain").send(
+    "NAAN & CURRY FOOD COST — FULL LOG (" + store.log.length + " entries)\n" +
+    "scraping: " + store.scraping + (store.progress ? " — " + store.progress : "") + "\n" +
+    "================================================================\n" +
+    lines.join("\n")
+  );
 });
 
 app.get("/api/trigger", (req, res) => {
