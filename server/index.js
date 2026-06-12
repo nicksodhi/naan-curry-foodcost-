@@ -884,6 +884,7 @@ async function scrapeImperialInvoices() {
   try {
     browser = await launchBrowser();
     const page = await browser.newPage();
+    await page.setViewport({ width: 1440, height: 900 });
     await page.setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36");
     page.setDefaultTimeout(30000);
 
@@ -1072,19 +1073,34 @@ async function scrapeImperialInvoices() {
 
     const openInvoices = await parseTab("Open");
 
-    // Switch to the Paid tab
-    const paidClicked = await page.evaluate(() => {
-      const els = Array.from(document.querySelectorAll("button, a, div, span, li"))
-        .filter(el => el.textContent.trim() === "Paid" && el.textContent.length < 12);
-      if (els.length) { els[0].click(); return true; }
-      return false;
-    });
+    // Switch to the Paid tab — VERIFIED: the search box placeholder flips from
+    // "Search open invoices" to "Search paid invoices" when the tab actually changes.
+    // Without verification we'd re-parse the Open list and corrupt statuses.
+    let onPaidTab = false;
+    for (let attempt = 0; attempt < 3 && !onPaidTab; attempt++) {
+      const clicked = await page.evaluate((n) => {
+        const els = Array.from(document.querySelectorAll("button, a, div, span, li"))
+          .filter(el => el.textContent.trim() === "Paid");
+        if (!els.length) return false;
+        // try a different candidate each attempt, also try its clickable parent
+        const el = els[Math.min(n, els.length - 1)];
+        (el.closest("button") || el.closest("a") || el).click();
+        return true;
+      }, attempt);
+      if (!clicked) break;
+      for (let w = 0; w < 8; w++) {
+        await new Promise(r => setTimeout(r, 1500));
+        onPaidTab = await page.evaluate(() => /Search paid invoices|Payment\s*Date/i.test(document.body.innerText) && !/Search open invoices/i.test(document.body.innerText));
+        if (onPaidTab) break;
+      }
+      if (!onPaidTab) log("Imperial: Paid tab click attempt " + (attempt + 1) + " — view didn't change");
+    }
     let paidInvoices = [];
-    if (paidClicked) {
-      await new Promise(r => setTimeout(r, 5000));
+    if (onPaidTab) {
+      log("Imperial: Paid tab verified");
       paidInvoices = await parseTab("Paid");
     } else {
-      log("Imperial: ⚠️ Paid tab not found — only Open invoices captured this run");
+      log("Imperial: ⚠️ could not verify Paid tab — skipping paid statuses this run (totals unaffected)");
     }
 
     const all = [
