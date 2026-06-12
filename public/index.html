@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f5f5f7">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="N&C Food Cost">
+<title>Naan &amp; Curry Food Cost</title>
+<style>
+  :root {
+    --bg: #f5f5f7;
+    --card: #ffffff;
+    --ink: #111114;
+    --ink-2: #6e6e76;
+    --ink-3: #9b9ba3;
+    --line: #ececf0;
+    --sysco: #2f5fe0;
+    --sysco-bg: #eef2fd;
+    --rd: #0f8a4d;
+    --rd-bg: #ecf7f1;
+    --amber-bg: #fff7e8;
+    --amber: #b97f10;
+    --radius: 18px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg); color: var(--ink);
+    padding-bottom: 60px;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 18px 16px 0; }
+
+  /* Header */
+  header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+  .brand h1 { font-size: 26px; font-weight: 800; letter-spacing: -0.4px; }
+  .brand h1 .bowl { margin-right: 6px; }
+  .brand p { color: var(--ink-2); font-size: 15px; margin-top: 2px; }
+  .refresh {
+    border: 1.5px solid #cfe7d9; color: var(--rd); background: #fff;
+    border-radius: 999px; padding: 9px 16px; font-size: 15px; font-weight: 600;
+    display: inline-flex; align-items: center; gap: 7px; cursor: pointer; white-space: nowrap;
+    font-family: inherit;
+  }
+  .refresh:active { transform: scale(0.97); }
+  .refresh.busy { border-color: #f3ddae; color: var(--amber); }
+  .refresh .spin { display: inline-block; animation: rot 1s linear infinite; }
+  @keyframes rot { to { transform: rotate(360deg); } }
+
+  /* Progress banner */
+  .banner {
+    background: var(--amber-bg); color: var(--amber); border-radius: 14px;
+    padding: 11px 14px; font-size: 14px; font-weight: 600; margin-bottom: 14px;
+    display: none; align-items: center; gap: 9px;
+  }
+  .banner.show { display: flex; }
+
+  /* Range pills */
+  .pills { display: flex; gap: 8px; margin-bottom: 16px; overflow-x: auto; scrollbar-width: none; }
+  .pills::-webkit-scrollbar { display: none; }
+  .pill {
+    border: none; background: #ebebef; color: var(--ink); font-family: inherit;
+    border-radius: 999px; padding: 10px 18px; font-size: 15px; font-weight: 600;
+    cursor: pointer; white-space: nowrap;
+  }
+  .pill.active { background: var(--ink); color: #fff; }
+
+  /* Cards */
+  .card { background: var(--card); border-radius: var(--radius); padding: 18px; margin-bottom: 14px; box-shadow: 0 1px 2px rgba(17,17,20,0.04); }
+  .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; color: var(--ink-3); text-transform: uppercase; margin-bottom: 8px; }
+
+  /* Grand total */
+  .grand .num { font-size: 40px; font-weight: 800; letter-spacing: -1px; }
+  .grand .meta { color: var(--ink-2); font-size: 14px; margin-top: 5px; }
+
+  /* Vendor split */
+  .split { display: grid; grid-template-columns: 1fr 1fr; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); }
+  .half { padding: 15px 14px; }
+  .half.rd { background: var(--rd-bg); }
+  .half.sysco { background: var(--sysco-bg); }
+  .half .v-name { font-size: 14px; font-weight: 700; display: flex; align-items: center; gap: 6px; }
+  .half.rd .v-name { color: var(--rd); }
+  .half.sysco .v-name { color: var(--sysco); }
+  .half .v-amt { font-size: 26px; font-weight: 800; letter-spacing: -0.6px; margin-top: 5px; }
+  .half.rd .v-amt { color: #0b6b3c; }
+  .half.sysco .v-amt { color: #2349b8; }
+  .half .v-sub { font-size: 13px; color: var(--ink-2); margin-top: 3px; }
+  .share-bar { display: flex; height: 8px; border-radius: 99px; overflow: hidden; margin-top: 14px; background: var(--line); }
+  .share-bar .s-rd { background: var(--rd); }
+  .share-bar .s-sy { background: var(--sysco); }
+
+  /* Categories */
+  .cat { padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .cat:last-child { border-bottom: none; padding-bottom: 2px; }
+  .cat .row1 { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 7px; }
+  .cat .c-name { font-size: 16px; font-weight: 700; }
+  .cat .c-amt { font-size: 16px; font-weight: 700; }
+  .cat .bar { display: flex; height: 9px; border-radius: 99px; overflow: hidden; background: #f0f0f3; }
+  .cat .b-rd { background: var(--rd); }
+  .cat .b-sy { background: var(--sysco); }
+  .cat .row2 { display: flex; gap: 14px; margin-top: 6px; font-size: 13px; color: var(--ink-2); }
+  .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 5px; vertical-align: 1px; }
+  .dot.rd { background: var(--rd); } .dot.sy { background: var(--sysco); }
+
+  /* Locations */
+  .loc { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .loc:last-child { border-bottom: none; padding-bottom: 2px; }
+  .loc .l-name { font-size: 16px; font-weight: 600; }
+  .loc .l-sub { font-size: 13px; color: var(--ink-2); margin-top: 2px; }
+  .loc .l-amt { font-size: 16px; font-weight: 700; color: #2349b8; }
+
+  /* Invoice list */
+  .inv { padding: 12px 0; border-bottom: 1px solid var(--line); cursor: pointer; }
+  .inv:last-child { border-bottom: none; }
+  .inv .top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+  .inv .tag {
+    font-size: 11px; font-weight: 800; letter-spacing: 0.04em; border-radius: 7px;
+    padding: 4px 7px; flex-shrink: 0;
+  }
+  .inv .tag.rd { background: var(--rd-bg); color: var(--rd); }
+  .inv .tag.sysco { background: var(--sysco-bg); color: var(--sysco); }
+  .inv .mid { flex: 1; min-width: 0; }
+  .inv .i-label { font-size: 15px; font-weight: 600; }
+  .inv .i-sub { font-size: 13px; color: var(--ink-2); margin-top: 1px; }
+  .inv .i-amt { font-size: 16px; font-weight: 700; flex-shrink: 0; }
+  .inv .items { display: none; margin-top: 10px; border-top: 1px dashed var(--line); padding-top: 8px; }
+  .inv.open .items { display: block; }
+  .it { display: flex; justify-content: space-between; gap: 10px; font-size: 13.5px; padding: 4px 0; }
+  .it .i-desc { color: var(--ink-2); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .it .i-cat { color: var(--ink-3); font-size: 11.5px; margin-left: 6px; }
+  .it .i-price { font-weight: 600; flex-shrink: 0; }
+  .it .i-price.neg { color: var(--rd); }
+
+  .empty { text-align: center; color: var(--ink-2); padding: 28px 10px; font-size: 15px; line-height: 1.5; }
+  .empty .big { font-size: 34px; margin-bottom: 8px; }
+  .empty button {
+    margin-top: 14px; background: var(--ink); color: #fff; border: none; font-family: inherit;
+    border-radius: 999px; padding: 12px 22px; font-size: 15px; font-weight: 700; cursor: pointer;
+  }
+  .foot { text-align: center; color: var(--ink-3); font-size: 12.5px; padding: 10px 0 0; }
+  .showmore {
+    width: 100%; border: none; background: #f0f0f3; color: var(--ink); font-family: inherit;
+    border-radius: 12px; padding: 11px; font-size: 14px; font-weight: 600; cursor: pointer; margin-top: 10px;
+  }
+  @media (prefers-reduced-motion: reduce) { .refresh .spin { animation: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <h1><span class="bowl">🍛</span>Naan &amp; Curry</h1>
+      <p>Food cost · Las Vegas</p>
+    </div>
+    <button class="refresh" id="refreshBtn" onclick="trigger()">
+      <span id="refreshIcon">⟳</span><span id="refreshText">refresh</span>
+    </button>
+  </header>
+
+  <div class="banner" id="banner"><span class="spin">⟳</span><span id="bannerText"></span></div>
+
+  <div class="pills">
+    <button class="pill active" data-range="month" onclick="setRange('month')">Current Month</button>
+    <button class="pill" data-range="7" onclick="setRange('7')">7 Days</button>
+    <button class="pill" data-range="30" onclick="setRange('30')">30 Days</button>
+  </div>
+
+  <div id="content"></div>
+  <div class="foot">Tracking since Jun 1, 2026 · Auto-updates daily at 5 PM</div>
+</div>
+
+<script>
+let range = "month";
+let data = null;
+let showAllInvoices = false;
+const openInvoices = new Set();
+
+const fmt = (n) => "$" + (n || 0).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const fmtShort = (n) => {
+  if (Math.abs(n) >= 1000) return "$" + (n / 1000).toLocaleString("en-US", { maximumFractionDigits: 1 }) + "k";
+  return fmt(n);
+};
+const niceDate = (ymd) => {
+  if (!ymd) return "";
+  const d = new Date(ymd + "T12:00:00");
+  return d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+};
+const esc = (s) => String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+function setRange(r) {
+  range = r;
+  showAllInvoices = false;
+  document.querySelectorAll(".pill").forEach(p => p.classList.toggle("active", p.dataset.range === r));
+  load();
+}
+
+async function load() {
+  try {
+    const res = await fetch("/api/data?range=" + range);
+    data = await res.json();
+    render();
+  } catch (e) {
+    document.getElementById("content").innerHTML =
+      '<div class="card"><div class="empty">Could not load data. Pull to refresh or try again.</div></div>';
+  }
+}
+
+function render() {
+  const d = data;
+  updateChrome();
+
+  if (d.grandTotal === 0 && d.invoices.length === 0) {
+    document.getElementById("content").innerHTML =
+      '<div class="card"><div class="empty"><div class="big">🧾</div>' +
+      "No invoices yet for " + esc(d.label) + ".<br>Run the first pull to load everything since June 1." +
+      '<br><button onclick="trigger()">Pull invoices now</button></div></div>';
+    return;
+  }
+
+  let html = "";
+
+  // Grand total
+  html += '<div class="card grand"><div class="eyebrow">Total Food Cost · ' + esc(d.label) + "</div>" +
+    '<div class="num">' + fmt(d.grandTotal) + "</div>" +
+    '<div class="meta">' + niceDate(d.from) + " – " + niceDate(d.to) + " · " +
+    d.rdInvoices + " RD receipt" + (d.rdInvoices === 1 ? "" : "s") + " · " +
+    d.syscoOrders + " Sysco order" + (d.syscoOrders === 1 ? "" : "s") + "</div></div>";
+
+  // Vendor split
+  const total = d.rdTotal + d.syscoTotal;
+  const rdPct = total > 0 ? Math.round((d.rdTotal / total) * 100) : 0;
+  html += '<div class="card"><div class="eyebrow">By Vendor</div><div class="split">' +
+    '<div class="half rd"><div class="v-name">Restaurant Depot</div><div class="v-amt">' + fmt(d.rdTotal) + "</div>" +
+    '<div class="v-sub">' + rdPct + "% of spend</div></div>" +
+    '<div class="half sysco"><div class="v-name">Sysco</div><div class="v-amt">' + fmt(d.syscoTotal) + "</div>" +
+    '<div class="v-sub">' + (100 - rdPct) + "% of spend</div></div></div>" +
+    '<div class="share-bar"><div class="s-rd" style="width:' + rdPct + '%"></div><div class="s-sy" style="width:' + (100 - rdPct) + '%"></div></div></div>';
+
+  // Categories
+  if (d.categories.length) {
+    const maxCat = Math.max(...d.categories.map(c => c.total));
+    html += '<div class="card"><div class="eyebrow">By Category</div>';
+    d.categories.forEach(c => {
+      const w = maxCat > 0 ? (c.total / maxCat) * 100 : 0;
+      const rdW = c.total > 0 ? (c.rd / c.total) * w : 0;
+      const syW = w - rdW;
+      html += '<div class="cat"><div class="row1"><span class="c-name">' + esc(c.name) + '</span><span class="c-amt">' + fmt(c.total) + "</span></div>" +
+        '<div class="bar"><div class="b-rd" style="width:' + rdW + '%"></div><div class="b-sy" style="width:' + syW + '%"></div></div>' +
+        '<div class="row2"><span><span class="dot rd"></span>RD ' + fmtShort(c.rd) + '</span><span><span class="dot sy"></span>Sysco ' + fmtShort(c.sysco) + "</span></div></div>";
+    });
+    if (d.rdTaxAdj && Math.abs(d.rdTaxAdj) >= 0.01) {
+      html += '<div class="cat"><div class="row1"><span class="c-name" style="color:var(--ink-2)">Tax &amp; adjustments</span><span class="c-amt" style="color:var(--ink-2)">' + fmt(d.rdTaxAdj) + "</span></div></div>";
+    }
+    html += "</div>";
+  }
+
+  // Sysco locations
+  const activeLocs = d.locations.filter(l => l.orders > 0);
+  if (activeLocs.length) {
+    html += '<div class="card"><div class="eyebrow">Sysco by Location</div>';
+    activeLocs.forEach(l => {
+      html += '<div class="loc"><div><div class="l-name">' + esc(l.name) + '</div><div class="l-sub">' +
+        l.orders + " order" + (l.orders === 1 ? "" : "s") + '</div></div><div class="l-amt">' + fmt(l.total) + "</div></div>";
+    });
+    html += "</div>";
+  }
+
+  // Invoices
+  if (d.invoices.length) {
+    const list = showAllInvoices ? d.invoices : d.invoices.slice(0, 12);
+    html += '<div class="card"><div class="eyebrow">Invoices &amp; Receipts</div>';
+    list.forEach(inv => {
+      const open = openInvoices.has(inv.vendor + inv.key);
+      html += '<div class="inv' + (open ? " open" : "") + '" onclick="toggleInv(\'' + inv.vendor + esc(inv.key) + '\')">' +
+        '<div class="top"><span class="tag ' + inv.vendor + '">' + (inv.vendor === "rd" ? "RD" : "SYSCO") + "</span>" +
+        '<div class="mid"><div class="i-label">' + esc(inv.label) + " · " + niceDate(inv.date) + '</div><div class="i-sub">' + esc(inv.sub) + "</div></div>" +
+        '<div class="i-amt">' + fmt(inv.total) + "</div></div>";
+      if (inv.items && inv.items.length) {
+        html += '<div class="items">';
+        inv.items.forEach(it => {
+          const desc = it.desc || it.name || "";
+          const price = it.price != null ? it.price : it.total;
+          html += '<div class="it"><span class="i-desc">' + esc(desc) + '<span class="i-cat">' + esc(it.category) + '</span></span>' +
+            '<span class="i-price' + (price < 0 ? " neg" : "") + '">' + fmt(price) + "</span></div>";
+        });
+        html += "</div>";
+      }
+      html += "</div>";
+    });
+    if (!showAllInvoices && d.invoices.length > 12) {
+      html += '<button class="showmore" onclick="event.stopPropagation();showAllInvoices=true;render()">Show all ' + d.invoices.length + "</button>";
+    }
+    html += "</div>";
+  }
+
+  document.getElementById("content").innerHTML = html;
+}
+
+function toggleInv(id) {
+  if (openInvoices.has(id)) openInvoices.delete(id); else openInvoices.add(id);
+  render();
+}
+
+function updateChrome() {
+  const d = data || {};
+  const btn = document.getElementById("refreshBtn");
+  const icon = document.getElementById("refreshIcon");
+  const txt = document.getElementById("refreshText");
+  const banner = document.getElementById("banner");
+  if (d.scraping) {
+    btn.classList.add("busy");
+    icon.className = "spin";
+    txt.textContent = "pulling...";
+    banner.classList.add("show");
+    document.getElementById("bannerText").textContent = d.progress || "Pulling invoices from both vendors...";
+  } else {
+    btn.classList.remove("busy");
+    icon.className = "";
+    txt.textContent = d.lastUpdated ? timeAgo(d.lastUpdated) : "refresh";
+    banner.classList.remove("show");
+  }
+}
+
+function timeAgo(iso) {
+  const s = (Date.now() - new Date(iso).getTime()) / 1000;
+  if (s < 90) return "just now";
+  if (s < 3600) return Math.round(s / 60) + "m ago";
+  if (s < 86400) return Math.round(s / 3600) + "h ago";
+  return Math.round(s / 86400) + "d ago";
+}
+
+async function trigger() {
+  if (data && data.scraping) return;
+  try {
+    await fetch("/api/trigger?source=all");
+    if (data) { data.scraping = true; data.progress = "Starting..."; }
+    updateChrome();
+  } catch {}
+}
+
+// Poll while scraping; light refresh otherwise
+setInterval(async () => {
+  if (data && data.scraping) await load();
+}, 4000);
+setInterval(() => { if (!data || !data.scraping) load(); }, 60000);
+
+load();
+</script>
+</body>
+</html>

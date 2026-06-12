@@ -1,0 +1,17 @@
+"Restaurant Depot #39",,"Customer #3900367"
+"1477 Helm Dr",,"GAYLORD RESTAURANT(only ege , manpreet can shop)"
+"Las Vegas, NV 89119",,"3700,W FLAMINGO RD"
+"(702) 260-4100",,"LAS VEGAS, NV 891034043"
+
+"Invoice: 17348","Terminal: 17","2026/06/01 11:32 am"
+UPC,Description,"Unit Qty","Case Qty",Price
+-2,"Previous Balance",0,0,$0.00
+2060042750,"PD SQUASH ITALN MD       ",1,0,$19.48
+2060042750,"PD SQUASH ITALN MD       ",-1,0,-$19.48
+2060042570,"PD LEMON CH 75/115       ",1,0,$32.15
+2060042570,"PD LEMON CH 75/115       ",-1,0,-$32.15
+0,Sub-Total,0,0,$0.00
+0,Tax,0,0,$0.00
+0,Total,0,0,$0.00
+0,"CASH     ",0,0,$0.00
+0,Balance,0,0,$0.00
