@@ -41,6 +41,19 @@ function loadStore() {
 
 const store = { ...loadStore(), log: [], scraping: false, progress: "" };
 
+// Persistent log — survives restarts and redeploys
+const LOG_FILE = "/data/fc_log.json";
+try {
+  if (fs.existsSync(LOG_FILE)) {
+    store.log = JSON.parse(fs.readFileSync(LOG_FILE, "utf8")) || [];
+    console.log("✅ Log restored: " + store.log.length + " entries");
+  }
+} catch (e) { console.log("Log load error:", e.message); }
+
+function saveLog() {
+  try { fs.writeFileSync(LOG_FILE, JSON.stringify(store.log)); } catch {}
+}
+
 // Crash guards — log instead of dying so /api/status always shows what happened
 process.on("uncaughtException", (e) => {
   console.log("💥 uncaughtException: " + (e && e.stack ? e.stack : e));
@@ -61,7 +74,8 @@ function saveStore() {
 const log = (msg) => {
   console.log(msg);
   store.log.unshift({ time: new Date().toISOString(), msg });
-  if (store.log.length > 500) store.log.pop();
+  if (store.log.length > 2000) store.log.length = 2000;
+  saveLog();
 };
 
 // ── GitHub backup (same pattern as prices app) ───────────────────────────────
@@ -532,6 +546,64 @@ async function scrapeRdReceipts() {
   }
 }
 
+// Reads the active account number from the header: "NAAN AND CURRY (017-974499)"
+async function getActiveSyscoAccount(page) {
+  return await page.evaluate(() => {
+    const m = document.body.innerText.match(/\(017-(\d{6})\)/);
+    return m ? m[1] : null;
+  });
+}
+
+// Switches the Sysco account and VERIFIES the header actually changed.
+// Returns true only when the target account is confirmed active.
+async function switchSyscoAccount(page, loc) {
+  const current = await getActiveSyscoAccount(page);
+  if (current === loc.match) { log("Sysco: already on " + loc.name); return true; }
+
+  // Open the switcher — click the innermost header element showing the account
+  await page.evaluate(() => {
+    const els = Array.from(document.querySelectorAll("button, a, div, span"))
+      .filter(el => /\(017-\d{6}\)/.test(el.textContent) && el.textContent.length < 120);
+    if (!els.length) return false;
+    els.sort((a, b) => a.textContent.length - b.textContent.length);
+    const t = els[0];
+    (t.closest("button") || t).click();
+    return true;
+  });
+
+  // Poll for the panel to render the target account number (#017-XXXXXX format)
+  let panelReady = false;
+  for (let w = 0; w < 12; w++) {
+    await new Promise(r => setTimeout(r, 1000));
+    panelReady = await page.evaluate((match) => document.body.innerText.includes("#017-" + match), loc.match);
+    if (panelReady) break;
+  }
+  if (!panelReady) { log("Sysco: ⚠️ switcher panel never showed #017-" + loc.match); return false; }
+
+  // Click the target account row (innermost match, climbed to its card)
+  await page.evaluate((match) => {
+    const els = Array.from(document.querySelectorAll("div, li, button, a, span, p, h3, h4"))
+      .filter(el => el.textContent.includes("#017-" + match) && el.textContent.length < 250);
+    if (!els.length) return false;
+    els.sort((a, b) => a.textContent.length - b.textContent.length);
+    let target = els[0];
+    for (let up = 0; up < 5 && target; up++) {
+      if (/NAAN AND CURRY/i.test(target.textContent)) break;
+      target = target.parentElement;
+    }
+    (target || els[0]).click();
+    return true;
+  }, loc.match);
+
+  // Verify the header now shows the target account
+  for (let w = 0; w < 15; w++) {
+    await new Promise(r => setTimeout(r, 1000));
+    const active = await getActiveSyscoAccount(page);
+    if (active === loc.match) return true;
+  }
+  return false;
+}
+
 // ── Sysco orders scraper ──────────────────────────────────────────────────────
 // Flow: login → for each of 5 locations: switch account → /app/orders →
 // collect Delivered orders since BACKFILL_START → open each → scrape line
@@ -582,33 +654,13 @@ async function scrapeSyscoOrders() {
     for (const loc of SYSCO_LOCATIONS) {
       store.progress = "Sysco: switching to " + loc.name + "...";
       try {
-        // Open account switcher — header element showing "NAAN AND CURRY (017-xxxxxx)"
-        const opened = await page.evaluate(() => {
-          const els = Array.from(document.querySelectorAll("button, a, div, span"));
-          const trigger = els.find(el => /NAAN AND CURRY\s*\(017-/.test(el.textContent) && el.textContent.length < 120);
-          if (trigger) { trigger.click(); return true; }
-          return false;
-        });
-        if (!opened) { log("Sysco: ⚠️ account switcher not found, staying on current account"); }
-        await new Promise(r => setTimeout(r, 2500));
-
-        // Click the target account in the switcher panel by customer number
-        const switched = await page.evaluate((match) => {
-          const els = Array.from(document.querySelectorAll("div, li, button, a, span, p"));
-          const candidates = els.filter(el => el.textContent.includes("#017-" + match) && el.textContent.length < 250);
-          if (candidates.length === 0) return false;
-          // pick smallest element containing the number, then click its row container
-          candidates.sort((a, b) => a.textContent.length - b.textContent.length);
-          let target = candidates[0];
-          for (let up = 0; up < 4 && target; up++) {
-            if (/NAAN AND CURRY/i.test(target.textContent)) break;
-            target = target.parentElement;
-          }
-          (target || candidates[0]).click();
-          return true;
-        }, loc.match);
+        const switched = await switchSyscoAccount(page, loc);
         log("Sysco: switch to " + loc.name + " (#017-" + loc.match + ") = " + switched);
-        await new Promise(r => setTimeout(r, 5000));
+        if (!switched) {
+          log("Sysco: ⏭️ SKIPPING " + loc.name + " — account switch not verified (prevents mislabeled orders)");
+          continue;
+        }
+        await new Promise(r => setTimeout(r, 2000));
 
         // Orders page
         await page.goto("https://shop.sysco.com/app/orders", { waitUntil: "domcontentloaded", timeout: 30000 }).catch(() => {});
@@ -655,20 +707,31 @@ async function scrapeSyscoOrders() {
         for (const ord of newOrders) {
           store.progress = "Sysco " + loc.name + ": reading order " + ord.orderNo + "...";
           try {
-            // Open the order detail by clicking its order number
-            const clicked = await page.evaluate((orderNo) => {
-              const els = Array.from(document.querySelectorAll("a, td, div, span, button"));
-              const el = els.find(e => e.textContent.trim() === orderNo) ||
-                         els.find(e => e.textContent.includes(orderNo) && e.textContent.length < 60);
-              if (el) {
-                let row = el.closest("tr") || el.closest("[class*='row']") || el;
-                (el.tagName === "A" ? el : row).click();
-                return true;
+            // Open the order detail — retry up to 3x, verify the detail page loaded
+            let opened = false;
+            for (let attempt = 0; attempt < 3 && !opened; attempt++) {
+              const clicked = await page.evaluate((orderNo) => {
+                const els = Array.from(document.querySelectorAll("a, td, div, span, button"));
+                const el = els.find(e => e.textContent.trim() === orderNo) ||
+                           els.find(e => e.textContent.includes(orderNo) && e.textContent.length < 60);
+                if (el) {
+                  el.scrollIntoView({ block: "center" });
+                  const row = el.closest("tr") || el.closest("[class*='row']") || el;
+                  (el.tagName === "A" ? el : row).click();
+                  return true;
+                }
+                return false;
+              }, ord.orderNo);
+              if (!clicked) break;
+              await new Promise(r => setTimeout(r, 6000));
+              // Detail page has "Back to Orders" / "Total Line Items"; the list page doesn't
+              opened = await page.evaluate(() => /Back to Orders|Total Line Items/i.test(document.body.innerText));
+              if (!opened) {
+                await page.goto("https://shop.sysco.com/app/orders", { waitUntil: "domcontentloaded", timeout: 30000 }).catch(() => {});
+                await new Promise(r => setTimeout(r, 5000));
               }
-              return false;
-            }, ord.orderNo);
-            if (!clicked) { log("Sysco: ⚠️ could not open order " + ord.orderNo); results.failed++; continue; }
-            await new Promise(r => setTimeout(r, 6000));
+            }
+            if (!opened) { log("Sysco: ⚠️ could not open order " + ord.orderNo); results.failed++; continue; }
 
             // Scrape line items: rows contain "Name / 1234567 | pack | brand / qty CS($x.xx CS) / allocated / $total"
             const detail = await page.evaluate(() => {
@@ -866,6 +929,7 @@ app.get("/api/data", (req, res) => {
 });
 
 app.get("/api/status", (req, res) => {
+  const limit = req.query.limit ? parseInt(req.query.limit) : null;
   res.json({
     status: "running",
     scraping: store.scraping,
@@ -873,7 +937,8 @@ app.get("/api/status", (req, res) => {
     lastUpdated: store.lastUpdated,
     rdReceipts: Object.keys(store.rd).length,
     syscoOrders: Object.keys(store.sysco).length,
-    log: store.log.slice(0, 200),
+    logEntries: store.log.length,
+    log: limit ? store.log.slice(0, limit) : store.log,
   });
 });
 
