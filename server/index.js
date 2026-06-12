@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, "../public")));
 
 // ── Config ────────────────────────────────────────────────────────────────────
 // First invoice date to track. Anything earlier is ignored on every scrape.
-const BACKFILL_START = "2026-06-01";
+const BACKFILL_START = "2026-05-01";
 const VEGAS_TZ = "America/Los_Angeles";
 
 // Sysco locations — confirmed from the account switcher screenshot
@@ -729,7 +729,9 @@ async function scrapeSyscoOrders() {
               const seen = new Set();
               rowEls.forEach(el => {
                 const t = el.innerText || "";
-                if (!/Delivered/i.test(t)) return;
+                if (/Canceled|Cancelled/i.test(t)) return; // voided — never count
+                if (/\bOpen\b/.test(t) && !/Delivered/i.test(t)) return; // unconfirmed — skip
+                if (!/Delivered/i.test(t)) return; // only confirmed-delivered orders count
                 const onum = t.match(/\b(\d{7})\b/);
                 const date = t.match(/\b(\d{2})\/(\d{2})\/(\d{4})\b/);
                 const total = t.match(/\$([\d,]+\.\d{2})/);
@@ -911,6 +913,14 @@ function rangeBounds(range) {
     const d = new Date(today + "T00:00:00");
     d.setDate(d.getDate() - 29);
     return { from: d.toISOString().slice(0, 10), to: today, label: "Last 30 Days" };
+  }
+  if (range === "lastmonth") {
+    const y = parseInt(today.slice(0, 4)), m = parseInt(today.slice(5, 7)); // 1-based month
+    const py = m === 1 ? y - 1 : y, pm = m === 1 ? 12 : m - 1;
+    const lastDay = new Date(py, pm, 0).getDate(); // day 0 of next monthIndex = last day of pm
+    const mm = String(pm).padStart(2, "0");
+    const from = py + "-" + mm + "-01";
+    return { from, to: py + "-" + mm + "-" + String(lastDay).padStart(2, "0"), label: monthLabel(from) };
   }
   // default: current month
   return { from: today.slice(0, 8) + "01", to: today, label: monthLabel(today) };
