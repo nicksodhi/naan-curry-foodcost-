@@ -896,18 +896,19 @@ async function scrapeImperialInvoices() {
     let onLoginForm = await hasPw();
 
     if (!onLoginForm) {
-      // try clicking a Sign In / Log In link on whatever page we landed on
+      // open the Sign In slide-out panel — the site exposes a stable test id
       const clicked = await page.evaluate(() => {
+        const byTestId = document.querySelector('[data-testid="sign-in-button"]');
+        if (byTestId) { byTestId.click(); return "testid"; }
         const el = Array.from(document.querySelectorAll("a, button"))
           .find(e => /sign\s*in|log\s*in/i.test((e.textContent || "").trim()) && (e.textContent || "").trim().length < 20);
-        if (el) { el.click(); return true; }
-        return false;
+        if (el) { el.click(); return "text"; }
+        return null;
       });
       if (clicked) {
-        await page.waitForNavigation({ waitUntil: "domcontentloaded", timeout: 15000 }).catch(() => {});
         await new Promise(r => setTimeout(r, 4000));
         onLoginForm = await hasPw();
-        log("Imperial: clicked Sign In link → login form = " + onLoginForm);
+        log("Imperial: opened sign-in panel via " + clicked + " → login form = " + onLoginForm);
       }
     }
     if (!onLoginForm) {
@@ -920,22 +921,46 @@ async function scrapeImperialInvoices() {
     }
 
     if (onLoginForm) {
-      const emailSel = 'input[type="email"], input[name*="email" i], input[name*="user" i], input[id*="email" i], input[id*="user" i], input[type="text"]';
-      await page.waitForSelector(emailSel, { timeout: 20000 });
-      await page.click(emailSel);
-      await page.keyboard.type(process.env.IMPERIAL_EMAIL, { delay: 50 });
-      await page.click('input[type="password"]');
-      await page.keyboard.type(process.env.IMPERIAL_PASSWORD, { delay: 50 });
-      const submitted = await page.evaluate(() => {
-        const btn = document.querySelector('button[type="submit"], input[type="submit"]') ||
-          Array.from(document.querySelectorAll("button")).find(b => /sign in|log in|login/i.test(b.textContent));
-        if (btn) { btn.click(); return true; }
-        return false;
+      // The login form is a dropdown/modal — clicking anything outside it (like the
+      // header search bar) closes it. So every interaction is scoped to the form
+      // that contains the password field, using DOM focus instead of page clicks.
+      const focusedEmail = await page.evaluate(() => {
+        const pw = document.querySelector('input[type="password"]');
+        if (!pw) return false;
+        let node = pw.closest("form") || pw.parentElement;
+        let email = null, hops = 0;
+        while (node && hops < 6 && !email) {
+          email = node.querySelector('input[type="email"], input[name*="email" i], input[name*="user" i], input[id*="email" i], input[id*="user" i], input[type="text"]');
+          if (email === pw) email = null;
+          node = node.parentElement; hops++;
+        }
+        if (!email) return false;
+        email.focus();
+        return true;
       });
-      if (!submitted) await page.keyboard.press("Enter");
-      await page.waitForNavigation({ waitUntil: "domcontentloaded", timeout: 30000 }).catch(() => {});
-      await new Promise(r => setTimeout(r, 4000));
-      log("Imperial: login submitted, URL=" + page.url());
+      if (!focusedEmail) {
+        log("Imperial: ⚠️ couldn't find email field inside the login form");
+      } else {
+        await page.keyboard.type(process.env.IMPERIAL_EMAIL, { delay: 50 });
+        await page.evaluate(() => { const pw = document.querySelector('input[type="password"]'); if (pw) pw.focus(); });
+        await page.keyboard.type(process.env.IMPERIAL_PASSWORD, { delay: 50 });
+        const submitted = await page.evaluate(() => {
+          const pw = document.querySelector('input[type="password"]');
+          let node = pw ? (pw.closest("form") || pw.parentElement) : null;
+          let hops = 0;
+          while (node && hops < 6) {
+            const btn = node.querySelector('button[type="submit"], input[type="submit"]') ||
+              Array.from(node.querySelectorAll("button")).find(b => /sign in|log in|login/i.test(b.textContent));
+            if (btn) { btn.click(); return true; }
+            node = node.parentElement; hops++;
+          }
+          return false;
+        });
+        if (!submitted) await page.keyboard.press("Enter");
+        await page.waitForNavigation({ waitUntil: "domcontentloaded", timeout: 30000 }).catch(() => {});
+        await new Promise(r => setTimeout(r, 4000));
+        log("Imperial: login submitted (button=" + submitted + "), URL=" + page.url());
+      }
     } else {
       log("Imperial: ⚠️ no login form found anywhere — URL=" + page.url() + " title=" + (await page.title()));
     }
@@ -955,20 +980,21 @@ async function scrapeImperialInvoices() {
       log("Imperial debug: page shows → " + snip);
     }
 
-    // Widen the date-range dropdown (defaults to "Last 1 month") so backfill reaches May
+    // Widen the date-range dropdown so backfill reaches May — prefer "All time"
     async function widenRange() {
       const picked = await page.evaluate(() => {
         const sel = document.querySelector("select");
         if (sel) {
           const opts = Array.from(sel.options);
-          const best = opts.find(o => /3 month/i.test(o.textContent)) ||
+          const best = opts.find(o => /all time/i.test(o.textContent)) ||
                        opts.find(o => /6 month/i.test(o.textContent)) ||
+                       opts.find(o => /3 month/i.test(o.textContent)) ||
                        opts[opts.length - 1];
           if (best) { sel.value = best.value; sel.dispatchEvent(new Event("change", { bubbles: true })); return "select: " + best.textContent.trim(); }
         }
-        // custom dropdown: click the "Last X month(s)" trigger, then pick "Last 3 months"
+        // custom dropdown: click the range trigger ("Last X month(s)" or "All time")
         const trigger = Array.from(document.querySelectorAll("button, div, span"))
-          .filter(el => /Last \d+ month/i.test(el.textContent) && el.textContent.length < 30)
+          .filter(el => /Last \d+ month|All time/i.test(el.textContent) && el.textContent.length < 30)
           .sort((a, b) => a.textContent.length - b.textContent.length)[0];
         if (trigger) { trigger.click(); return "clicked trigger"; }
         return "no range control found";
@@ -977,8 +1003,8 @@ async function scrapeImperialInvoices() {
         await new Promise(r => setTimeout(r, 1500));
         const opt = await page.evaluate(() => {
           const els = Array.from(document.querySelectorAll("li, div, span, button, option"))
-            .filter(el => /Last [36] months/i.test(el.textContent.trim()) && el.textContent.length < 25);
-          els.sort((a, b) => a.textContent.length - b.textContent.length);
+            .filter(el => /^(All time|Last [36] months)$/i.test(el.textContent.trim()));
+          els.sort((a, b) => (/all time/i.test(a.textContent) ? -1 : 1) - (/all time/i.test(b.textContent) ? -1 : 1));
           if (els.length) { els[0].click(); return els[0].textContent.trim(); }
           return null;
         });
