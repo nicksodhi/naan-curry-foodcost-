@@ -887,12 +887,39 @@ async function scrapeImperialInvoices() {
     await page.setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36");
     page.setDefaultTimeout(30000);
 
-    // Going straight to /invoices redirects to login when signed out
+    // The site redirects signed-out /invoices visits to the homepage (no password
+    // field), so we have to actively find the login form rather than assume.
     await page.goto("https://www.imperialdade.com/invoices", { waitUntil: "domcontentloaded", timeout: 45000 }).catch(() => {});
     await new Promise(r => setTimeout(r, 5000));
 
-    const needsLogin = await page.evaluate(() => !!document.querySelector('input[type="password"]'));
-    if (needsLogin) {
+    const hasPw = () => page.evaluate(() => !!document.querySelector('input[type="password"]'));
+    let onLoginForm = await hasPw();
+
+    if (!onLoginForm) {
+      // try clicking a Sign In / Log In link on whatever page we landed on
+      const clicked = await page.evaluate(() => {
+        const el = Array.from(document.querySelectorAll("a, button"))
+          .find(e => /sign\s*in|log\s*in/i.test((e.textContent || "").trim()) && (e.textContent || "").trim().length < 20);
+        if (el) { el.click(); return true; }
+        return false;
+      });
+      if (clicked) {
+        await page.waitForNavigation({ waitUntil: "domcontentloaded", timeout: 15000 }).catch(() => {});
+        await new Promise(r => setTimeout(r, 4000));
+        onLoginForm = await hasPw();
+        log("Imperial: clicked Sign In link → login form = " + onLoginForm);
+      }
+    }
+    if (!onLoginForm) {
+      // try common login URLs directly
+      for (const u of ["https://www.imperialdade.com/login", "https://www.imperialdade.com/signin", "https://www.imperialdade.com/account/login", "https://www.imperialdade.com/customer/account/login"]) {
+        await page.goto(u, { waitUntil: "domcontentloaded", timeout: 30000 }).catch(() => {});
+        await new Promise(r => setTimeout(r, 4000));
+        if (await hasPw()) { onLoginForm = true; log("Imperial: login form found at " + u); break; }
+      }
+    }
+
+    if (onLoginForm) {
       const emailSel = 'input[type="email"], input[name*="email" i], input[name*="user" i], input[id*="email" i], input[id*="user" i], input[type="text"]';
       await page.waitForSelector(emailSel, { timeout: 20000 });
       await page.click(emailSel);
@@ -908,11 +935,24 @@ async function scrapeImperialInvoices() {
       if (!submitted) await page.keyboard.press("Enter");
       await page.waitForNavigation({ waitUntil: "domcontentloaded", timeout: 30000 }).catch(() => {});
       await new Promise(r => setTimeout(r, 4000));
+      log("Imperial: login submitted, URL=" + page.url());
+    } else {
+      log("Imperial: ⚠️ no login form found anywhere — URL=" + page.url() + " title=" + (await page.title()));
     }
-    log("Imperial: logged in, URL=" + page.url());
-    if (!page.url().includes("/invoices")) {
-      await page.goto("https://www.imperialdade.com/invoices", { waitUntil: "domcontentloaded", timeout: 30000 }).catch(() => {});
-      await new Promise(r => setTimeout(r, 5000));
+
+    // Go to invoices and POLL until the list actually renders (it's a slow SPA)
+    await page.goto("https://www.imperialdade.com/invoices", { waitUntil: "domcontentloaded", timeout: 45000 }).catch(() => {});
+    let invoicesReady = false;
+    for (let i = 0; i < 15; i++) {
+      invoicesReady = await page.evaluate(() =>
+        /Search open invoices|Invoice\s*#|Invoice Total/i.test(document.body.innerText) && /PR\d{4,}/.test(document.body.innerText));
+      if (invoicesReady) break;
+      await new Promise(r => setTimeout(r, 2000));
+    }
+    log("Imperial: invoices page ready = " + invoicesReady + " (URL " + page.url() + ")");
+    if (!invoicesReady) {
+      const snip = await page.evaluate(() => (document.title + " | " + document.body.innerText.slice(0, 250)).replace(/\s+/g, " "));
+      log("Imperial debug: page shows → " + snip);
     }
 
     // Widen the date-range dropdown (defaults to "Last 1 month") so backfill reaches May
@@ -997,6 +1037,10 @@ async function scrapeImperialInvoices() {
         return out;
       });
       log("Imperial [" + tabName + "]: " + found.length + " invoices on page");
+      if (found.length === 0) {
+        const snip = await page.evaluate(() => (document.title + " | " + document.body.innerText.slice(0, 250)).replace(/\s+/g, " "));
+        log("Imperial debug [" + tabName + "]: page shows → " + snip);
+      }
       return found;
     }
 
