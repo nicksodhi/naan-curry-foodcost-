@@ -15679,6 +15679,505 @@
           "category": "Dry & Pantry"
         }
       ]
+    },
+    "2026-06-12_152": {
+      "invoiceNo": "152",
+      "date": "2026-06-12",
+      "dateTime": "2026/06/12 2:22 pm",
+      "subTotal": 231.57,
+      "tax": 13.28,
+      "total": 244.85,
+      "items": [
+        {
+          "upc": "76069500759",
+          "desc": "SCRUBBER S/S 50GR",
+          "qty": 1,
+          "price": 5.99,
+          "category": "Other"
+        },
+        {
+          "upc": "1258715931",
+          "desc": "LINER GLAD 13GL QT",
+          "qty": 1,
+          "price": 27.09,
+          "category": "Supplies"
+        },
+        {
+          "upc": "80124311769",
+          "desc": "GREEN SCRNG PADS",
+          "qty": 1,
+          "price": 6.33,
+          "category": "Other"
+        },
+        {
+          "upc": "80124311769",
+          "desc": "GREEN SCRNG PADS",
+          "qty": 1,
+          "price": 6.33,
+          "category": "Other"
+        },
+        {
+          "upc": "4900005846",
+          "desc": "COKE CLASSIC       12Z",
+          "qty": 1,
+          "price": 19.99,
+          "category": "Beverages"
+        },
+        {
+          "upc": "111105",
+          "desc": "(Coupon) COKE 35PK CANS 12z",
+          "qty": 1,
+          "price": -2.2,
+          "category": "Beverages"
+        },
+        {
+          "upc": "76069566700",
+          "desc": "RS ALL PURPOSE",
+          "qty": 1,
+          "price": 24.17,
+          "category": "Other"
+        },
+        {
+          "upc": "76069500698",
+          "desc": "HI-LITE LEMON 1GL  DET",
+          "qty": 1,
+          "price": 29.72,
+          "category": "Produce"
+        },
+        {
+          "upc": "76557414228",
+          "desc": "SATIN HND SOAP PNK",
+          "qty": 1,
+          "price": 22.99,
+          "category": "Supplies"
+        },
+        {
+          "upc": "9437910130",
+          "desc": "ATHENA GRLD EGGPLN",
+          "qty": 1,
+          "price": 55.25,
+          "category": "Other"
+        },
+        {
+          "upc": "76069503465",
+          "desc": "LNR 40X46 1.15 BLK",
+          "qty": 1,
+          "price": 35.91,
+          "category": "Other"
+        }
+      ]
+    },
+    "2026-06-12_19112": {
+      "invoiceNo": "19112",
+      "date": "2026-06-12",
+      "dateTime": "2026/06/12 1:33 pm",
+      "subTotal": 1854.23,
+      "tax": 0,
+      "total": 1854.23,
+      "items": [
+        {
+          "upc": "2460021512",
+          "desc": "SALT PUREX POLY    50#",
+          "qty": 1,
+          "price": 9.23,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 67.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 35.52,
+          "price": 230.52,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 35.52,
+          "price": -3.55,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 43.17,
+          "price": 275.86,
+          "category": "Protein"
+        },
+        {
+          "upc": "76069502990",
+          "desc": "CRM WHP 40% JF 64Z",
+          "qty": 1,
+          "price": 43.3,
+          "category": "Other"
+        },
+        {
+          "upc": "76069502990",
+          "desc": "CRM WHP 40% JF 64Z",
+          "qty": 1,
+          "price": 43.3,
+          "category": "Other"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 79.88,
+          "category": "Produce"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 67.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 67.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "20772320000",
+          "desc": "CHX BRST JMB",
+          "qty": 40,
+          "price": 63.2,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 67.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 67.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "2060042513",
+          "desc": "PD GINGER FRSH 28#",
+          "qty": 1,
+          "price": 28.44,
+          "category": "Produce"
+        },
+        {
+          "upc": "7911710101",
+          "desc": "MILK WHL GAL GS/AN",
+          "qty": 1,
+          "price": 16.87,
+          "category": "Dairy"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 49.07,
+          "price": 313.56,
+          "category": "Protein"
+        },
+        {
+          "upc": "79680038600",
+          "desc": "FLOUR H&R WINGOLD  25#",
+          "qty": 1,
+          "price": 8.81,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "79680038600",
+          "desc": "FLOUR H&R WINGOLD  25#",
+          "qty": 1,
+          "price": 8.81,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500935",
+          "desc": "OIL CANOLA SALAD   1/35#",
+          "qty": 1,
+          "price": 39.76,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500935",
+          "desc": "OIL CANOLA SALAD   1/35#",
+          "qty": 1,
+          "price": 39.76,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500935",
+          "desc": "OIL CANOLA SALAD   1/35#",
+          "qty": 1,
+          "price": 39.76,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069502533",
+          "desc": "TOM PETITE DICED",
+          "qty": 1,
+          "price": 26.18,
+          "category": "Other"
+        },
+        {
+          "upc": "76069500923",
+          "desc": "TOM PUREE 1.06 CQ",
+          "qty": 1,
+          "price": 30.55,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500922",
+          "desc": "SCE TOMATO CQ",
+          "qty": 1,
+          "price": 27.78,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500922",
+          "desc": "SCE TOMATO CQ",
+          "qty": 1,
+          "price": 27.78,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500922",
+          "desc": "SCE TOMATO CQ",
+          "qty": 1,
+          "price": 27.78,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500923",
+          "desc": "TOM PUREE 1.06 CQ",
+          "qty": 1,
+          "price": 30.55,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500923",
+          "desc": "TOM PUREE 1.06 CQ",
+          "qty": 1,
+          "price": 30.55,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500923",
+          "desc": "TOM PUREE 1.06 CQ",
+          "qty": 1,
+          "price": 30.55,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069501699",
+          "desc": "SCE PIZZA SUP-HVY",
+          "qty": 1,
+          "price": 38.19,
+          "category": "Other"
+        },
+        {
+          "upc": "79680038600",
+          "desc": "FLOUR H&R WINGOLD  25#",
+          "qty": 1,
+          "price": 8.81,
+          "category": "Dry & Pantry"
+        }
+      ]
+    },
+    "2026-06-12_9356": {
+      "invoiceNo": "9356",
+      "date": "2026-06-12",
+      "dateTime": "2026/06/12 11:24 am",
+      "subTotal": 914.08,
+      "tax": 11.61,
+      "total": 925.69,
+      "items": [
+        {
+          "upc": "7127035817",
+          "desc": "CHZ PANEER LOAF    5#",
+          "qty": 1,
+          "price": 88.23,
+          "category": "Dairy"
+        },
+        {
+          "upc": "2060042708",
+          "desc": "PD PPR BELL GREEN",
+          "qty": 1,
+          "price": 32.9,
+          "category": "Produce"
+        },
+        {
+          "upc": "3022302671",
+          "desc": "PD CILANTRO 1#",
+          "qty": 1,
+          "price": 15.11,
+          "category": "Produce"
+        },
+        {
+          "upc": "3022302671",
+          "desc": "PD CILANTRO 1#",
+          "qty": 1,
+          "price": 15.11,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060042647",
+          "desc": "PD HRB MINT",
+          "qty": 1,
+          "price": 5.63,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060042647",
+          "desc": "PD HRB MINT",
+          "qty": 1,
+          "price": 5.63,
+          "category": "Produce"
+        },
+        {
+          "upc": "81008518222",
+          "desc": "PDU PPR SERRANO 5#",
+          "qty": 1,
+          "price": 11.76,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069501661",
+          "desc": "FOIL ROLL 18X500HV",
+          "qty": 1,
+          "price": 56.37,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069501661",
+          "desc": "FOIL ROLL 18X500HV",
+          "qty": 1,
+          "price": 56.37,
+          "category": "Supplies"
+        },
+        {
+          "upc": "1004460030966",
+          "desc": "CLX BLEACH GERM",
+          "qty": 1,
+          "price": 25.89,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.89,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.89,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500868",
+          "desc": "CHZ JACK/CHED SHRD 5#",
+          "qty": 1,
+          "price": 40.5,
+          "category": "Dairy"
+        },
+        {
+          "upc": "20776700000",
+          "desc": "CHX LEG QTR SML",
+          "qty": 40,
+          "price": 31.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 67.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 67.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "20772320000",
+          "desc": "CHX BRST JMB",
+          "qty": 40,
+          "price": 63.2,
+          "category": "Protein"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "81009537357",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 77.5,
+          "category": "Protein"
+        },
+        {
+          "upc": "1580003021",
+          "desc": "C&H SUGAR GRAN     25#",
+          "qty": 1,
+          "price": 20.03,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "2460021512",
+          "desc": "SALT PUREX POLY    50#",
+          "qty": 1,
+          "price": 9.23,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069501473",
+          "desc": "BEAN GARBANZO CQ   #10",
+          "qty": 1,
+          "price": 29.88,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "84046513269",
+          "desc": "PD MICRO FWR ORCHD",
+          "qty": 1,
+          "price": 9.68,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046511717",
+          "desc": "PD MICRO CHEF BLND",
+          "qty": 1,
+          "price": 14.58,
+          "category": "Produce"
+        }
+      ]
     }
   },
   "sysco": {
@@ -18136,5 +18635,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-06-13T00:03:54.231Z"
+  "lastUpdated": "2026-06-14T00:04:23.609Z"
 }
