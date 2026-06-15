@@ -16178,6 +16178,348 @@
           "category": "Produce"
         }
       ]
+    },
+    "2026-06-13_259": {
+      "invoiceNo": "259",
+      "date": "2026-06-13",
+      "dateTime": "2026/06/13 12:09 pm",
+      "subTotal": 1089.77,
+      "tax": 9.85,
+      "total": 1099.62,
+      "items": [
+        {
+          "upc": "76069501436",
+          "desc": "VINEGAR WHT DST CQ",
+          "qty": 1,
+          "price": 11.65,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "4150873466",
+          "desc": "SAN PELL SPRKL PET 500ML",
+          "qty": 1,
+          "price": 25.09,
+          "category": "Other"
+        },
+        {
+          "upc": "111198",
+          "desc": "(Coupon) SAN PELL 500ml PET",
+          "qty": 1,
+          "price": -3.5,
+          "category": "Other"
+        },
+        {
+          "upc": "64728331897",
+          "desc": "SHRP P&D TF 16-20",
+          "qty": 1,
+          "price": 64.43,
+          "category": "Protein"
+        },
+        {
+          "upc": "9951132400",
+          "desc": "CAM LID ROUND TRAN",
+          "qty": 1,
+          "price": 5.2,
+          "category": "Supplies"
+        },
+        {
+          "upc": "9951132400",
+          "desc": "CAM LID ROUND TRAN",
+          "qty": -1,
+          "price": -5.2,
+          "category": "Supplies"
+        },
+        {
+          "upc": "9951132400",
+          "desc": "CAM LID ROUND TRAN",
+          "qty": 1,
+          "price": 31.22,
+          "category": "Supplies"
+        },
+        {
+          "upc": "9951132393",
+          "desc": "CAM RND 12QT WHT",
+          "qty": 1,
+          "price": 86.45,
+          "category": "Other"
+        },
+        {
+          "upc": "4900002468",
+          "desc": "COKE CLASSIC       16.9Z",
+          "qty": 1,
+          "price": 18.92,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002468",
+          "desc": "COKE CLASSIC       16.9Z",
+          "qty": 1,
+          "price": 18.92,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002469",
+          "desc": "COKE DIET          16.9Z",
+          "qty": 1,
+          "price": 20.27,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002470",
+          "desc": "SPRITE             16.9Z",
+          "qty": 1,
+          "price": 18.63,
+          "category": "Beverages"
+        },
+        {
+          "upc": "81008518226",
+          "desc": "PDU CUCUMBER 6CT",
+          "qty": 1,
+          "price": 3.39,
+          "category": "Produce"
+        },
+        {
+          "upc": "81383101068",
+          "desc": "PD ONI GRN ICELESS",
+          "qty": 1,
+          "price": 10.2,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046513303",
+          "desc": "PD MICRO FLWR PRM",
+          "qty": 1,
+          "price": 13.17,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046513303",
+          "desc": "PD MICRO FLWR PRM",
+          "qty": 1,
+          "price": 13.17,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046511033",
+          "desc": "PD MICRO BULL BLD",
+          "qty": 1,
+          "price": 12.91,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069501473",
+          "desc": "BEAN GARBANZO CQ   #10",
+          "qty": 1,
+          "price": 29.88,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "4473801843",
+          "desc": "MILK COCONUT       13.5Z",
+          "qty": 1,
+          "price": 52.1,
+          "category": "Dairy"
+        },
+        {
+          "upc": "7911710101",
+          "desc": "MILK WHL GAL GS/AN",
+          "qty": 1,
+          "price": 16.87,
+          "category": "Dairy"
+        },
+        {
+          "upc": "2060044137",
+          "desc": "PD PPR SERRANO CS",
+          "qty": 1,
+          "price": 46.3,
+          "category": "Produce"
+        },
+        {
+          "upc": "20795030000",
+          "desc": "CHX HAL LEG QTR SM",
+          "qty": 40,
+          "price": 36.8,
+          "category": "Protein"
+        },
+        {
+          "upc": "76069501615",
+          "desc": "OIL BTR ALT C.Q.",
+          "qty": 1,
+          "price": 36.42,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 67.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 67.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 67.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "76069500867",
+          "desc": "CHZ JACK/CHED FNCY 5#",
+          "qty": 1,
+          "price": 40.45,
+          "category": "Dairy"
+        },
+        {
+          "upc": "20795030000",
+          "desc": "CHX HAL LEG QTR SM",
+          "qty": 40,
+          "price": 36.8,
+          "category": "Protein"
+        },
+        {
+          "upc": "20772320000",
+          "desc": "CHX BRST JMB",
+          "qty": 40,
+          "price": 63.2,
+          "category": "Protein"
+        },
+        {
+          "upc": "20772320000",
+          "desc": "CHX BRST JMB",
+          "qty": 40,
+          "price": 63.2,
+          "category": "Protein"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.89,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.89,
+          "category": "Dairy"
+        },
+        {
+          "upc": "4940500507",
+          "desc": "COLORING EGG YELOW",
+          "qty": 1,
+          "price": 29.14,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "3022302671",
+          "desc": "PD CILANTRO 1#",
+          "qty": 1,
+          "price": 15.11,
+          "category": "Produce"
+        }
+      ]
+    },
+    "2026-06-13_19260": {
+      "invoiceNo": "19260",
+      "date": "2026-06-13",
+      "dateTime": "2026/06/13 10:51 am",
+      "subTotal": 304.7,
+      "tax": 25.52,
+      "total": 330.22,
+      "items": [
+        {
+          "upc": "72787502744",
+          "desc": "STRAINS 6.25\" DOUB",
+          "qty": 1,
+          "price": 12.67,
+          "category": "Other"
+        },
+        {
+          "upc": "76069502223",
+          "desc": "LID SFL 3.25-5Z",
+          "qty": 1,
+          "price": 5.35,
+          "category": "Supplies"
+        },
+        {
+          "upc": "9951130645",
+          "desc": "PEBB BOWL 12\"",
+          "qty": 1,
+          "price": 16.1,
+          "category": "Other"
+        },
+        {
+          "upc": "9951130645",
+          "desc": "PEBB BOWL 12\"",
+          "qty": 1,
+          "price": 16.1,
+          "category": "Other"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 17.58,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 17.58,
+          "category": "Supplies"
+        },
+        {
+          "upc": "7959448965",
+          "desc": "BAG BRN SOS 20# SH",
+          "qty": 1,
+          "price": 23.62,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069503012",
+          "desc": "BAG HNDL BR13X7X17",
+          "qty": 1,
+          "price": 67.4,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069533505",
+          "desc": "CONT SOUP CMB 8Z",
+          "qty": 1,
+          "price": 28.7,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069533507",
+          "desc": "CONT SOUP CMB 16Z",
+          "qty": 1,
+          "price": 30.03,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069533507",
+          "desc": "CONT SOUP CMB 16Z",
+          "qty": 1,
+          "price": 30.03,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069501355",
+          "desc": "HNDSOAP W/LOTION   ANTIBC",
+          "qty": 1,
+          "price": 39.54,
+          "category": "Supplies"
+        }
+      ]
     }
   },
   "sysco": {
@@ -18635,5 +18977,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-06-14T02:32:05.906Z"
+  "lastUpdated": "2026-06-15T00:04:08.567Z"
 }
