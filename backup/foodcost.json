@@ -16726,6 +16726,586 @@
           "category": "Dry & Pantry"
         }
       ]
+    },
+    "2026-06-16_28965": {
+      "invoiceNo": "28965",
+      "date": "2026-06-16",
+      "dateTime": "2026/06/16 1:52 pm",
+      "subTotal": 904.97,
+      "tax": 13.17,
+      "total": 918.14,
+      "items": [
+        {
+          "upc": "74069565165",
+          "desc": "PD LETT ROMAINE HT",
+          "qty": 1,
+          "price": 8.44,
+          "category": "Produce"
+        },
+        {
+          "upc": "74069565165",
+          "desc": "PD LETT ROMAINE HT",
+          "qty": 1,
+          "price": 8.44,
+          "category": "Produce"
+        },
+        {
+          "upc": "74069565165",
+          "desc": "PD LETT ROMAINE HT",
+          "qty": 1,
+          "price": 8.44,
+          "category": "Produce"
+        },
+        {
+          "upc": "81008518222",
+          "desc": "PDU PPR SERRANO 5#",
+          "qty": 1,
+          "price": 11.58,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046511762",
+          "desc": "PD MICRO SLD RNBOW",
+          "qty": 1,
+          "price": 12.89,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046513303",
+          "desc": "PD MICRO FLWR PRM",
+          "qty": 1,
+          "price": 13.17,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069533705",
+          "desc": "REG ROLL 200  7313",
+          "qty": 1,
+          "price": 22.7,
+          "category": "Other"
+        },
+        {
+          "upc": "64612790014",
+          "desc": "PDU GINGER FR 5LBS",
+          "qty": 1,
+          "price": 8,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069500330",
+          "desc": "JUICE LEMON GAL    4/1GAL",
+          "qty": 1,
+          "price": 33.5,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069501661",
+          "desc": "FOIL ROLL 18X500HV",
+          "qty": 1,
+          "price": 56.37,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069501661",
+          "desc": "FOIL ROLL 18X500HV",
+          "qty": 1,
+          "price": 56.37,
+          "category": "Supplies"
+        },
+        {
+          "upc": "885161310170",
+          "desc": "COCONUT MILK AROYD 13.5Z",
+          "qty": 1,
+          "price": 43.02,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069502007",
+          "desc": "FZ VEG BROC FLORET 12/2LB",
+          "qty": 1,
+          "price": 23.77,
+          "category": "Frozen"
+        },
+        {
+          "upc": "64728331897",
+          "desc": "SHRP P&D TF 16-20",
+          "qty": 1,
+          "price": 64.43,
+          "category": "Protein"
+        },
+        {
+          "upc": "3338366004",
+          "desc": "PD CARROT BAG 10#",
+          "qty": 1,
+          "price": 5.91,
+          "category": "Supplies"
+        },
+        {
+          "upc": "3022302671",
+          "desc": "PD CILANTRO 1#",
+          "qty": 1,
+          "price": 12.96,
+          "category": "Produce"
+        },
+        {
+          "upc": "3022302671",
+          "desc": "PD CILANTRO 1#",
+          "qty": 1,
+          "price": 12.96,
+          "category": "Produce"
+        },
+        {
+          "upc": "88264500812",
+          "desc": "PD POTATO 40CT",
+          "qty": 1,
+          "price": 15.35,
+          "category": "Produce"
+        },
+        {
+          "upc": "20776700000",
+          "desc": "CHX LEG QTR SML",
+          "qty": 40,
+          "price": 31.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776700000",
+          "desc": "CHX LEG QTR SML",
+          "qty": 40,
+          "price": 31.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "20772320000",
+          "desc": "CHX BRST JMB",
+          "qty": 40,
+          "price": 63.2,
+          "category": "Protein"
+        },
+        {
+          "upc": "1009746404000",
+          "desc": "TOWEL M/F WHT",
+          "qty": 1,
+          "price": 21.85,
+          "category": "Supplies"
+        },
+        {
+          "upc": "2060042606",
+          "desc": "PD CAUL 1CT",
+          "qty": 1,
+          "price": 15.82,
+          "category": "Produce"
+        },
+        {
+          "upc": "79625210135",
+          "desc": "YGT WM GOPI        32LB",
+          "qty": 1,
+          "price": 40.28,
+          "category": "Other"
+        },
+        {
+          "upc": "79625210135",
+          "desc": "YGT WM GOPI        32LB",
+          "qty": 1,
+          "price": 40.28,
+          "category": "Other"
+        },
+        {
+          "upc": "79680038600",
+          "desc": "FLOUR H&R WINGOLD  25#",
+          "qty": 1,
+          "price": 8.81,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "79680038600",
+          "desc": "FLOUR H&R WINGOLD  25#",
+          "qty": 1,
+          "price": 8.81,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "79680038600",
+          "desc": "FLOUR H&R WINGOLD  25#",
+          "qty": 1,
+          "price": 8.81,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "4900005846",
+          "desc": "COKE CLASSIC       12Z",
+          "qty": 1,
+          "price": 19.99,
+          "category": "Beverages"
+        },
+        {
+          "upc": "111105",
+          "desc": "(Coupon) COKE 35PK CANS 12z",
+          "qty": 1,
+          "price": -2.2,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900005846",
+          "desc": "COKE CLASSIC       12Z",
+          "qty": 1,
+          "price": 19.99,
+          "category": "Beverages"
+        },
+        {
+          "upc": "111105",
+          "desc": "(Coupon) COKE 35PK CANS 12z",
+          "qty": 1,
+          "price": -2.2,
+          "category": "Beverages"
+        },
+        {
+          "upc": "76069500868",
+          "desc": "CHZ JACK/CHED SHRD 5#",
+          "qty": 1,
+          "price": 39.18,
+          "category": "Dairy"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        }
+      ]
+    },
+    "2026-06-16_12867": {
+      "invoiceNo": "12867",
+      "date": "2026-06-16",
+      "dateTime": "2026/06/16 1:17 pm",
+      "subTotal": 2260.33,
+      "tax": 2.39,
+      "total": 2262.72,
+      "items": [
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069566701",
+          "desc": "RS GREEN DISH 1G",
+          "qty": 1,
+          "price": 28.54,
+          "category": "Other"
+        },
+        {
+          "upc": "76069502007",
+          "desc": "FZ VEG BROC FLORET 12/2LB",
+          "qty": 1,
+          "price": 23.77,
+          "category": "Frozen"
+        },
+        {
+          "upc": "76069500922",
+          "desc": "SCE TOMATO CQ",
+          "qty": 1,
+          "price": 27.78,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500922",
+          "desc": "SCE TOMATO CQ",
+          "qty": 1,
+          "price": 27.78,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500922",
+          "desc": "SCE TOMATO CQ",
+          "qty": 1,
+          "price": 27.78,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069502533",
+          "desc": "TOM PETITE DICED",
+          "qty": 1,
+          "price": 26.18,
+          "category": "Other"
+        },
+        {
+          "upc": "76069502533",
+          "desc": "TOM PETITE DICED",
+          "qty": 1,
+          "price": 26.18,
+          "category": "Other"
+        },
+        {
+          "upc": "76069502533",
+          "desc": "TOM PETITE DICED",
+          "qty": 1,
+          "price": 26.18,
+          "category": "Other"
+        },
+        {
+          "upc": "76069500923",
+          "desc": "TOM PUREE 1.06 CQ",
+          "qty": 1,
+          "price": 30.55,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500923",
+          "desc": "TOM PUREE 1.06 CQ",
+          "qty": 1,
+          "price": 30.55,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500923",
+          "desc": "TOM PUREE 1.06 CQ",
+          "qty": 1,
+          "price": 30.55,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500923",
+          "desc": "TOM PUREE 1.06 CQ",
+          "qty": 1,
+          "price": 30.55,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "79625210135",
+          "desc": "YGT WM GOPI        32LB",
+          "qty": 1,
+          "price": 40.28,
+          "category": "Other"
+        },
+        {
+          "upc": "64708660460",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 77.5,
+          "category": "Protein"
+        },
+        {
+          "upc": "4900002470",
+          "desc": "SPRITE             16.9Z",
+          "qty": 1,
+          "price": 18.63,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002468",
+          "desc": "COKE CLASSIC       16.9Z",
+          "qty": 1,
+          "price": 18.92,
+          "category": "Beverages"
+        },
+        {
+          "upc": "81008518222",
+          "desc": "PDU PPR SERRANO 5#",
+          "qty": 1,
+          "price": 11.58,
+          "category": "Produce"
+        },
+        {
+          "upc": "81008518222",
+          "desc": "PDU PPR SERRANO 5#",
+          "qty": 1,
+          "price": 11.58,
+          "category": "Produce"
+        },
+        {
+          "upc": "4900002469",
+          "desc": "COKE DIET          16.9Z",
+          "qty": 1,
+          "price": 20.27,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002468",
+          "desc": "COKE CLASSIC       16.9Z",
+          "qty": 1,
+          "price": 18.92,
+          "category": "Beverages"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 36.71,
+          "price": 238.25,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 36.71,
+          "price": -3.67,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 36.09,
+          "price": 230.62,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 40.23,
+          "price": 257.07,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 37.72,
+          "price": 241.03,
+          "category": "Protein"
+        },
+        {
+          "upc": "64708660460",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 77.5,
+          "category": "Protein"
+        },
+        {
+          "upc": "68044410720",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 13.98,
+          "category": "Produce"
+        },
+        {
+          "upc": "68044410720",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 13.98,
+          "category": "Produce"
+        },
+        {
+          "upc": "68044410720",
+          "desc": "PD GARLIC PEELED",
+          "qty": -1,
+          "price": -13.98,
+          "category": "Produce"
+        },
+        {
+          "upc": "68044410720",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 73.68,
+          "category": "Produce"
+        },
+        {
+          "upc": "68044410720",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 73.68,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.89,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.89,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.89,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.89,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.89,
+          "category": "Dairy"
+        },
+        {
+          "upc": "68044410720",
+          "desc": "PD GARLIC PEELED",
+          "qty": -1,
+          "price": -13.98,
+          "category": "Produce"
+        }
+      ]
     }
   },
   "sysco": {
@@ -19585,49 +20165,49 @@
       "date": "2026-05-05",
       "total": 386.7,
       "account": "PR93817",
-      "status": "open"
+      "status": "paid"
     },
     "41635232": {
       "invoiceNo": "41635232",
       "date": "2026-05-07",
       "total": 367.61,
       "account": "PR93817",
-      "status": "open"
+      "status": "paid"
     },
     "41686896": {
       "invoiceNo": "41686896",
       "date": "2026-05-12",
       "total": 375.48,
       "account": "PR93817",
-      "status": "open"
+      "status": "paid"
     },
     "41687248": {
       "invoiceNo": "41687248",
       "date": "2026-05-12",
       "total": 481.02,
       "account": "PR93817",
-      "status": "open"
+      "status": "paid"
     },
     "41698225": {
       "invoiceNo": "41698225",
       "date": "2026-05-13",
       "total": 410.54,
       "account": "PR93817",
-      "status": "open"
+      "status": "paid"
     },
     "41703288": {
       "invoiceNo": "41703288",
       "date": "2026-05-13",
       "total": 389.79,
       "account": "PR93817",
-      "status": "open"
+      "status": "paid"
     },
     "41703294": {
       "invoiceNo": "41703294",
       "date": "2026-05-13",
       "total": 397.11,
       "account": "PR93817",
-      "status": "open"
+      "status": "paid"
     },
     "41808379": {
       "invoiceNo": "41808379",
@@ -19721,5 +20301,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-06-17T00:03:11.011Z"
+  "lastUpdated": "2026-06-18T00:04:08.369Z"
 }
