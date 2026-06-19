@@ -17306,6 +17306,121 @@
           "category": "Produce"
         }
       ]
+    },
+    "2026-06-17_868": {
+      "invoiceNo": "868",
+      "date": "2026-06-17",
+      "dateTime": "2026/06/17 4:07 pm",
+      "subTotal": 1756.77,
+      "tax": 0,
+      "total": 1756.77,
+      "items": [
+        {
+          "upc": "76069557534",
+          "desc": "SPC BAY LEAF       10Z",
+          "qty": 1,
+          "price": 34.13,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500931",
+          "desc": "OIL SOYBEAN CQ     35#",
+          "qty": 1,
+          "price": 39.93,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500931",
+          "desc": "OIL SOYBEAN CQ     35#",
+          "qty": 1,
+          "price": 39.93,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500931",
+          "desc": "OIL SOYBEAN CQ     35#",
+          "qty": 1,
+          "price": 39.93,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500931",
+          "desc": "OIL SOYBEAN CQ     35#",
+          "qty": 1,
+          "price": 39.93,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 44.77,
+          "price": 290.56,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 44.77,
+          "price": -4.48,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 45.43,
+          "price": 290.3,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 48.08,
+          "price": 307.23,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 46.84,
+          "price": 299.31,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 76,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 76,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 76,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 76,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 76,
+          "category": "Protein"
+        }
+      ]
     }
   },
   "sysco": {
@@ -20299,7 +20414,14 @@
       "total": 415.34,
       "account": "PR93817",
       "status": "open"
+    },
+    "42119770": {
+      "invoiceNo": "42119770",
+      "date": "2026-06-17",
+      "total": 421.26,
+      "account": "PR93817",
+      "status": "open"
     }
   },
-  "lastUpdated": "2026-06-18T00:04:08.369Z"
+  "lastUpdated": "2026-06-19T00:04:13.345Z"
 }
