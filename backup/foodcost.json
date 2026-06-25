@@ -18130,6 +18130,558 @@
           "category": "Produce"
         }
       ]
+    },
+    "2026-06-22_13507": {
+      "invoiceNo": "13507",
+      "date": "2026-06-22",
+      "dateTime": "2026/06/22 1:24 pm",
+      "subTotal": 789.72,
+      "tax": 3.45,
+      "total": 793.17,
+      "items": [
+        {
+          "upc": "2060042647",
+          "desc": "PD HRB MINT",
+          "qty": 1,
+          "price": 5.63,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060042647",
+          "desc": "PD HRB MINT",
+          "qty": 1,
+          "price": 5.63,
+          "category": "Produce"
+        },
+        {
+          "upc": "695034840034",
+          "desc": "PDU GINGER FR 5LBS",
+          "qty": 1,
+          "price": 7.89,
+          "category": "Produce"
+        },
+        {
+          "upc": "64656384721",
+          "desc": "SKIMMER SQ FINE 7I EA",
+          "qty": 1,
+          "price": 7.27,
+          "category": "Other"
+        },
+        {
+          "upc": "64656397401",
+          "desc": "SKIMMER WIRE MESH  9\"",
+          "qty": 1,
+          "price": 11.68,
+          "category": "Other"
+        },
+        {
+          "upc": "72787502730",
+          "desc": "STRAINER SINGLE    10 1/4",
+          "qty": 1,
+          "price": 22.21,
+          "category": "Other"
+        },
+        {
+          "upc": "7127035817",
+          "desc": "CHZ PANEER LOAF    5#",
+          "qty": 1,
+          "price": 88.23,
+          "category": "Dairy"
+        },
+        {
+          "upc": "3022302671",
+          "desc": "PD CILANTRO 1#",
+          "qty": 1,
+          "price": 12.96,
+          "category": "Produce"
+        },
+        {
+          "upc": "3022302671",
+          "desc": "PD CILANTRO 1#",
+          "qty": 1,
+          "price": 12.96,
+          "category": "Produce"
+        },
+        {
+          "upc": "4480050400",
+          "desc": "PC SUGAR INTHE RAW 1200CT",
+          "qty": 1,
+          "price": 30.63,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "4900002468",
+          "desc": "COKE CLASSIC       16.9Z",
+          "qty": 1,
+          "price": 18.92,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002468",
+          "desc": "COKE CLASSIC       16.9Z",
+          "qty": 1,
+          "price": 18.92,
+          "category": "Beverages"
+        },
+        {
+          "upc": "7929816900",
+          "desc": "EVIAN WATER PET    500ML",
+          "qty": 1,
+          "price": 18.24,
+          "category": "Beverages"
+        },
+        {
+          "upc": "7929816900",
+          "desc": "EVIAN WATER PET    500ML",
+          "qty": 1,
+          "price": 18.24,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002469",
+          "desc": "COKE DIET          16.9Z",
+          "qty": 1,
+          "price": 20.27,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002469",
+          "desc": "COKE DIET          16.9Z",
+          "qty": 1,
+          "price": 20.27,
+          "category": "Beverages"
+        },
+        {
+          "upc": "885161310170",
+          "desc": "COCONUT MILK AROYD 13.5Z",
+          "qty": 1,
+          "price": 43.02,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.88,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.88,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.88,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069501045",
+          "desc": "VEG CHOP SPINACH",
+          "qty": 1,
+          "price": 33.12,
+          "category": "Produce"
+        },
+        {
+          "upc": "850069308315",
+          "desc": "PD PPR SERRANO CS",
+          "qty": 1,
+          "price": 35.58,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 73.68,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069501473",
+          "desc": "BEAN GARBANZO CQ   #10",
+          "qty": 1,
+          "price": 29.88,
+          "category": "Dry & Pantry"
+        }
+      ]
+    },
+    "2026-06-22_20732": {
+      "invoiceNo": "20732",
+      "date": "2026-06-22",
+      "dateTime": "2026/06/22 12:04 pm",
+      "subTotal": 1647.52,
+      "tax": 7.82,
+      "total": 1655.34,
+      "items": [
+        {
+          "upc": "81008518222",
+          "desc": "PDU PPR SERRANO 5#",
+          "qty": 1,
+          "price": 11.26,
+          "category": "Produce"
+        },
+        {
+          "upc": "81008518222",
+          "desc": "PDU PPR SERRANO 5#",
+          "qty": 1,
+          "price": 11.26,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060042647",
+          "desc": "PD HRB MINT",
+          "qty": 1,
+          "price": 5.63,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060042647",
+          "desc": "PD HRB MINT",
+          "qty": 1,
+          "price": 5.63,
+          "category": "Produce"
+        },
+        {
+          "upc": "7911710101",
+          "desc": "MILK WHL GAL GS/AN",
+          "qty": 1,
+          "price": 16.87,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069502990",
+          "desc": "CRM WHP 40% JF 64Z",
+          "qty": 1,
+          "price": 43.3,
+          "category": "Other"
+        },
+        {
+          "upc": "3022302671",
+          "desc": "PD CILANTRO 1#",
+          "qty": 1,
+          "price": 12.96,
+          "category": "Produce"
+        },
+        {
+          "upc": "3022302671",
+          "desc": "PD CILANTRO 1#",
+          "qty": 1,
+          "price": 12.96,
+          "category": "Produce"
+        },
+        {
+          "upc": "74069569998",
+          "desc": "PD CAUL 1CT",
+          "qty": 1,
+          "price": 18.38,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060042570",
+          "desc": "PD LEMON CH 75/115",
+          "qty": 1,
+          "price": 37.21,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069501045",
+          "desc": "VEG CHOP SPINACH",
+          "qty": 1,
+          "price": 33.12,
+          "category": "Produce"
+        },
+        {
+          "upc": "20772320000",
+          "desc": "CHX BRST JMB",
+          "qty": 40,
+          "price": 61.2,
+          "category": "Protein"
+        },
+        {
+          "upc": "76069502990",
+          "desc": "CRM WHP 40% JF 64Z",
+          "qty": 1,
+          "price": 43.3,
+          "category": "Other"
+        },
+        {
+          "upc": "76069502990",
+          "desc": "CRM WHP 40% JF 64Z",
+          "qty": 1,
+          "price": 43.3,
+          "category": "Other"
+        },
+        {
+          "upc": "64708660460",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 77.5,
+          "category": "Protein"
+        },
+        {
+          "upc": "64708660460",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 77.5,
+          "category": "Protein"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 76,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 76,
+          "category": "Protein"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.88,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.88,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.88,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069501051",
+          "desc": "FILM 18X2000",
+          "qty": 1,
+          "price": 18.52,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069501051",
+          "desc": "FILM 18X2000",
+          "qty": 1,
+          "price": 18.52,
+          "category": "Supplies"
+        },
+        {
+          "upc": "81008518222",
+          "desc": "PDU PPR SERRANO 5#",
+          "qty": 1,
+          "price": 11.26,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060042647",
+          "desc": "PD HRB MINT",
+          "qty": 1,
+          "price": 5.63,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060042647",
+          "desc": "PD HRB MINT",
+          "qty": 1,
+          "price": 5.63,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046511033",
+          "desc": "PD MICRO BULL BLD",
+          "qty": 1,
+          "price": 12.91,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046513269",
+          "desc": "PD MICRO FWR ORCHD",
+          "qty": 1,
+          "price": 9.68,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069501661",
+          "desc": "FOIL ROLL 18X500HV",
+          "qty": 1,
+          "price": 56.37,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069500087",
+          "desc": "PC SALT PKT DC",
+          "qty": 1,
+          "price": 13.41,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "7127035817",
+          "desc": "CHZ PANEER LOAF    5#",
+          "qty": 1,
+          "price": 88.23,
+          "category": "Dairy"
+        },
+        {
+          "upc": "3022302671",
+          "desc": "PD CILANTRO 1#",
+          "qty": 1,
+          "price": 12.96,
+          "category": "Produce"
+        },
+        {
+          "upc": "6069551457",
+          "desc": "FSH TILAPITS 3-5Z  10#",
+          "qty": 1,
+          "price": 32.1,
+          "category": "Other"
+        },
+        {
+          "upc": "85176800278",
+          "desc": "PD ORANGE 88CT",
+          "qty": 1,
+          "price": 33.48,
+          "category": "Produce"
+        },
+        {
+          "upc": "20776700000",
+          "desc": "CHX LEG QTR SML",
+          "qty": 40,
+          "price": 34,
+          "category": "Protein"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.88,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.88,
+          "category": "Dairy"
+        },
+        {
+          "upc": "2446310124",
+          "desc": "PASTE SAMBAL OELEK",
+          "qty": 1,
+          "price": 36.33,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "7800080469",
+          "desc": "DR PEPPER 12Z      36PK",
+          "qty": 1,
+          "price": 20.45,
+          "category": "Produce"
+        },
+        {
+          "upc": "81013324901",
+          "desc": "PD SALAD SPRING MX",
+          "qty": 1,
+          "price": 5.93,
+          "category": "Produce"
+        },
+        {
+          "upc": "81013324901",
+          "desc": "PD SALAD SPRING MX",
+          "qty": -1,
+          "price": -5.93,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069501473",
+          "desc": "BEAN GARBANZO CQ   #10",
+          "qty": 1,
+          "price": 29.88,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 73.68,
+          "category": "Produce"
+        }
+      ]
     }
   },
   "sysco": {
@@ -22029,7 +22581,14 @@
       "total": 404.38,
       "account": "PR93817",
       "status": "open"
+    },
+    "42184922": {
+      "invoiceNo": "42184922",
+      "date": "2026-06-23",
+      "total": 725.39,
+      "account": "PR93817",
+      "status": "open"
     }
   },
-  "lastUpdated": "2026-06-24T00:03:24.682Z"
+  "lastUpdated": "2026-06-25T00:05:04.336Z"
 }
