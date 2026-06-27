@@ -74,7 +74,7 @@ function saveStore() {
 const log = (msg) => {
   console.log(msg);
   store.log.unshift({ time: new Date().toISOString(), msg });
-  if (store.log.length > 2000) store.log.length = 2000;
+  if (store.log.length > 60000) store.log.length = 60000; // ~3 years of daily runs
   saveLog();
 };
 
@@ -1206,10 +1206,13 @@ function rangeBounds(range) {
     d.setDate(d.getDate() - 6);
     return { from: d.toISOString().slice(0, 10), to: today, label: "Last 7 Days" };
   }
-  if (range === "30") {
+  if (range === "3months") {
     const d = new Date(today + "T00:00:00");
-    d.setDate(d.getDate() - 29);
-    return { from: d.toISOString().slice(0, 10), to: today, label: "Last 30 Days" };
+    d.setMonth(d.getMonth() - 3);
+    return { from: d.toISOString().slice(0, 10), to: today, label: "Last 3 Months" };
+  }
+  if (range === "ytd") {
+    return { from: today.slice(0, 4) + "-01-01", to: today, label: today.slice(0, 4) + " Year to Date" };
   }
   if (range === "lastmonth") {
     const y = parseInt(today.slice(0, 4)), m = parseInt(today.slice(5, 7)); // 1-based month
