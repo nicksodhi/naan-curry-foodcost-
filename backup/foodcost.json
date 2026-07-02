@@ -20224,6 +20224,156 @@
           "category": "Protein"
         }
       ]
+    },
+    "2026-06-30_14247": {
+      "invoiceNo": "14247",
+      "date": "2026-06-30",
+      "dateTime": "2026/06/30 12:50 pm",
+      "subTotal": 840.6,
+      "tax": 0,
+      "total": 840.6,
+      "items": [
+        {
+          "upc": "84046513269",
+          "desc": "PD MICRO FWR ORCHD",
+          "qty": 1,
+          "price": 9.68,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046511762",
+          "desc": "PD MICRO SLD RNBOW",
+          "qty": 1,
+          "price": 12.89,
+          "category": "Produce"
+        },
+        {
+          "upc": "81008518222",
+          "desc": "PDU PPR SERRANO 5#",
+          "qty": 1,
+          "price": 11.18,
+          "category": "Produce"
+        },
+        {
+          "upc": "81008518222",
+          "desc": "PDU PPR SERRANO 5#",
+          "qty": 1,
+          "price": 11.18,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046513303",
+          "desc": "PD MICRO FLWR PRM",
+          "qty": 1,
+          "price": 13.17,
+          "category": "Produce"
+        },
+        {
+          "upc": "7127035817",
+          "desc": "CHZ PANEER LOAF    5#",
+          "qty": 1,
+          "price": 88.23,
+          "category": "Dairy"
+        },
+        {
+          "upc": "7127035817",
+          "desc": "CHZ PANEER LOAF    5#",
+          "qty": 1,
+          "price": 88.23,
+          "category": "Dairy"
+        },
+        {
+          "upc": "4150873466",
+          "desc": "SAN PELL SPRKL PET 500ML",
+          "qty": 1,
+          "price": 25.09,
+          "category": "Other"
+        },
+        {
+          "upc": "111198",
+          "desc": "(Coupon) SAN PELL 500ml PET",
+          "qty": 1,
+          "price": -3.5,
+          "category": "Other"
+        },
+        {
+          "upc": "4150873466",
+          "desc": "SAN PELL SPRKL PET 500ML",
+          "qty": 1,
+          "price": 25.09,
+          "category": "Other"
+        },
+        {
+          "upc": "111198",
+          "desc": "(Coupon) SAN PELL 500ml PET",
+          "qty": 1,
+          "price": -3.5,
+          "category": "Other"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "7929816900",
+          "desc": "EVIAN WATER PET    500ML",
+          "qty": 1,
+          "price": 18.24,
+          "category": "Beverages"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 3,
+          "price": 113.64,
+          "category": "Dairy"
+        },
+        {
+          "upc": "7929816900",
+          "desc": "EVIAN WATER PET    500ML",
+          "qty": 1,
+          "price": 18.24,
+          "category": "Beverages"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 69.94,
+          "category": "Produce"
+        },
+        {
+          "upc": "81009537357",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 2,
+          "price": 155,
+          "category": "Protein"
+        }
+      ]
     }
   },
   "sysco": {
@@ -25026,5 +25176,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-07-01T00:05:13.198Z"
+  "lastUpdated": "2026-07-02T00:04:45.969Z"
 }
