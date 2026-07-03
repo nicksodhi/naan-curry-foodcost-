@@ -20374,6 +20374,380 @@
           "category": "Protein"
         }
       ]
+    },
+    "2026-07-01_11743": {
+      "invoiceNo": "11743",
+      "date": "2026-07-01",
+      "dateTime": "2026/07/01 12:27 pm",
+      "subTotal": 1180.36,
+      "tax": 23.53,
+      "total": 1203.89,
+      "items": [
+        {
+          "upc": "4900002468",
+          "desc": "COKE CLASSIC       16.9Z",
+          "qty": 1,
+          "price": 18.92,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002468",
+          "desc": "COKE CLASSIC       16.9Z",
+          "qty": 1,
+          "price": 18.92,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002468",
+          "desc": "COKE CLASSIC       16.9Z",
+          "qty": 1,
+          "price": 18.92,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002469",
+          "desc": "COKE DIET          16.9Z",
+          "qty": 1,
+          "price": 20.27,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002469",
+          "desc": "COKE DIET          16.9Z",
+          "qty": 1,
+          "price": 20.27,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002470",
+          "desc": "SPRITE             16.9Z",
+          "qty": 1,
+          "price": 18.63,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002470",
+          "desc": "SPRITE             16.9Z",
+          "qty": 1,
+          "price": 18.63,
+          "category": "Beverages"
+        },
+        {
+          "upc": "81294400832",
+          "desc": "CVR 1/3 PAN SOLID",
+          "qty": 1,
+          "price": 4.62,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400832",
+          "desc": "CVR 1/3 PAN SOLID",
+          "qty": 1,
+          "price": 4.62,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400832",
+          "desc": "CVR 1/3 PAN SOLID",
+          "qty": 1,
+          "price": 4.62,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400832",
+          "desc": "CVR 1/3 PAN SOLID",
+          "qty": 1,
+          "price": 4.62,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400832",
+          "desc": "CVR 1/3 PAN SOLID",
+          "qty": 1,
+          "price": 4.62,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400832",
+          "desc": "CVR 1/3 PAN SOLID",
+          "qty": 1,
+          "price": 4.62,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400832",
+          "desc": "CVR 1/3 PAN SOLID",
+          "qty": 1,
+          "price": 4.62,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400832",
+          "desc": "CVR 1/3 PAN SOLID",
+          "qty": 1,
+          "price": 4.62,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400832",
+          "desc": "CVR 1/3 PAN SOLID",
+          "qty": 1,
+          "price": 4.62,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400824",
+          "desc": "CVR HALF PAN SOLID",
+          "qty": 1,
+          "price": 6.05,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400824",
+          "desc": "CVR HALF PAN SOLID",
+          "qty": 1,
+          "price": 6.05,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400824",
+          "desc": "CVR HALF PAN SOLID",
+          "qty": 1,
+          "price": 6.05,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400824",
+          "desc": "CVR HALF PAN SOLID",
+          "qty": 1,
+          "price": 6.05,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400824",
+          "desc": "CVR HALF PAN SOLID",
+          "qty": 1,
+          "price": 6.05,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400824",
+          "desc": "CVR HALF PAN SOLID",
+          "qty": 1,
+          "price": 6.05,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400824",
+          "desc": "CVR HALF PAN SOLID",
+          "qty": 1,
+          "price": 6.05,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400824",
+          "desc": "CVR HALF PAN SOLID",
+          "qty": 1,
+          "price": 6.05,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400824",
+          "desc": "CVR HALF PAN SOLID",
+          "qty": 1,
+          "price": 6.05,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400824",
+          "desc": "CVR HALF PAN SOLID",
+          "qty": 1,
+          "price": 6.05,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400824",
+          "desc": "CVR HALF PAN SOLID",
+          "qty": 1,
+          "price": 6.05,
+          "category": "Other"
+        },
+        {
+          "upc": "81294400824",
+          "desc": "CVR HALF PAN SOLID",
+          "qty": 1,
+          "price": 6.05,
+          "category": "Other"
+        },
+        {
+          "upc": "4940500509",
+          "desc": "COLORING LEM YELOW",
+          "qty": 1,
+          "price": 28.91,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "3022302671",
+          "desc": "PD CILANTRO 1#",
+          "qty": 2,
+          "price": 26.44,
+          "category": "Produce"
+        },
+        {
+          "upc": "64612790014",
+          "desc": "PDU GINGER FR 5LBS",
+          "qty": 1,
+          "price": 7.62,
+          "category": "Produce"
+        },
+        {
+          "upc": "64612790014",
+          "desc": "PDU GINGER FR 5LBS",
+          "qty": 1,
+          "price": 7.62,
+          "category": "Produce"
+        },
+        {
+          "upc": "81008518226",
+          "desc": "PDU CUCUMBER 6CT",
+          "qty": 1,
+          "price": 2.39,
+          "category": "Produce"
+        },
+        {
+          "upc": "81008518226",
+          "desc": "PDU CUCUMBER 6CT",
+          "qty": 1,
+          "price": 2.39,
+          "category": "Produce"
+        },
+        {
+          "upc": "7127035817",
+          "desc": "CHZ PANEER LOAF    5#",
+          "qty": 2,
+          "price": 173.12,
+          "category": "Dairy"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 2,
+          "price": 139.88,
+          "category": "Produce"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 45.51,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 45.51,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 45.51,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "20776700000",
+          "desc": "CHX LEG QTR SML",
+          "qty": 40,
+          "price": 32,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776700000",
+          "desc": "CHX LEG QTR SML",
+          "qty": 40,
+          "price": 32,
+          "category": "Protein"
+        },
+        {
+          "upc": "76069500595",
+          "desc": "SATIN HND SOAP WHT",
+          "qty": 1,
+          "price": 28.35,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502287",
+          "desc": "CUP SFL BLK 4Z",
+          "qty": 1,
+          "price": 39.07,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069566703",
+          "desc": "RS PINK DISH 1G",
+          "qty": 1,
+          "price": 21,
+          "category": "Other"
+        },
+        {
+          "upc": "76069502223",
+          "desc": "LID SFL 3.25-5Z",
+          "qty": 1,
+          "price": 40.72,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502285",
+          "desc": "CUP SFL BLK 2Z",
+          "qty": 1,
+          "price": 20.21,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502222",
+          "desc": "LID SFL 1.5-2Z",
+          "qty": 1,
+          "price": 17.42,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069501045",
+          "desc": "VEG CHOP SPINACH",
+          "qty": 1,
+          "price": 32.95,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 35.75,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 35.75,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 35.75,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 35.75,
+          "category": "Dairy"
+        }
+      ]
     }
   },
   "sysco": {
@@ -25176,5 +25550,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-07-02T00:04:45.969Z"
+  "lastUpdated": "2026-07-03T00:07:18.439Z"
 }
