@@ -25357,6 +25357,276 @@
           "category": "Dry & Pantry"
         }
       ]
+    },
+    "4217109": {
+      "orderNo": "4217109",
+      "location": "The Strip",
+      "locationId": "017-974544",
+      "deliveryDate": "2026-07-02",
+      "total": 1739.01,
+      "itemSum": 1739.01,
+      "items": [
+        {
+          "supc": "1094721",
+          "name": "Onion Yellow Jumbo Bag",
+          "qty": 2,
+          "unitPrice": 20.31,
+          "total": 40.62,
+          "category": "Produce"
+        },
+        {
+          "supc": "1094663",
+          "name": "Onion Red Jumbo Bag",
+          "qty": 1,
+          "unitPrice": 16.51,
+          "total": 16.51,
+          "category": "Produce"
+        },
+        {
+          "supc": "1543164",
+          "name": "Potato Baking Russet 40 Count Fresh",
+          "qty": 2,
+          "unitPrice": 16.41,
+          "total": 32.82,
+          "category": "Produce"
+        },
+        {
+          "supc": "1243724",
+          "name": "Cauliflower Cello Wrapped Fresh",
+          "qty": 2,
+          "unitPrice": 25.1,
+          "total": 50.2,
+          "category": "Produce"
+        },
+        {
+          "supc": "7350788",
+          "name": "Onion Green Iceless",
+          "qty": 1,
+          "unitPrice": null,
+          "total": 6.89,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 10,
+          "unitPrice": 47.32,
+          "total": 473.2,
+          "category": "Dairy"
+        },
+        {
+          "supc": "4676306",
+          "name": "Milk Whole Gallon",
+          "qty": 4,
+          "unitPrice": 18.76,
+          "total": 75.04,
+          "category": "Dairy"
+        },
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 4,
+          "unitPrice": 72.83,
+          "total": 291.32,
+          "category": "Protein"
+        },
+        {
+          "supc": "5231238",
+          "name": "Chicken Cvp Breast Boneless-skinless Random Jumbo Marinated",
+          "qty": 2,
+          "unitPrice": 63.2,
+          "total": 126.4,
+          "category": "Protein"
+        },
+        {
+          "supc": "6344790",
+          "name": "Chicken Cvp Wings 1st And 2nd Joints Jumbo",
+          "qty": 1,
+          "unitPrice": 50.96,
+          "total": 50.96,
+          "category": "Protein"
+        },
+        {
+          "supc": "2822379",
+          "name": "Cheese Cheddar Jack Fancy Shredded",
+          "qty": 1,
+          "unitPrice": 41.39,
+          "total": 41.39,
+          "category": "Dairy"
+        },
+        {
+          "supc": "5106388",
+          "name": "Shrimp White Peeled And Deveined Tail-off 16/20 Count",
+          "qty": 1,
+          "unitPrice": 62.65,
+          "total": 62.65,
+          "category": "Protein"
+        },
+        {
+          "supc": "0496671",
+          "name": "Tilapia Fillet Boneless Skinless Iqf 3-5 Ounce",
+          "qty": 1,
+          "unitPrice": 33.17,
+          "total": 33.17,
+          "category": "Protein"
+        },
+        {
+          "supc": "3960200",
+          "name": "Vegetable Mix 4-way",
+          "qty": 1,
+          "unitPrice": 22.41,
+          "total": 22.41,
+          "category": "Frozen"
+        },
+        {
+          "supc": "3355757",
+          "name": "Butter-it Alternative Liquid Zero Trans Fat",
+          "qty": 1,
+          "unitPrice": 34.07,
+          "total": 34.07,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4119079",
+          "name": "Oil Soybean Vegetable Pure",
+          "qty": 2,
+          "unitPrice": 43.57,
+          "total": 87.14,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4518403",
+          "name": "Shortening Fry Liquid Clear Zero Trans Fat",
+          "qty": 2,
+          "unitPrice": 40.27,
+          "total": 80.54,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 10,
+          "unitPrice": 9.43,
+          "total": 94.3,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4014684",
+          "name": "Flour Wheat Whole Stone Ground",
+          "qty": 1,
+          "unitPrice": 17.99,
+          "total": 17.99,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "5087572",
+          "name": "Sugar Granulated Extra Fine Cane",
+          "qty": 1,
+          "unitPrice": 19,
+          "total": 19,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4564894",
+          "name": "Salt Granulated Plain",
+          "qty": 1,
+          "unitPrice": 16.06,
+          "total": 16.06,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8474538",
+          "name": "Spinach Baby Fresh",
+          "qty": 2,
+          "unitPrice": 12.73,
+          "total": 25.46,
+          "category": "Produce"
+        },
+        {
+          "supc": "9903790",
+          "name": "Ketchup Jug Red In Plastic Bottle With Pump",
+          "qty": 1,
+          "unitPrice": 40.87,
+          "total": 40.87,
+          "category": "Dry & Pantry"
+        }
+      ]
+    },
+    "4220513": {
+      "orderNo": "4220513",
+      "location": "Durango (Main)",
+      "locationId": "017-974499",
+      "deliveryDate": "2026-07-03",
+      "total": 1097.07,
+      "itemSum": 1097.07,
+      "items": [
+        {
+          "supc": "1094721",
+          "name": "Onion Yellow Jumbo Bag",
+          "qty": 20,
+          "unitPrice": 19.5,
+          "total": 390,
+          "category": "Produce"
+        },
+        {
+          "supc": "1543164",
+          "name": "Potato Baking Russet 40 Count Fresh",
+          "qty": 1,
+          "unitPrice": 16.41,
+          "total": 16.41,
+          "category": "Produce"
+        },
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 6,
+          "unitPrice": 72.83,
+          "total": 436.98,
+          "category": "Protein"
+        },
+        {
+          "supc": "5231238",
+          "name": "Chicken Cvp Breast Boneless-skinless Random Jumbo Marinated",
+          "qty": 1,
+          "unitPrice": 62.99,
+          "total": 62.99,
+          "category": "Protein"
+        },
+        {
+          "supc": "4119079",
+          "name": "Oil Soybean Vegetable Pure",
+          "qty": 3,
+          "unitPrice": 43.57,
+          "total": 130.71,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4002325",
+          "name": "Tomato Puree 1.06 Fancy California",
+          "qty": 2,
+          "unitPrice": 29.99,
+          "total": 59.98,
+          "category": "Dry & Pantry"
+        }
+      ]
+    },
+    "4220714": {
+      "orderNo": "4220714",
+      "location": "Durango (Main)",
+      "locationId": "017-974499",
+      "deliveryDate": "2026-07-03",
+      "total": 291.32,
+      "itemSum": 291.32,
+      "items": [
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 4,
+          "unitPrice": 72.83,
+          "total": 291.32,
+          "category": "Protein"
+        }
+      ]
     }
   },
   "imperial": {
@@ -25463,21 +25733,21 @@
       "date": "2026-06-02",
       "total": 512.58,
       "account": "PR93817",
-      "status": "open"
+      "status": "paid"
     },
     "41933341": {
       "invoiceNo": "41933341",
       "date": "2026-06-02",
       "total": 479.11,
       "account": "PR93817",
-      "status": "open"
+      "status": "paid"
     },
     "41933376": {
       "invoiceNo": "41933376",
       "date": "2026-06-02",
       "total": 366.45,
       "account": "PR93817",
-      "status": "open"
+      "status": "paid"
     },
     "41950215": {
       "invoiceNo": "41950215",
@@ -25548,7 +25818,14 @@
       "total": 501.92,
       "account": "PR93817",
       "status": "open"
+    },
+    "42293640": {
+      "invoiceNo": "42293640",
+      "date": "2026-07-02",
+      "total": 848.96,
+      "account": "PR93817",
+      "status": "open"
     }
   },
-  "lastUpdated": "2026-07-03T00:07:18.439Z"
+  "lastUpdated": "2026-07-04T00:06:21.566Z"
 }
