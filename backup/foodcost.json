@@ -23559,6 +23559,119 @@
           "category": "Protein"
         }
       ]
+    },
+    "2026-07-17_13704": {
+      "invoiceNo": "13704",
+      "date": "2026-07-17",
+      "dateTime": "2026/07/17 2:30 pm",
+      "subTotal": 0,
+      "tax": 0,
+      "total": 0,
+      "items": [
+        {
+          "upc": "7279600047",
+          "desc": "IBC ROOT BEER RS   12Z",
+          "qty": 1,
+          "price": 25.44,
+          "category": "Other"
+        },
+        {
+          "upc": "7279600047",
+          "desc": "IBC ROOT BEER RS   12Z",
+          "qty": -1,
+          "price": -25.44,
+          "category": "Other"
+        }
+      ]
+    },
+    "2026-07-17_13702": {
+      "invoiceNo": "13702",
+      "date": "2026-07-17",
+      "dateTime": "2026/07/17 2:27 pm",
+      "subTotal": null,
+      "tax": 0,
+      "total": 0,
+      "items": []
+    },
+    "2026-07-17_5678": {
+      "invoiceNo": "5678",
+      "date": "2026-07-17",
+      "dateTime": "2026/07/17 1:43 pm",
+      "subTotal": 380.1,
+      "tax": 0,
+      "total": 380.1,
+      "items": [
+        {
+          "upc": "76069503131",
+          "desc": "EGG CF BRWN JF MED 15DZ",
+          "qty": 1,
+          "price": 19,
+          "category": "Other"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 68.22,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060042827",
+          "desc": "PD MELON HONEY",
+          "qty": 1,
+          "price": 33.99,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069502007",
+          "desc": "FZ VEG BROC FLORET 12/2LB",
+          "qty": 1,
+          "price": 23.77,
+          "category": "Frozen"
+        },
+        {
+          "upc": "7911710101",
+          "desc": "MILK WHL GAL GS/AN",
+          "qty": 2,
+          "price": 33.16,
+          "category": "Dairy"
+        },
+        {
+          "upc": "20795030000",
+          "desc": "CHX HAL LEG QTR SM",
+          "qty": 40,
+          "price": 34.4,
+          "category": "Protein"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.7,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.7,
+          "category": "Dairy"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.08,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.08,
+          "category": "Dry & Pantry"
+        }
+      ]
     }
   },
   "sysco": {
@@ -30359,6 +30472,136 @@
         }
       ]
     },
+    "4247390": {
+      "orderNo": "4247390",
+      "location": "Rhodes Ranch",
+      "locationId": "017-974546",
+      "deliveryDate": "2026-07-18",
+      "total": 541.47,
+      "itemSum": 541.47,
+      "items": [
+        {
+          "supc": "1094663",
+          "name": "Onion Red Jumbo Bag",
+          "qty": 1,
+          "unitPrice": 15.69,
+          "total": 15.69,
+          "category": "Produce"
+        },
+        {
+          "supc": "1543164",
+          "name": "Potato Baking Russet 40 Count Fresh",
+          "qty": 1,
+          "unitPrice": 18.9,
+          "total": 18.9,
+          "category": "Produce"
+        },
+        {
+          "supc": "1243724",
+          "name": "Cauliflower Cello Wrapped Fresh",
+          "qty": 1,
+          "unitPrice": 32.22,
+          "total": 32.22,
+          "category": "Produce"
+        },
+        {
+          "supc": "2219095",
+          "name": "Cilantro Cleaned, Washed & Fresh Herb",
+          "qty": 1,
+          "unitPrice": 17.46,
+          "total": 17.46,
+          "category": "Produce"
+        },
+        {
+          "supc": "7410640",
+          "name": "Cucumber Select Fresh",
+          "qty": 1,
+          "unitPrice": 11.95,
+          "total": 11.95,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 2,
+          "unitPrice": 47.72,
+          "total": 95.44,
+          "category": "Dairy"
+        },
+        {
+          "supc": "2822379",
+          "name": "Cheese Cheddar Jack Fancy Shredded",
+          "qty": 1,
+          "unitPrice": 42.56,
+          "total": 42.56,
+          "category": "Dairy"
+        },
+        {
+          "supc": "3355757",
+          "name": "Butter-it Alternative Liquid Zero Trans Fat",
+          "qty": 1,
+          "unitPrice": 34.07,
+          "total": 34.07,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 4,
+          "unitPrice": 9.69,
+          "total": 38.76,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4112262",
+          "name": "Coloring Food Egg Shade Yellow",
+          "qty": 1,
+          "unitPrice": 27.25,
+          "total": 27.25,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4002325",
+          "name": "Tomato Puree 1.06 Fancy California",
+          "qty": 1,
+          "unitPrice": 29.99,
+          "total": 29.99,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "5087572",
+          "name": "Sugar Granulated Extra Fine Cane",
+          "qty": 1,
+          "unitPrice": 19.56,
+          "total": 19.56,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4564894",
+          "name": "Salt Granulated Plain",
+          "qty": 1,
+          "unitPrice": 16.06,
+          "total": 16.06,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "6914451",
+          "name": "Pan Coating Butter It",
+          "qty": 1,
+          "unitPrice": 18.5,
+          "total": 18.5,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4518403",
+          "name": "Shortening Fry Liquid Clear Zero Trans Fat",
+          "qty": 3,
+          "unitPrice": 41.02,
+          "total": 123.06,
+          "category": "Dry & Pantry"
+        }
+      ]
+    },
     "4248676": {
       "orderNo": "4248676",
       "location": "Durango (Main)",
@@ -30832,5 +31075,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-07-18T00:04:33.457Z"
+  "lastUpdated": "2026-07-19T00:04:18.597Z"
 }
