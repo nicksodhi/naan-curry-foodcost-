@@ -24579,6 +24579,163 @@
           "category": "Supplies"
         }
       ]
+    },
+    "2026-07-21_25949": {
+      "invoiceNo": "25949",
+      "date": "2026-07-21",
+      "dateTime": "2026/07/21 3:31 pm",
+      "subTotal": 2335.41,
+      "tax": 6.68,
+      "total": 2342.09,
+      "items": [
+        {
+          "upc": "2060042647",
+          "desc": "PD HRB MINT",
+          "qty": 1,
+          "price": 5.63,
+          "category": "Produce"
+        },
+        {
+          "upc": "3022302671",
+          "desc": "PD CILANTRO 1#",
+          "qty": 1,
+          "price": 12.99,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060042606",
+          "desc": "PD CAUL 1CT",
+          "qty": 1,
+          "price": 26.19,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 68.22,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 68.22,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 68.22,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.7,
+          "category": "Dairy"
+        },
+        {
+          "upc": "85005170518",
+          "desc": "PD GINGER FRSH 28#",
+          "qty": 1,
+          "price": 31.95,
+          "category": "Produce"
+        },
+        {
+          "upc": "85005170518",
+          "desc": "PD GINGER FRSH 28#",
+          "qty": 1,
+          "price": 31.95,
+          "category": "Produce"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.08,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.08,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 41.93,
+          "price": 282.61,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 41.93,
+          "price": -8.39,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 42.54,
+          "price": 278.21,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776700000",
+          "desc": "CHX LEG QTR SML",
+          "qty": 40,
+          "price": 32.8,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 43.87,
+          "price": 286.91,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 48.19,
+          "price": 315.16,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 46.91,
+          "price": 306.79,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 48.67,
+          "price": 318.3,
+          "category": "Protein"
+        },
+        {
+          "upc": "76069502223",
+          "desc": "LID SFL 3.25-5Z",
+          "qty": 1,
+          "price": 40.72,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502287",
+          "desc": "CUP SFL BLK 4Z",
+          "qty": 1,
+          "price": 39.07,
+          "category": "Supplies"
+        }
+      ]
     }
   },
   "sysco": {
@@ -32478,5 +32635,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-07-22T00:04:17.204Z"
+  "lastUpdated": "2026-07-23T00:03:53.320Z"
 }
