@@ -26102,6 +26102,219 @@
           "category": "Dry & Pantry"
         }
       ]
+    },
+    "2026-07-29_452": {
+      "invoiceNo": "452",
+      "date": "2026-07-29",
+      "dateTime": "2026/07/29 11:36 am",
+      "subTotal": 2324.2,
+      "tax": 37.31,
+      "total": 2361.51,
+      "items": [
+        {
+          "upc": "76069533505",
+          "desc": "CONT SOUP CMB 8Z",
+          "qty": 1,
+          "price": 23.22,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069533505",
+          "desc": "CONT SOUP CMB 8Z",
+          "qty": 1,
+          "price": 23.22,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502285",
+          "desc": "CUP SFL BLK 2Z",
+          "qty": 1,
+          "price": 20.21,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502190",
+          "desc": "FOIL SHEET 12X1034",
+          "qty": 1,
+          "price": 114.49,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069533879",
+          "desc": "SKYLN OVEN GRDL FR 1GL",
+          "qty": 1,
+          "price": 7.81,
+          "category": "Other"
+        },
+        {
+          "upc": "76069533879",
+          "desc": "SKYLN OVEN GRDL FR 1GL",
+          "qty": 1,
+          "price": 7.81,
+          "category": "Other"
+        },
+        {
+          "upc": "76069502222",
+          "desc": "LID SFL 1.5-2Z",
+          "qty": 1,
+          "price": 17.42,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069533507",
+          "desc": "CONT SOUP CMB 16Z",
+          "qty": 1,
+          "price": 28.08,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069533507",
+          "desc": "CONT SOUP CMB 16Z",
+          "qty": 1,
+          "price": 28.08,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.7,
+          "category": "Dairy"
+        },
+        {
+          "upc": "64708660460",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 86.3,
+          "category": "Protein"
+        },
+        {
+          "upc": "64708660460",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 86.3,
+          "category": "Protein"
+        },
+        {
+          "upc": "1990000350",
+          "desc": "BAKING PWD CG",
+          "qty": 1,
+          "price": 89.43,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 2,
+          "price": 131.54,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.7,
+          "category": "Dairy"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 43.28,
+          "price": 291.71,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 43.28,
+          "price": -8.66,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 43.03,
+          "price": 281.42,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 43.54,
+          "price": 284.75,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 45.04,
+          "price": 294.56,
+          "category": "Protein"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 4,
+          "price": 184.32,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "2064800057",
+          "desc": "CONT FMHG 8\" 3CBLK",
+          "qty": 1,
+          "price": 24.99,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.06,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.06,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.7,
+          "category": "Dairy"
+        },
+        {
+          "upc": "7929816900",
+          "desc": "EVIAN WATER PET    500ML",
+          "qty": 1,
+          "price": 18.24,
+          "category": "Beverages"
+        },
+        {
+          "upc": "76069503469",
+          "desc": "LNR 38X58 1.55 BLK",
+          "qty": 1,
+          "price": 33.99,
+          "category": "Other"
+        },
+        {
+          "upc": "7959423543",
+          "desc": "BAG BRN SOS 1/6 70",
+          "qty": 1,
+          "price": 72.06,
+          "category": "Supplies"
+        },
+        {
+          "upc": "2060042513",
+          "desc": "PD GINGER FRSH 28#",
+          "qty": 1,
+          "price": 25.69,
+          "category": "Produce"
+        }
+      ]
     }
   },
   "sysco": {
@@ -34660,6 +34873,104 @@
         }
       ]
     },
+    "4267800": {
+      "orderNo": "4267800",
+      "location": "Durango (Main)",
+      "locationId": "017-974499",
+      "deliveryDate": "2026-07-28",
+      "total": 1339.22,
+      "itemSum": 1339.22,
+      "items": [
+        {
+          "supc": "1094721",
+          "name": "Onion Yellow Jumbo Bag",
+          "qty": 14,
+          "unitPrice": 22.64,
+          "total": 316.96,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 1,
+          "unitPrice": 47.72,
+          "total": 47.72,
+          "category": "Dairy"
+        },
+        {
+          "supc": "4676306",
+          "name": "Milk Whole Gallon",
+          "qty": 1,
+          "unitPrice": 19.29,
+          "total": 19.29,
+          "category": "Dairy"
+        },
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 8,
+          "unitPrice": 71.59,
+          "total": 572.72,
+          "category": "Protein"
+        },
+        {
+          "supc": "4518403",
+          "name": "Shortening Fry Liquid Clear Zero Trans Fat",
+          "qty": 1,
+          "unitPrice": 41.02,
+          "total": 41.02,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 2,
+          "unitPrice": 9.69,
+          "total": 19.38,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "5087572",
+          "name": "Sugar Granulated Extra Fine Cane",
+          "qty": 1,
+          "unitPrice": 19.56,
+          "total": 19.56,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4564894",
+          "name": "Salt Granulated Plain",
+          "qty": 1,
+          "unitPrice": 16.54,
+          "total": 16.54,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4002325",
+          "name": "Tomato Puree 1.06 Fancy California",
+          "qty": 5,
+          "unitPrice": 29.99,
+          "total": 149.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4978884",
+          "name": "Sauce Tomato California",
+          "qty": 3,
+          "unitPrice": 27.64,
+          "total": 82.92,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4978856",
+          "name": "Tomato Diced In Juice California",
+          "qty": 2,
+          "unitPrice": 26.58,
+          "total": 53.16,
+          "category": "Dry & Pantry"
+        }
+      ]
+    },
     "4267813": {
       "orderNo": "4267813",
       "location": "Rhodes Ranch",
@@ -35133,5 +35444,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-07-30T00:03:47.704Z"
+  "lastUpdated": "2026-07-31T00:03:48.046Z"
 }
