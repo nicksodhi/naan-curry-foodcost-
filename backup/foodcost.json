@@ -26315,6 +26315,30 @@
           "category": "Produce"
         }
       ]
+    },
+    "2026-07-30_17027": {
+      "invoiceNo": "17027",
+      "date": "2026-07-30",
+      "dateTime": "2026/07/30 2:17 pm",
+      "subTotal": 0,
+      "tax": 0,
+      "total": 0,
+      "items": [
+        {
+          "upc": "7520230219",
+          "desc": "LF MINI YLW CORN   4.5\"",
+          "qty": 1,
+          "price": 22.15,
+          "category": "Other"
+        },
+        {
+          "upc": "7520230219",
+          "desc": "LF MINI YLW CORN   4.5\"",
+          "qty": -1,
+          "price": -22.15,
+          "category": "Other"
+        }
+      ]
     }
   },
   "sysco": {
@@ -35230,6 +35254,104 @@
           "category": "Dry & Pantry"
         }
       ]
+    },
+    "4273587": {
+      "orderNo": "4273587",
+      "location": "Durango (Main)",
+      "locationId": "017-974499",
+      "deliveryDate": "2026-07-31",
+      "total": 1095.99,
+      "itemSum": 1095.99,
+      "items": [
+        {
+          "supc": "1094721",
+          "name": "Onion Yellow Jumbo Bag",
+          "qty": 12,
+          "unitPrice": 22.64,
+          "total": 271.68,
+          "category": "Produce"
+        },
+        {
+          "supc": "1543164",
+          "name": "Potato Baking Russet 40 Count Fresh",
+          "qty": 1,
+          "unitPrice": 20.55,
+          "total": 20.55,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 1,
+          "unitPrice": 47.72,
+          "total": 47.72,
+          "category": "Dairy"
+        },
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 6,
+          "unitPrice": 71.59,
+          "total": 429.54,
+          "category": "Protein"
+        },
+        {
+          "supc": "5231238",
+          "name": "Chicken Cvp Breast Boneless-skinless Random Jumbo Marinated",
+          "qty": 1,
+          "unitPrice": 62,
+          "total": 62,
+          "category": "Protein"
+        },
+        {
+          "supc": "4119079",
+          "name": "Oil Soybean Vegetable Pure",
+          "qty": 2,
+          "unitPrice": 44.95,
+          "total": 89.9,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4518403",
+          "name": "Shortening Fry Liquid Clear Zero Trans Fat",
+          "qty": 1,
+          "unitPrice": 41.02,
+          "total": 41.02,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 2,
+          "unitPrice": 9.69,
+          "total": 19.38,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4978884",
+          "name": "Sauce Tomato California",
+          "qty": 1,
+          "unitPrice": 27.64,
+          "total": 27.64,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4002325",
+          "name": "Tomato Puree 1.06 Fancy California",
+          "qty": 2,
+          "unitPrice": 29.99,
+          "total": 59.98,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4978856",
+          "name": "Tomato Diced In Juice California",
+          "qty": 1,
+          "unitPrice": 26.58,
+          "total": 26.58,
+          "category": "Dry & Pantry"
+        }
+      ]
     }
   },
   "imperial": {
@@ -35444,5 +35566,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-07-31T00:03:48.046Z"
+  "lastUpdated": "2026-08-01T00:03:45.120Z"
 }
