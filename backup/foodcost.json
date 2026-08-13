@@ -29204,6 +29204,72 @@
           "category": "Supplies"
         }
       ]
+    },
+    "2026-08-11_4810": {
+      "invoiceNo": "4810",
+      "date": "2026-08-11",
+      "dateTime": "2026/08/11 1:43 pm",
+      "subTotal": 218.32,
+      "tax": 18.28,
+      "total": 236.6,
+      "items": [
+        {
+          "upc": "76069502287",
+          "desc": "CUP SFL BLK 4Z",
+          "qty": 1,
+          "price": 38.99,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502223",
+          "desc": "LID SFL 3.25-5Z",
+          "qty": 1,
+          "price": 26.4,
+          "category": "Supplies"
+        },
+        {
+          "upc": "2237670002",
+          "desc": "JAVA JCKT SLEEVE",
+          "qty": 1,
+          "price": 17.37,
+          "category": "Other"
+        },
+        {
+          "upc": "1009746480539",
+          "desc": "TISSUE BATH 2PLY 4",
+          "qty": 1,
+          "price": 19.84,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502852",
+          "desc": "CUP HOT WHT 10Z    SUNSET",
+          "qty": 1,
+          "price": 43.62,
+          "category": "Supplies"
+        },
+        {
+          "upc": "760695031832",
+          "desc": "LID 10/20Z BLK",
+          "qty": 1,
+          "price": 34.86,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502285",
+          "desc": "CUP SFL BLK 2Z",
+          "qty": 1,
+          "price": 19.99,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502222",
+          "desc": "LID SFL 1.5-2Z",
+          "qty": 1,
+          "price": 17.25,
+          "category": "Supplies"
+        }
+      ]
     }
   },
   "sysco": {
@@ -39718,6 +39784,152 @@
         }
       ]
     },
+    "4291005": {
+      "orderNo": "4291005",
+      "location": "The Strip",
+      "locationId": "017-974544",
+      "deliveryDate": "2026-08-10",
+      "total": 1214.98,
+      "itemSum": 1214.98,
+      "items": [
+        {
+          "supc": "1094721",
+          "name": "Onion Yellow Jumbo Bag",
+          "qty": 2,
+          "unitPrice": 22.14,
+          "total": 44.28,
+          "category": "Produce"
+        },
+        {
+          "supc": "1094663",
+          "name": "Onion Red Jumbo Bag",
+          "qty": 1,
+          "unitPrice": 14.82,
+          "total": 14.82,
+          "category": "Produce"
+        },
+        {
+          "supc": "1543164",
+          "name": "Potato Baking Russet 40 Count Fresh",
+          "qty": 2,
+          "unitPrice": 23.33,
+          "total": 46.66,
+          "category": "Produce"
+        },
+        {
+          "supc": "1243724",
+          "name": "Cauliflower Cello Wrapped Fresh",
+          "qty": 2,
+          "unitPrice": 23.05,
+          "total": 46.1,
+          "category": "Produce"
+        },
+        {
+          "supc": "7350788",
+          "name": "Onion Green Iceless",
+          "qty": 1,
+          "unitPrice": null,
+          "total": 6.95,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 6,
+          "unitPrice": 47.72,
+          "total": 286.32,
+          "category": "Dairy"
+        },
+        {
+          "supc": "4676306",
+          "name": "Milk Whole Gallon",
+          "qty": 4,
+          "unitPrice": 19.29,
+          "total": 77.16,
+          "category": "Dairy"
+        },
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 3,
+          "unitPrice": 71.59,
+          "total": 214.77,
+          "category": "Protein"
+        },
+        {
+          "supc": "5231238",
+          "name": "Chicken Cvp Breast Boneless-skinless Random Jumbo Marinated",
+          "qty": 2,
+          "unitPrice": 61.2,
+          "total": 122.4,
+          "category": "Protein"
+        },
+        {
+          "supc": "2822379",
+          "name": "Cheese Cheddar Jack Fancy Shredded",
+          "qty": 1,
+          "unitPrice": 49.06,
+          "total": 49.06,
+          "category": "Dairy"
+        },
+        {
+          "supc": "0496671",
+          "name": "Tilapia Fillet Boneless Skinless Iqf 3-5 Ounce",
+          "qty": 1,
+          "unitPrice": 33.24,
+          "total": 33.24,
+          "category": "Protein"
+        },
+        {
+          "supc": "3355757",
+          "name": "Butter-it Alternative Liquid Zero Trans Fat",
+          "qty": 1,
+          "unitPrice": 34.07,
+          "total": 34.07,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4119079",
+          "name": "Oil Soybean Vegetable Pure",
+          "qty": 1,
+          "unitPrice": 45.85,
+          "total": 45.85,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4518403",
+          "name": "Shortening Fry Liquid Clear Zero Trans Fat",
+          "qty": 1,
+          "unitPrice": 42.11,
+          "total": 42.11,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 8,
+          "unitPrice": 10.26,
+          "total": 82.08,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "5087572",
+          "name": "Sugar Granulated Extra Fine Cane",
+          "qty": 2,
+          "unitPrice": 19.56,
+          "total": 39.12,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4002325",
+          "name": "Tomato Puree 1.06 Fancy California",
+          "qty": 1,
+          "unitPrice": 29.99,
+          "total": 29.99,
+          "category": "Dry & Pantry"
+        }
+      ]
+    },
     "4292197": {
       "orderNo": "4292197",
       "location": "St Rose",
@@ -40241,5 +40453,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-08-12T00:04:37.183Z"
+  "lastUpdated": "2026-08-13T00:03:51.731Z"
 }
