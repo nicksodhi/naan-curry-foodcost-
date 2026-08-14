@@ -29270,6 +29270,219 @@
           "category": "Supplies"
         }
       ]
+    },
+    "2026-08-12_2494": {
+      "invoiceNo": "2494",
+      "date": "2026-08-12",
+      "dateTime": "2026/08/12 11:40 am",
+      "subTotal": 1946.65,
+      "tax": 30.79,
+      "total": 1977.44,
+      "items": [
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.7,
+          "category": "Dairy"
+        },
+        {
+          "upc": "2260900078",
+          "desc": "BLEACH AROCEP GERM 128Z",
+          "qty": 1,
+          "price": 5.04,
+          "category": "Supplies"
+        },
+        {
+          "upc": "2260900078",
+          "desc": "BLEACH AROCEP GERM 128Z",
+          "qty": 1,
+          "price": 5.04,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069566700",
+          "desc": "RS ALL PURPOSE",
+          "qty": 1,
+          "price": 26.06,
+          "category": "Other"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 45.39,
+          "price": 294.58,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 46.23,
+          "price": 300.03,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 43.45,
+          "price": 281.99,
+          "category": "Protein"
+        },
+        {
+          "upc": "20771110000",
+          "desc": "MUTTON 6WAY CUT    R/W",
+          "qty": 39.68,
+          "price": 168.64,
+          "category": "Other"
+        },
+        {
+          "upc": "20771110000",
+          "desc": "MUTTON 6WAY CUT    R/W",
+          "qty": 41.34,
+          "price": 175.7,
+          "category": "Other"
+        },
+        {
+          "upc": "20795030000",
+          "desc": "CHX HAL LEG QTR SM",
+          "qty": 40,
+          "price": 34,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776700000",
+          "desc": "CHX LEG QTR SML",
+          "qty": 40,
+          "price": 32,
+          "category": "Protein"
+        },
+        {
+          "upc": "2060044137",
+          "desc": "PD PPR SERRANO CS",
+          "qty": 1,
+          "price": 30.49,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.7,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.7,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.7,
+          "category": "Dairy"
+        },
+        {
+          "upc": "7766113803",
+          "desc": "PD GINGER FRSH 28#",
+          "qty": 1,
+          "price": 22.87,
+          "category": "Produce"
+        },
+        {
+          "upc": "7766113803",
+          "desc": "PD GINGER FRSH 28#",
+          "qty": 1,
+          "price": 22.87,
+          "category": "Produce"
+        },
+        {
+          "upc": "68044410345",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 65,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069533505",
+          "desc": "CONT SOUP CMB 8Z",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069533505",
+          "desc": "CONT SOUP CMB 8Z",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069503483",
+          "desc": "GLOVE NIT BLK LG",
+          "qty": 1,
+          "price": 44.99,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069503469",
+          "desc": "LNR 38X58 1.55 BLK",
+          "qty": 1,
+          "price": 33.99,
+          "category": "Other"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.48,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.48,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069503057",
+          "desc": "LID PET XSLT 16-24",
+          "qty": 1,
+          "price": 29.22,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069503054",
+          "desc": "CUP PET 16Z SNSET",
+          "qty": 1,
+          "price": 58.63,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069533507",
+          "desc": "CONT SOUP CMB 16Z",
+          "qty": 1,
+          "price": 24.99,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069533507",
+          "desc": "CONT SOUP CMB 16Z",
+          "qty": 1,
+          "price": 24.99,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069533507",
+          "desc": "CONT SOUP CMB 16Z",
+          "qty": 1,
+          "price": 24.99,
+          "category": "Supplies"
+        }
+      ]
     }
   },
   "sysco": {
@@ -40239,6 +40452,176 @@
           "category": "Dry & Pantry"
         }
       ]
+    },
+    "4298573": {
+      "orderNo": "4298573",
+      "location": "Cheyenne",
+      "locationId": "017-974547",
+      "deliveryDate": "2026-08-13",
+      "total": 1189.26,
+      "itemSum": 1211.4,
+      "items": [
+        {
+          "supc": "1094721",
+          "name": "Onion Yellow Jumbo Bag",
+          "qty": 1,
+          "unitPrice": 22.14,
+          "total": 22.14,
+          "category": "Produce"
+        },
+        {
+          "supc": "1094663",
+          "name": "Onion Red Jumbo Bag",
+          "qty": 1,
+          "unitPrice": 14.82,
+          "total": 14.82,
+          "category": "Produce"
+        },
+        {
+          "supc": "1543164",
+          "name": "Potato Baking Russet 40 Count Fresh",
+          "qty": 1,
+          "unitPrice": 23.33,
+          "total": 23.33,
+          "category": "Produce"
+        },
+        {
+          "supc": "1243724",
+          "name": "Cauliflower Cello Wrapped Fresh",
+          "qty": 1,
+          "unitPrice": 23.05,
+          "total": 23.05,
+          "category": "Produce"
+        },
+        {
+          "supc": "7350788",
+          "name": "Onion Green Iceless",
+          "qty": 1,
+          "unitPrice": null,
+          "total": 6.95,
+          "category": "Produce"
+        },
+        {
+          "supc": "1910231",
+          "name": "Pepper Green Bell Choice Fresh",
+          "qty": 1,
+          "unitPrice": 21.49,
+          "total": 21.49,
+          "category": "Produce"
+        },
+        {
+          "supc": "2219095",
+          "name": "Cilantro Cleaned, Washed & Fresh Herb",
+          "qty": 2,
+          "unitPrice": 17.98,
+          "total": 35.96,
+          "category": "Produce"
+        },
+        {
+          "supc": "7410640",
+          "name": "Cucumber Select Fresh",
+          "qty": 1,
+          "unitPrice": 11.95,
+          "total": 11.95,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 4,
+          "unitPrice": 47.72,
+          "total": 190.88,
+          "category": "Dairy"
+        },
+        {
+          "supc": "4676306",
+          "name": "Milk Whole Gallon",
+          "qty": 3,
+          "unitPrice": 19.29,
+          "total": 57.87,
+          "category": "Dairy"
+        },
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 3,
+          "unitPrice": 71.59,
+          "total": 214.77,
+          "category": "Protein"
+        },
+        {
+          "supc": "5231238",
+          "name": "Chicken Cvp Breast Boneless-skinless Random Jumbo Marinated",
+          "qty": 2,
+          "unitPrice": 61.2,
+          "total": 122.4,
+          "category": "Protein"
+        },
+        {
+          "supc": "2822379",
+          "name": "Cheese Cheddar Jack Fancy Shredded",
+          "qty": 1,
+          "unitPrice": 49.06,
+          "total": 49.06,
+          "category": "Dairy"
+        },
+        {
+          "supc": "5106388",
+          "name": "Shrimp White Peeled And Deveined Tail-off 16/20 Count",
+          "qty": 1,
+          "unitPrice": 61.7,
+          "total": 61.7,
+          "category": "Protein"
+        },
+        {
+          "supc": "3355757",
+          "name": "Butter-it Alternative Liquid Zero Trans Fat",
+          "qty": 1,
+          "unitPrice": 34.07,
+          "total": 34.07,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4119079",
+          "name": "Oil Soybean Vegetable Pure",
+          "qty": 2,
+          "unitPrice": 45.85,
+          "total": 91.7,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4518403",
+          "name": "Shortening Fry Liquid Clear Zero Trans Fat",
+          "qty": 2,
+          "unitPrice": 42.11,
+          "total": 84.22,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 6,
+          "unitPrice": 10.26,
+          "total": 61.56,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "6344790",
+          "name": "Chicken Cvp Wings 1st And 2nd Joints Jumbo",
+          "qty": 1,
+          "unitPrice": 63.92,
+          "total": 63.92,
+          "category": "Protein"
+        },
+        {
+          "supc": "5087572",
+          "name": "Sugar Granulated Extra Fine Cane",
+          "qty": 1,
+          "unitPrice": 19.56,
+          "total": 19.56,
+          "category": "Dry & Pantry"
+        }
+      ]
     }
   },
   "imperial": {
@@ -40453,5 +40836,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-08-13T00:03:51.731Z"
+  "lastUpdated": "2026-08-14T00:06:18.666Z"
 }
