@@ -29696,6 +29696,201 @@
           "category": "Dry & Pantry"
         }
       ]
+    },
+    "2026-08-15_2975": {
+      "invoiceNo": "2975",
+      "date": "2026-08-15",
+      "dateTime": "2026/08/15 11:09 am",
+      "subTotal": 6.96,
+      "tax": 0,
+      "total": 6.96,
+      "items": [
+        {
+          "upc": "1480058229",
+          "desc": "REALEMON JUICE     2/48Z",
+          "qty": 1,
+          "price": 6.96,
+          "category": "Produce"
+        }
+      ]
+    },
+    "2026-08-14_29642": {
+      "invoiceNo": "29642",
+      "date": "2026-08-14",
+      "dateTime": "2026/08/14 10:55 am",
+      "subTotal": 553.05,
+      "tax": 10.59,
+      "total": 563.64,
+      "items": [
+        {
+          "upc": "76069502283",
+          "desc": "STRAW 7.75 GWR RED",
+          "qty": 1,
+          "price": 7.54,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502283",
+          "desc": "STRAW 7.75 GWR RED",
+          "qty": 1,
+          "price": 7.54,
+          "category": "Supplies"
+        },
+        {
+          "upc": "3338366004",
+          "desc": "PD CARROT BAG 10#",
+          "qty": 1,
+          "price": 5.96,
+          "category": "Supplies"
+        },
+        {
+          "upc": "74069565165",
+          "desc": "PD LETT ROMAINE HT",
+          "qty": 1,
+          "price": 3.87,
+          "category": "Produce"
+        },
+        {
+          "upc": "74069565165",
+          "desc": "PD LETT ROMAINE HT",
+          "qty": 1,
+          "price": 3.87,
+          "category": "Produce"
+        },
+        {
+          "upc": "74069565165",
+          "desc": "PD LETT ROMAINE HT",
+          "qty": 1,
+          "price": 3.87,
+          "category": "Produce"
+        },
+        {
+          "upc": "74069565165",
+          "desc": "PD LETT ROMAINE HT",
+          "qty": 1,
+          "price": 3.87,
+          "category": "Produce"
+        },
+        {
+          "upc": "74069565165",
+          "desc": "PD LETT ROMAINE HT",
+          "qty": -1,
+          "price": -3.87,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046511725",
+          "desc": "PD MICRO FINES HRB",
+          "qty": 1,
+          "price": 13.84,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046513269",
+          "desc": "PD MICRO FWR ORCHD",
+          "qty": 1,
+          "price": 9.7,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069503054",
+          "desc": "CUP PET 16Z SNSET",
+          "qty": 1,
+          "price": 5.62,
+          "category": "Supplies"
+        },
+        {
+          "upc": "80124301700",
+          "desc": "SCRUBBER S/S 100GR",
+          "qty": 1,
+          "price": 9,
+          "category": "Other"
+        },
+        {
+          "upc": "68044410720",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 65,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.48,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.48,
+          "category": "Supplies"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.08,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.08,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "88264500000",
+          "desc": "PD ONION YEL JBO",
+          "qty": 1,
+          "price": 19.36,
+          "category": "Produce"
+        },
+        {
+          "upc": "4940500507",
+          "desc": "COLORING EGG YELOW",
+          "qty": 1,
+          "price": 29.56,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "20776700000",
+          "desc": "CHX LEG QTR SML",
+          "qty": 40,
+          "price": 32,
+          "category": "Protein"
+        },
+        {
+          "upc": "81009537357",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 85.79,
+          "category": "Protein"
+        },
+        {
+          "upc": "76069500330",
+          "desc": "JUICE LEMON GAL    4/1GAL",
+          "qty": 1,
+          "price": 35.06,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069503012",
+          "desc": "BAG HNDL BR13X7X17",
+          "qty": 1,
+          "price": 51.79,
+          "category": "Supplies"
+        },
+        {
+          "upc": "4150883446",
+          "desc": "ACQUA PANNA GLASS  750ML",
+          "qty": 1,
+          "price": 26.56,
+          "category": "Other"
+        }
+      ]
     }
   },
   "sysco": {
@@ -41547,5 +41742,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-08-16T00:03:45.807Z"
+  "lastUpdated": "2026-08-17T00:03:52.925Z"
 }
