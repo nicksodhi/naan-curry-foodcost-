@@ -30610,6 +30610,212 @@
           "category": "Produce"
         }
       ]
+    },
+    "2026-08-18_18049": {
+      "invoiceNo": "18049",
+      "date": "2026-08-18",
+      "dateTime": "2026/08/18 3:45 pm",
+      "subTotal": 2328.85,
+      "tax": 23.83,
+      "total": 2352.68,
+      "items": [
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.48,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.48,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502222",
+          "desc": "LID SFL 1.5-2Z",
+          "qty": 1,
+          "price": 17.25,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502285",
+          "desc": "CUP SFL BLK 2Z",
+          "qty": 1,
+          "price": 19.99,
+          "category": "Supplies"
+        },
+        {
+          "upc": "7959423543",
+          "desc": "BAG BRN SOS 1/6 70",
+          "qty": 1,
+          "price": 72.06,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069503469",
+          "desc": "LNR 38X58 1.55 BLK",
+          "qty": 1,
+          "price": 40.12,
+          "category": "Other"
+        },
+        {
+          "upc": "76069503469",
+          "desc": "LNR 38X58 1.55 BLK",
+          "qty": 1,
+          "price": 40.12,
+          "category": "Other"
+        },
+        {
+          "upc": "76069566701",
+          "desc": "RS GREEN DISH 1G",
+          "qty": 1,
+          "price": 23.99,
+          "category": "Other"
+        },
+        {
+          "upc": "76069566700",
+          "desc": "RS ALL PURPOSE",
+          "qty": 1,
+          "price": 26.06,
+          "category": "Other"
+        },
+        {
+          "upc": "7127035817",
+          "desc": "CHZ PANEER LOAF    5#",
+          "qty": 1,
+          "price": 87.23,
+          "category": "Dairy"
+        },
+        {
+          "upc": "2060042513",
+          "desc": "PD GINGER FRSH 28#",
+          "qty": 1,
+          "price": 21.5,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060042513",
+          "desc": "PD GINGER FRSH 28#",
+          "qty": 1,
+          "price": 21.5,
+          "category": "Produce"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 56.8,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 56.8,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 56.8,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 56.8,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 56.8,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 56.8,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 56.8,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 56.8,
+          "category": "Protein"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.08,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.08,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 37.46,
+          "price": 243.12,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 32.83,
+          "price": 213.07,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 33.8,
+          "price": 219.36,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 35.58,
+          "price": 230.91,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 35.3,
+          "price": 229.1,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 35.74,
+          "price": 231.95,
+          "category": "Protein"
+        }
+      ]
     }
   },
   "sysco": {
@@ -42248,6 +42454,88 @@
         }
       ]
     },
+    "4305049": {
+      "orderNo": "4305049",
+      "location": "The Strip",
+      "locationId": "017-974544",
+      "deliveryDate": "2026-08-17",
+      "total": 621.02,
+      "itemSum": 621.02,
+      "items": [
+        {
+          "supc": "1094721",
+          "name": "Onion Yellow Jumbo Bag",
+          "qty": 2,
+          "unitPrice": 22.14,
+          "total": 44.28,
+          "category": "Produce"
+        },
+        {
+          "supc": "1543164",
+          "name": "Potato Baking Russet 40 Count Fresh",
+          "qty": 1,
+          "unitPrice": 24.2,
+          "total": 24.2,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 4,
+          "unitPrice": 47.72,
+          "total": 190.88,
+          "category": "Dairy"
+        },
+        {
+          "supc": "4676306",
+          "name": "Milk Whole Gallon",
+          "qty": 4,
+          "unitPrice": 19.29,
+          "total": 77.16,
+          "category": "Dairy"
+        },
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 2,
+          "unitPrice": 71.59,
+          "total": 143.18,
+          "category": "Protein"
+        },
+        {
+          "supc": "5087572",
+          "name": "Sugar Granulated Extra Fine Cane",
+          "qty": 2,
+          "unitPrice": 19.56,
+          "total": 39.12,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "9903790",
+          "name": "Ketchup Jug Red In Plastic Bottle With Pump",
+          "qty": 1,
+          "unitPrice": 41.43,
+          "total": 41.43,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4002325",
+          "name": "Tomato Puree 1.06 Fancy California",
+          "qty": 1,
+          "unitPrice": 29.99,
+          "total": 29.99,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 3,
+          "unitPrice": 10.26,
+          "total": 30.78,
+          "category": "Dry & Pantry"
+        }
+      ]
+    },
     "4306965": {
       "orderNo": "4306965",
       "location": "Cheyenne",
@@ -42883,5 +43171,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-08-19T00:04:29.963Z"
+  "lastUpdated": "2026-08-20T00:03:53.420Z"
 }
