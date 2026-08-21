@@ -30816,6 +30816,30 @@
           "category": "Protein"
         }
       ]
+    },
+    "2026-08-19_348": {
+      "invoiceNo": "348",
+      "date": "2026-08-19",
+      "dateTime": "2026/08/19 12:12 pm",
+      "subTotal": 0,
+      "tax": 0,
+      "total": 0,
+      "items": [
+        {
+          "upc": "84216910628",
+          "desc": "RACK BUN PAN KD",
+          "qty": 1,
+          "price": 137.86,
+          "category": "Other"
+        },
+        {
+          "upc": "84216910628",
+          "desc": "RACK BUN PAN KD",
+          "qty": -1,
+          "price": -137.86,
+          "category": "Other"
+        }
+      ]
     }
   },
   "sysco": {
@@ -43171,5 +43195,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-08-20T00:03:53.420Z"
+  "lastUpdated": "2026-08-21T00:03:42.826Z"
 }
