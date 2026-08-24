@@ -43326,6 +43326,120 @@
         }
       ]
     },
+    "4310854": {
+      "orderNo": "4310854",
+      "location": "The Strip",
+      "locationId": "017-974544",
+      "deliveryDate": "2026-08-20",
+      "total": 909.92,
+      "itemSum": 909.92,
+      "items": [
+        {
+          "supc": "1094721",
+          "name": "Onion Yellow Jumbo Bag",
+          "qty": 1,
+          "unitPrice": 22.14,
+          "total": 22.14,
+          "category": "Produce"
+        },
+        {
+          "supc": "1094663",
+          "name": "Onion Red Jumbo Bag",
+          "qty": 1,
+          "unitPrice": 14.82,
+          "total": 14.82,
+          "category": "Produce"
+        },
+        {
+          "supc": "1243724",
+          "name": "Cauliflower Cello Wrapped Fresh",
+          "qty": 1,
+          "unitPrice": 25.88,
+          "total": 25.88,
+          "category": "Produce"
+        },
+        {
+          "supc": "7350788",
+          "name": "Onion Green Iceless",
+          "qty": 1,
+          "unitPrice": null,
+          "total": 6.95,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 6,
+          "unitPrice": 47.72,
+          "total": 286.32,
+          "category": "Dairy"
+        },
+        {
+          "supc": "4676306",
+          "name": "Milk Whole Gallon",
+          "qty": 4,
+          "unitPrice": 19.29,
+          "total": 77.16,
+          "category": "Dairy"
+        },
+        {
+          "supc": "5231238",
+          "name": "Chicken Cvp Breast Boneless-skinless Random Jumbo Marinated",
+          "qty": 1,
+          "unitPrice": 62.54,
+          "total": 62.54,
+          "category": "Protein"
+        },
+        {
+          "supc": "6344790",
+          "name": "Chicken Cvp Wings 1st And 2nd Joints Jumbo",
+          "qty": 1,
+          "unitPrice": 63.92,
+          "total": 63.92,
+          "category": "Protein"
+        },
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 2,
+          "unitPrice": 71.59,
+          "total": 143.18,
+          "category": "Protein"
+        },
+        {
+          "supc": "1053826",
+          "name": "Pea Green Packaged",
+          "qty": 1,
+          "unitPrice": 36.97,
+          "total": 36.97,
+          "category": "Frozen"
+        },
+        {
+          "supc": "4119079",
+          "name": "Oil Soybean Vegetable Pure",
+          "qty": 1,
+          "unitPrice": 45.85,
+          "total": 45.85,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4518403",
+          "name": "Shortening Fry Liquid Clear Zero Trans Fat",
+          "qty": 1,
+          "unitPrice": 42.11,
+          "total": 42.11,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 8,
+          "unitPrice": 10.26,
+          "total": 82.08,
+          "category": "Dry & Pantry"
+        }
+      ]
+    },
     "4313886": {
       "orderNo": "4313886",
       "location": "St Rose",
@@ -43518,6 +43632,112 @@
           "qty": 2,
           "unitPrice": 26.58,
           "total": 53.16,
+          "category": "Dry & Pantry"
+        }
+      ]
+    },
+    "4314763": {
+      "orderNo": "4314763",
+      "location": "Cheyenne",
+      "locationId": "017-974547",
+      "deliveryDate": "2026-08-22",
+      "total": 832.98,
+      "itemSum": 832.98,
+      "items": [
+        {
+          "supc": "1094663",
+          "name": "Onion Red Jumbo Bag",
+          "qty": 1,
+          "unitPrice": 14.82,
+          "total": 14.82,
+          "category": "Produce"
+        },
+        {
+          "supc": "8474538",
+          "name": "Spinach Baby Fresh",
+          "qty": 1,
+          "unitPrice": 12.73,
+          "total": 12.73,
+          "category": "Produce"
+        },
+        {
+          "supc": "2219095",
+          "name": "Cilantro Cleaned, Washed & Fresh Herb",
+          "qty": 1,
+          "unitPrice": 17.98,
+          "total": 17.98,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 3,
+          "unitPrice": 47.72,
+          "total": 143.16,
+          "category": "Dairy"
+        },
+        {
+          "supc": "4676306",
+          "name": "Milk Whole Gallon",
+          "qty": 1,
+          "unitPrice": 19.29,
+          "total": 19.29,
+          "category": "Dairy"
+        },
+        {
+          "supc": "5231238",
+          "name": "Chicken Cvp Breast Boneless-skinless Random Jumbo Marinated",
+          "qty": 3,
+          "unitPrice": 62.54,
+          "total": 187.62,
+          "category": "Protein"
+        },
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 3,
+          "unitPrice": 71.59,
+          "total": 214.77,
+          "category": "Protein"
+        },
+        {
+          "supc": "4113049",
+          "name": "Vinegar White Distilled 50 Grain",
+          "qty": 1,
+          "unitPrice": 11.93,
+          "total": 11.93,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "6914451",
+          "name": "Pan Coating Butter It",
+          "qty": 1,
+          "unitPrice": 19.05,
+          "total": 19.05,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4119079",
+          "name": "Oil Soybean Vegetable Pure",
+          "qty": 1,
+          "unitPrice": 45.85,
+          "total": 45.85,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4518403",
+          "name": "Shortening Fry Liquid Clear Zero Trans Fat",
+          "qty": 2,
+          "unitPrice": 42.11,
+          "total": 84.22,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 6,
+          "unitPrice": 10.26,
+          "total": 61.56,
           "category": "Dry & Pantry"
         }
       ]
@@ -43841,5 +44061,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-08-23T00:06:55.567Z"
+  "lastUpdated": "2026-08-24T00:03:54.807Z"
 }
