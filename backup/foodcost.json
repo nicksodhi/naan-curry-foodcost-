@@ -43848,6 +43848,120 @@
         }
       ]
     },
+    "4318807": {
+      "orderNo": "4318807",
+      "location": "The Strip",
+      "locationId": "017-974544",
+      "deliveryDate": "2026-08-24",
+      "total": 484.68,
+      "itemSum": 484.68,
+      "items": [
+        {
+          "supc": "1094721",
+          "name": "Onion Yellow Jumbo Bag",
+          "qty": 1,
+          "unitPrice": 16.65,
+          "total": 16.65,
+          "category": "Produce"
+        },
+        {
+          "supc": "1094663",
+          "name": "Onion Red Jumbo Bag",
+          "qty": 1,
+          "unitPrice": 15.56,
+          "total": 15.56,
+          "category": "Produce"
+        },
+        {
+          "supc": "1243724",
+          "name": "Cauliflower Cello Wrapped Fresh",
+          "qty": 2,
+          "unitPrice": 23.08,
+          "total": 46.16,
+          "category": "Produce"
+        },
+        {
+          "supc": "1910231",
+          "name": "Pepper Green Bell Choice Fresh",
+          "qty": 1,
+          "unitPrice": 19.95,
+          "total": 19.95,
+          "category": "Produce"
+        },
+        {
+          "supc": "1675925",
+          "name": "Spinach Clipped Fresh",
+          "qty": 1,
+          "unitPrice": 20.16,
+          "total": 20.16,
+          "category": "Produce"
+        },
+        {
+          "supc": "4676306",
+          "name": "Milk Whole Gallon",
+          "qty": 3,
+          "unitPrice": 15.6,
+          "total": 46.8,
+          "category": "Dairy"
+        },
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 1,
+          "unitPrice": 50,
+          "total": 50,
+          "category": "Protein"
+        },
+        {
+          "supc": "5231238",
+          "name": "Chicken Cvp Breast Boneless-skinless Random Jumbo Marinated",
+          "qty": 2,
+          "unitPrice": 51.36,
+          "total": 102.72,
+          "category": "Protein"
+        },
+        {
+          "supc": "3355757",
+          "name": "Butter-it Alternative Liquid Zero Trans Fat",
+          "qty": 1,
+          "unitPrice": 31.52,
+          "total": 31.52,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 8,
+          "unitPrice": 8.07,
+          "total": 64.56,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4073441",
+          "name": "Corn Starch Food Grade",
+          "qty": 1,
+          "unitPrice": 34.82,
+          "total": 34.82,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4014684",
+          "name": "Flour Wheat Whole Stone Ground",
+          "qty": 1,
+          "unitPrice": 18.75,
+          "total": 18.75,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4564894",
+          "name": "Salt Granulated Plain",
+          "qty": 1,
+          "unitPrice": 17.03,
+          "total": 17.03,
+          "category": "Dry & Pantry"
+        }
+      ]
+    },
     "4320914": {
       "orderNo": "4320914",
       "location": "Rhodes Ranch",
@@ -44329,5 +44443,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-08-26T00:03:20.579Z"
+  "lastUpdated": "2026-08-27T00:03:12.837Z"
 }
