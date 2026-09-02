@@ -32877,6 +32877,313 @@
           "category": "Other"
         }
       ]
+    },
+    "2026-08-31_7325": {
+      "invoiceNo": "7325",
+      "date": "2026-08-31",
+      "dateTime": "2026/08/31 5:21 pm",
+      "subTotal": 914.85,
+      "tax": 0,
+      "total": 914.85,
+      "items": [
+        {
+          "upc": "64612790014",
+          "desc": "PDU GINGER FR 5LBS",
+          "qty": 1,
+          "price": 7.09,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.41,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.41,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.41,
+          "category": "Dairy"
+        },
+        {
+          "upc": "7127035817",
+          "desc": "CHZ PANEER LOAF    5#",
+          "qty": 1,
+          "price": 87.75,
+          "category": "Dairy"
+        },
+        {
+          "upc": "81009537357",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 83.69,
+          "category": "Protein"
+        },
+        {
+          "upc": "81009537357",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 83.69,
+          "category": "Protein"
+        },
+        {
+          "upc": "885161310170",
+          "desc": "COCONUT MILK AROYD 13.5Z",
+          "qty": 1,
+          "price": 41.79,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "20776700000",
+          "desc": "CHX LEG QTR SML",
+          "qty": 40,
+          "price": 30.4,
+          "category": "Protein"
+        },
+        {
+          "upc": "4900002468",
+          "desc": "COKE CLASSIC       16.9Z",
+          "qty": 1,
+          "price": 19.65,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002468",
+          "desc": "COKE CLASSIC       16.9Z",
+          "qty": 1,
+          "price": 19.65,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002470",
+          "desc": "SPRITE             16.9Z",
+          "qty": 1,
+          "price": 20.15,
+          "category": "Beverages"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 59.89,
+          "category": "Produce"
+        },
+        {
+          "upc": "4900002469",
+          "desc": "COKE DIET          16.9Z",
+          "qty": 1,
+          "price": 20.45,
+          "category": "Beverages"
+        },
+        {
+          "upc": "7929816900",
+          "desc": "EVIAN WATER PET    500ML",
+          "qty": 1,
+          "price": 18.24,
+          "category": "Beverages"
+        },
+        {
+          "upc": "7929816900",
+          "desc": "EVIAN WATER PET    500ML",
+          "qty": 1,
+          "price": 18.24,
+          "category": "Beverages"
+        },
+        {
+          "upc": "76069501473",
+          "desc": "BEAN GARBANZO CQ   #10",
+          "qty": 1,
+          "price": 29.75,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "113790",
+          "desc": "(Coupon) BEAN GARBANZO CQ        #10",
+          "qty": 6,
+          "price": 0,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "4150873466",
+          "desc": "SAN PELL SPRKL PET 500ML",
+          "qty": 1,
+          "price": 25.09,
+          "category": "Other"
+        },
+        {
+          "upc": "114094",
+          "desc": "(Coupon) SAN PELL 500ml PET",
+          "qty": 1,
+          "price": -3.5,
+          "category": "Other"
+        },
+        {
+          "upc": "76069500868",
+          "desc": "CHZ JACK/CHED SHRD 5#",
+          "qty": 1,
+          "price": 40.19,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069501045",
+          "desc": "VEG CHOP SPINACH",
+          "qty": 1,
+          "price": 33.79,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069500923",
+          "desc": "TOM PUREE 1.06 CQ",
+          "qty": 1,
+          "price": 30.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.39,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.39,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.39,
+          "category": "Dry & Pantry"
+        }
+      ]
+    },
+    "2026-08-31_7272": {
+      "invoiceNo": "7272",
+      "date": "2026-08-31",
+      "dateTime": "2026/08/31 12:55 pm",
+      "subTotal": 558.32,
+      "tax": 5.09,
+      "total": 563.41,
+      "items": [
+        {
+          "upc": "84046513269",
+          "desc": "PD MICRO FWR ORCHD",
+          "qty": 1,
+          "price": 11.15,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046511033",
+          "desc": "PD MICRO BULL BLD",
+          "qty": 1,
+          "price": 14.25,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069500759",
+          "desc": "SCRUBBER S/S 50GR",
+          "qty": 1,
+          "price": 9,
+          "category": "Other"
+        },
+        {
+          "upc": "4940500507",
+          "desc": "COLORING EGG YELOW",
+          "qty": 1,
+          "price": 28.79,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069502007",
+          "desc": "FZ VEG BROC FLORET 12/2LB",
+          "qty": 1,
+          "price": 23.55,
+          "category": "Frozen"
+        },
+        {
+          "upc": "20795030000",
+          "desc": "CHX HAL LEG QTR SM",
+          "qty": 40,
+          "price": 32.4,
+          "category": "Protein"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.39,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.39,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "81009537357",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 83.69,
+          "category": "Protein"
+        },
+        {
+          "upc": "81009537357",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 83.69,
+          "category": "Protein"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.41,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.41,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069566700",
+          "desc": "RS ALL PURPOSE",
+          "qty": 1,
+          "price": 26.06,
+          "category": "Other"
+        },
+        {
+          "upc": "2260900109",
+          "desc": "BLEACH AROCEP GERM 128Z",
+          "qty": 1,
+          "price": 25.75,
+          "category": "Supplies"
+        },
+        {
+          "upc": "9437910130",
+          "desc": "ATHENA GRLD EGGPLN",
+          "qty": 1,
+          "price": 54.39,
+          "category": "Other"
+        }
+      ]
     }
   },
   "sysco": {
@@ -46990,5 +47297,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-09-01T00:03:09.153Z"
+  "lastUpdated": "2026-09-02T00:04:29.957Z"
 }
