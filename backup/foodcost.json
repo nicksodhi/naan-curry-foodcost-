@@ -34001,6 +34001,289 @@
           "category": "Supplies"
         }
       ]
+    },
+    "2026-09-05_1277": {
+      "invoiceNo": "1277",
+      "date": "2026-09-05",
+      "dateTime": "2026/09/05 11:28 am",
+      "subTotal": 2927.91,
+      "tax": 0,
+      "total": 2927.91,
+      "items": [
+        {
+          "upc": "7929816900",
+          "desc": "EVIAN WATER PET    500ML",
+          "qty": 1,
+          "price": 18.24,
+          "category": "Beverages"
+        },
+        {
+          "upc": "7929816900",
+          "desc": "EVIAN WATER PET    500ML",
+          "qty": 1,
+          "price": 18.24,
+          "category": "Beverages"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "116189",
+          "desc": "(Coupon) BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": -1,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "116189",
+          "desc": "(Coupon) BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": -1,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "116189",
+          "desc": "(Coupon) BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": -1,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "116189",
+          "desc": "(Coupon) BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": -1,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "116189",
+          "desc": "(Coupon) BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": -1,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "116189",
+          "desc": "(Coupon) BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": -1,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500922",
+          "desc": "SCE TOMATO CQ",
+          "qty": 1,
+          "price": 27.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069501045",
+          "desc": "VEG CHOP SPINACH",
+          "qty": 1,
+          "price": 33.95,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069501045",
+          "desc": "VEG CHOP SPINACH",
+          "qty": 1,
+          "price": 33.95,
+          "category": "Produce"
+        },
+        {
+          "upc": "81009537357",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 4,
+          "price": 339.96,
+          "category": "Protein"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.41,
+          "category": "Dairy"
+        },
+        {
+          "upc": "7127035817",
+          "desc": "CHZ PANEER LOAF    5#",
+          "qty": 3,
+          "price": 263.25,
+          "category": "Dairy"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 58.88,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 58.88,
+          "category": "Produce"
+        },
+        {
+          "upc": "4940500120",
+          "desc": "COLORING CLVER RED",
+          "qty": 1,
+          "price": 34.1,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.41,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.41,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069501473",
+          "desc": "BEAN GARBANZO CQ   #10",
+          "qty": 1,
+          "price": 34.15,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 33.8,
+          "price": 222.74,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 45.04,
+          "price": 296.81,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 45.04,
+          "price": -15.77,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 34.5,
+          "price": 220.46,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 46.52,
+          "price": 297.26,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 34.97,
+          "price": 223.46,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 41.45,
+          "price": 264.87,
+          "category": "Protein"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.41,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.41,
+          "category": "Dairy"
+        },
+        {
+          "upc": "84046513269",
+          "desc": "PD MICRO FWR ORCHD",
+          "qty": 1,
+          "price": 11.15,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046513269",
+          "desc": "PD MICRO FWR ORCHD",
+          "qty": 1,
+          "price": 11.15,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046513303",
+          "desc": "PD MICRO FLWR PRM",
+          "qty": 1,
+          "price": 14.49,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046513303",
+          "desc": "PD MICRO FLWR PRM",
+          "qty": 1,
+          "price": 14.49,
+          "category": "Produce"
+        }
+      ]
     }
   },
   "sysco": {
@@ -49316,5 +49599,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-09-06T00:05:32.845Z"
+  "lastUpdated": "2026-09-07T00:04:18.924Z"
 }
