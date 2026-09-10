@@ -34535,6 +34535,191 @@
           "category": "Dairy"
         }
       ]
+    },
+    "2026-09-08_2866": {
+      "invoiceNo": "2866",
+      "date": "2026-09-08",
+      "dateTime": "2026/09/08 10:59 am",
+      "subTotal": 597.44,
+      "tax": 25.47,
+      "total": 622.91,
+      "items": [
+        {
+          "upc": "74069565165",
+          "desc": "PD LETT ROMAINE HT",
+          "qty": 1,
+          "price": 4.25,
+          "category": "Produce"
+        },
+        {
+          "upc": "74069565165",
+          "desc": "PD LETT ROMAINE HT",
+          "qty": 1,
+          "price": 4.25,
+          "category": "Produce"
+        },
+        {
+          "upc": "74069565165",
+          "desc": "PD LETT ROMAINE HT",
+          "qty": 1,
+          "price": 4.25,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046511725",
+          "desc": "PD MICRO FINES HRB",
+          "qty": 1,
+          "price": 14.19,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046511717",
+          "desc": "PD MICRO CHEF BLND",
+          "qty": 1,
+          "price": 16.45,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069503052",
+          "desc": "CUP PET 10Z SNSET",
+          "qty": 1,
+          "price": 55.35,
+          "category": "Supplies"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "116189",
+          "desc": "(Coupon) BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": -1,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "116189",
+          "desc": "(Coupon) BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": -1,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 35.55,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 35.55,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069566701",
+          "desc": "RS GREEN DISH 1G",
+          "qty": 1,
+          "price": 30.79,
+          "category": "Other"
+        },
+        {
+          "upc": "76069566700",
+          "desc": "RS ALL PURPOSE",
+          "qty": 1,
+          "price": 22.99,
+          "category": "Other"
+        },
+        {
+          "upc": "76069500595",
+          "desc": "SATIN HND SOAP WHT",
+          "qty": 1,
+          "price": 28.7,
+          "category": "Supplies"
+        },
+        {
+          "upc": "4460060615",
+          "desc": "FRAGANZIA CITRUS   175Z",
+          "qty": 1,
+          "price": 31.99,
+          "category": "Other"
+        },
+        {
+          "upc": "76069500330",
+          "desc": "JUICE LEMON GAL    4/1GAL",
+          "qty": 1,
+          "price": 33.39,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069501045",
+          "desc": "VEG CHOP SPINACH",
+          "qty": 1,
+          "price": 33.95,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060035413",
+          "desc": "PD CUCUMBER SEL 72",
+          "qty": 1,
+          "price": 23.55,
+          "category": "Produce"
+        }
+      ]
     }
   },
   "sysco": {
@@ -49637,6 +49822,168 @@
         }
       ]
     },
+    "4344242": {
+      "orderNo": "4344242",
+      "location": "The Strip",
+      "locationId": "017-974544",
+      "deliveryDate": "2026-09-07",
+      "total": 722.67,
+      "itemSum": 738.66,
+      "items": [
+        {
+          "supc": "3983194",
+          "name": "Potato Russet #2 6 Oz Minimum-sized Carton",
+          "qty": 1,
+          "unitPrice": 15.99,
+          "total": 15.99,
+          "category": "Produce"
+        },
+        {
+          "supc": "1008515",
+          "name": "Potato Baking Russet 80 Count Fresh",
+          "qty": 1,
+          "unitPrice": 21.95,
+          "total": 21.95,
+          "category": "Produce"
+        },
+        {
+          "supc": "1094721",
+          "name": "Onion Yellow Jumbo Bag",
+          "qty": 2,
+          "unitPrice": 23.95,
+          "total": 47.9,
+          "category": "Produce"
+        },
+        {
+          "supc": "1094663",
+          "name": "Onion Red Jumbo Bag",
+          "qty": 2,
+          "unitPrice": 15.56,
+          "total": 31.12,
+          "category": "Produce"
+        },
+        {
+          "supc": "9903289",
+          "name": "Cilantro Fresh Iceless",
+          "qty": 1,
+          "unitPrice": 29.95,
+          "total": 29.95,
+          "category": "Produce"
+        },
+        {
+          "supc": "2037125",
+          "name": "Mint Fresh Herb",
+          "qty": 1,
+          "unitPrice": 7.14,
+          "total": 7.14,
+          "category": "Produce"
+        },
+        {
+          "supc": "2252013",
+          "name": "Lemon Choice Fresh",
+          "qty": 1,
+          "unitPrice": 42.99,
+          "total": 42.99,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 2,
+          "unitPrice": 40.36,
+          "total": 80.72,
+          "category": "Dairy"
+        },
+        {
+          "supc": "4676306",
+          "name": "Milk Whole Gallon",
+          "qty": 2,
+          "unitPrice": 15.6,
+          "total": 31.2,
+          "category": "Dairy"
+        },
+        {
+          "supc": "5231238",
+          "name": "Chicken Cvp Breast Boneless-skinless Random Jumbo Marinated",
+          "qty": 1,
+          "unitPrice": 51.36,
+          "total": 51.36,
+          "category": "Protein"
+        },
+        {
+          "supc": "1803287",
+          "name": "Chicken Cvp Leg Quarter Small Halal",
+          "qty": 1,
+          "unitPrice": 41.22,
+          "total": 41.22,
+          "category": "Protein"
+        },
+        {
+          "supc": "3355757",
+          "name": "Butter-it Alternative Liquid Zero Trans Fat",
+          "qty": 1,
+          "unitPrice": 31.52,
+          "total": 31.52,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4119079",
+          "name": "Oil Soybean Vegetable Pure",
+          "qty": 1,
+          "unitPrice": 45.65,
+          "total": 45.65,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 5,
+          "unitPrice": 8.07,
+          "total": 40.35,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4073441",
+          "name": "Corn Starch Food Grade",
+          "qty": 1,
+          "unitPrice": 34.82,
+          "total": 34.82,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "5087572",
+          "name": "Sugar Granulated Extra Fine Cane",
+          "qty": 1,
+          "unitPrice": 18.16,
+          "total": 18.16,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4564894",
+          "name": "Salt Granulated Plain",
+          "qty": 1,
+          "unitPrice": 17.03,
+          "total": 17.03,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4014973",
+          "name": "Bean Kidney Dark Red",
+          "qty": 1,
+          "unitPrice": 40.41,
+          "total": 40.41,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "1193226",
+          "name": "Chicken Thighs Boneless Skinless Random",
+          "qty": 2,
+          "unitPrice": 54.59,
+          "total": 109.18,
+          "category": "Protein"
+        }
+      ]
+    },
     "4344577": {
       "orderNo": "4344577",
       "location": "St Rose",
@@ -50354,5 +50701,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-09-09T00:04:36.332Z"
+  "lastUpdated": "2026-09-10T00:04:45.291Z"
 }
