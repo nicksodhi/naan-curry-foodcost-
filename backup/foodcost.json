@@ -34720,6 +34720,233 @@
           "category": "Produce"
         }
       ]
+    },
+    "2026-09-09_8636": {
+      "invoiceNo": "8636",
+      "date": "2026-09-09",
+      "dateTime": "2026/09/09 1:41 pm",
+      "subTotal": 2813.59,
+      "tax": 0,
+      "total": 2813.59,
+      "items": [
+        {
+          "upc": "81008518222",
+          "desc": "PDU PPR SERRANO 5#",
+          "qty": 1,
+          "price": 8.65,
+          "category": "Produce"
+        },
+        {
+          "upc": "81008518222",
+          "desc": "PDU PPR SERRANO 5#",
+          "qty": -1,
+          "price": -8.65,
+          "category": "Produce"
+        },
+        {
+          "upc": "81008518222",
+          "desc": "PDU PPR SERRANO 5#",
+          "qty": 1,
+          "price": 8.65,
+          "category": "Produce"
+        },
+        {
+          "upc": "4900002468",
+          "desc": "COKE CLASSIC       16.9Z",
+          "qty": 1,
+          "price": 19.65,
+          "category": "Beverages"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 35.55,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 35.55,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 35.55,
+          "category": "Dairy"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 35.52,
+          "price": 234.08,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 36.77,
+          "price": 242.31,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 36.77,
+          "price": -14.46,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 34.5,
+          "price": 220.46,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 39.84,
+          "price": 254.58,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 32.83,
+          "price": 209.78,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 36.97,
+          "price": 236.24,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 40.28,
+          "price": 257.39,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 35.43,
+          "price": 226.4,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 38.16,
+          "price": 243.84,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 39.57,
+          "price": 252.85,
+          "category": "Protein"
+        },
+        {
+          "upc": "79680038600",
+          "desc": "FLOUR H&R WINGOLD  25#",
+          "qty": 1,
+          "price": 9.39,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "79680038600",
+          "desc": "FLOUR H&R WINGOLD  25#",
+          "qty": 1,
+          "price": 9.39,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 2,
+          "price": 117.76,
+          "category": "Produce"
+        },
+        {
+          "upc": "7766113803",
+          "desc": "PD GINGER FRSH 28#",
+          "qty": 1,
+          "price": 23.39,
+          "category": "Produce"
+        },
+        {
+          "upc": "7766113803",
+          "desc": "PD GINGER FRSH 28#",
+          "qty": 1,
+          "price": 23.39,
+          "category": "Produce"
+        },
+        {
+          "upc": "7766113803",
+          "desc": "PD GINGER FRSH 28#",
+          "qty": 1,
+          "price": 23.39,
+          "category": "Produce"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "116189",
+          "desc": "(Coupon) BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": -1,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "116189",
+          "desc": "(Coupon) BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": -1,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "116189",
+          "desc": "(Coupon) BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": -1,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "7766113803",
+          "desc": "PD GINGER FRSH 28#",
+          "qty": -1,
+          "price": -23.39,
+          "category": "Produce"
+        }
+      ]
     }
   },
   "sysco": {
@@ -50701,5 +50928,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-09-10T00:04:45.291Z"
+  "lastUpdated": "2026-09-11T00:04:08.036Z"
 }
