@@ -50714,6 +50714,120 @@
           "category": "Dry & Pantry"
         }
       ]
+    },
+    "4351111": {
+      "orderNo": "4351111",
+      "location": "Durango (Main)",
+      "locationId": "017-974499",
+      "deliveryDate": "2026-09-11",
+      "total": 1300.79,
+      "itemSum": 1300.79,
+      "items": [
+        {
+          "supc": "1094721",
+          "name": "Onion Yellow Jumbo Bag",
+          "qty": 15,
+          "unitPrice": 22.99,
+          "total": 344.85,
+          "category": "Produce"
+        },
+        {
+          "supc": "7350788",
+          "name": "Onion Green Iceless",
+          "qty": 1,
+          "unitPrice": null,
+          "total": 7.95,
+          "category": "Produce"
+        },
+        {
+          "supc": "1675925",
+          "name": "Spinach Clipped Fresh",
+          "qty": 1,
+          "unitPrice": 20.16,
+          "total": 20.16,
+          "category": "Produce"
+        },
+        {
+          "supc": "7410640",
+          "name": "Cucumber Select Fresh",
+          "qty": 1,
+          "unitPrice": 12.79,
+          "total": 12.79,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 3,
+          "unitPrice": 40.36,
+          "total": 121.08,
+          "category": "Dairy"
+        },
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 8,
+          "unitPrice": 51.59,
+          "total": 412.72,
+          "category": "Protein"
+        },
+        {
+          "supc": "3355757",
+          "name": "Butter-it Alternative Liquid Zero Trans Fat",
+          "qty": 1,
+          "unitPrice": 31.52,
+          "total": 31.52,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4119079",
+          "name": "Oil Soybean Vegetable Pure",
+          "qty": 2,
+          "unitPrice": 45.65,
+          "total": 91.3,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4518403",
+          "name": "Shortening Fry Liquid Clear Zero Trans Fat",
+          "qty": 1,
+          "unitPrice": 38.52,
+          "total": 38.52,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "1425982",
+          "name": "Milk Coconut Unsweetened",
+          "qty": 1,
+          "unitPrice": 47.28,
+          "total": 47.28,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4002325",
+          "name": "Tomato Puree 1.06 Fancy California",
+          "qty": 3,
+          "unitPrice": 29.7,
+          "total": 89.1,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4978884",
+          "name": "Sauce Tomato California",
+          "qty": 2,
+          "unitPrice": 28.47,
+          "total": 56.94,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4978856",
+          "name": "Tomato Diced In Juice California",
+          "qty": 1,
+          "unitPrice": 26.58,
+          "total": 26.58,
+          "category": "Dry & Pantry"
+        }
+      ]
     }
   },
   "imperial": {
@@ -50928,5 +51042,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-09-11T00:04:08.036Z"
+  "lastUpdated": "2026-09-12T00:03:18.515Z"
 }
