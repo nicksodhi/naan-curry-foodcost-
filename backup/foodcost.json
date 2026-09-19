@@ -53675,6 +53675,234 @@
           "category": "Dairy"
         }
       ]
+    },
+    "4367451": {
+      "orderNo": "4367451",
+      "location": "St Rose",
+      "locationId": "017-974545",
+      "deliveryDate": "2026-09-18",
+      "total": 505.5,
+      "itemSum": 667.16,
+      "items": [
+        {
+          "supc": "3983194",
+          "name": "Potato Russet #2 6 Oz Minimum-sized Carton",
+          "qty": 1,
+          "unitPrice": 15.99,
+          "total": 15.99,
+          "category": "Produce"
+        },
+        {
+          "supc": "1008515",
+          "name": "Potato Baking Russet 80 Count Fresh",
+          "qty": 1,
+          "unitPrice": 21.95,
+          "total": 21.95,
+          "category": "Produce"
+        },
+        {
+          "supc": "5231238",
+          "name": "Chicken Cvp Breast Boneless-skinless Random Jumbo Marinated",
+          "qty": 2,
+          "unitPrice": 51.36,
+          "total": 102.72,
+          "category": "Protein"
+        },
+        {
+          "supc": "7203474",
+          "name": "Chicken Cvp Breast Boneless-skinless Whole Random Jumbo",
+          "qty": 2,
+          "unitPrice": 68.89,
+          "total": 137.78,
+          "category": "Protein"
+        },
+        {
+          "supc": "7007376",
+          "name": "Pepper Serrano Util",
+          "qty": 1,
+          "unitPrice": 42.95,
+          "total": 42.95,
+          "category": "Produce"
+        },
+        {
+          "supc": "1094721",
+          "name": "Onion Yellow Jumbo Bag",
+          "qty": 1,
+          "unitPrice": 23.55,
+          "total": 23.55,
+          "category": "Produce"
+        },
+        {
+          "supc": "1094663",
+          "name": "Onion Red Jumbo Bag",
+          "qty": 1,
+          "unitPrice": 15.56,
+          "total": 15.56,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 3,
+          "unitPrice": 40.36,
+          "total": 121.08,
+          "category": "Dairy"
+        },
+        {
+          "supc": "1803287",
+          "name": "Chicken Cvp Leg Quarter Small Halal",
+          "qty": 1,
+          "unitPrice": 41.22,
+          "total": 41.22,
+          "category": "Protein"
+        },
+        {
+          "supc": "2037125",
+          "name": "Mint Fresh Herb",
+          "qty": 1,
+          "unitPrice": 7.14,
+          "total": 7.14,
+          "category": "Produce"
+        },
+        {
+          "supc": "9903289",
+          "name": "Cilantro Fresh Iceless",
+          "qty": 1,
+          "unitPrice": 35.99,
+          "total": 35.99,
+          "category": "Produce"
+        },
+        {
+          "supc": "1675925",
+          "name": "Spinach Clipped Fresh",
+          "qty": 1,
+          "unitPrice": 20.81,
+          "total": 20.81,
+          "category": "Produce"
+        },
+        {
+          "supc": "3355757",
+          "name": "Butter-it Alternative Liquid Zero Trans Fat",
+          "qty": 1,
+          "unitPrice": 32,
+          "total": 32,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 6,
+          "unitPrice": 8.07,
+          "total": 48.42,
+          "category": "Dry & Pantry"
+        }
+      ]
+    },
+    "4368970": {
+      "orderNo": "4368970",
+      "location": "Durango (Main)",
+      "locationId": "017-974499",
+      "deliveryDate": "2026-09-18",
+      "total": 958.06,
+      "itemSum": 1009.42,
+      "items": [
+        {
+          "supc": "5231238",
+          "name": "Chicken Cvp Breast Boneless-skinless Random Jumbo Marinated",
+          "qty": 1,
+          "unitPrice": 51.36,
+          "total": 51.36,
+          "category": "Protein"
+        },
+        {
+          "supc": "7203474",
+          "name": "Chicken Cvp Breast Boneless-skinless Whole Random Jumbo",
+          "qty": 1,
+          "unitPrice": 68.89,
+          "total": 68.89,
+          "category": "Protein"
+        },
+        {
+          "supc": "1094721",
+          "name": "Onion Yellow Jumbo Bag",
+          "qty": 10,
+          "unitPrice": 22.61,
+          "total": 226.1,
+          "category": "Produce"
+        },
+        {
+          "supc": "2037125",
+          "name": "Mint Fresh Herb",
+          "qty": 1,
+          "unitPrice": 7.14,
+          "total": 7.14,
+          "category": "Produce"
+        },
+        {
+          "supc": "9903289",
+          "name": "Cilantro Fresh Iceless",
+          "qty": 1,
+          "unitPrice": 35.99,
+          "total": 35.99,
+          "category": "Produce"
+        },
+        {
+          "supc": "1803287",
+          "name": "Chicken Cvp Leg Quarter Small Halal",
+          "qty": 1,
+          "unitPrice": 41.22,
+          "total": 41.22,
+          "category": "Protein"
+        },
+        {
+          "supc": "1150566",
+          "name": "Chicken Cvp Leg Meat Frozen",
+          "qty": 6,
+          "unitPrice": 61.19,
+          "total": 367.14,
+          "category": "Protein"
+        },
+        {
+          "supc": "2822379",
+          "name": "Cheese Cheddar Jack Fancy Shredded",
+          "qty": 1,
+          "unitPrice": 52.52,
+          "total": 52.52,
+          "category": "Dairy"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 2,
+          "unitPrice": 8.07,
+          "total": 16.14,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4978884",
+          "name": "Sauce Tomato California",
+          "qty": 2,
+          "unitPrice": 28.47,
+          "total": 56.94,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4002325",
+          "name": "Tomato Puree 1.06 Fancy California",
+          "qty": 2,
+          "unitPrice": 29.7,
+          "total": 59.4,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4978856",
+          "name": "Tomato Diced In Juice California",
+          "qty": 1,
+          "unitPrice": 26.58,
+          "total": 26.58,
+          "category": "Dry & Pantry"
+        }
+      ]
     }
   },
   "imperial": {
@@ -53889,5 +54117,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-09-18T00:04:02.312Z"
+  "lastUpdated": "2026-09-19T00:03:24.730Z"
 }
