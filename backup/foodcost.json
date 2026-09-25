@@ -54940,6 +54940,112 @@
           "category": "Other"
         }
       ]
+    },
+    "4373756": {
+      "orderNo": "4373756",
+      "location": "Rhodes Ranch",
+      "locationId": "017-974546",
+      "deliveryDate": "2026-09-22",
+      "total": 573.39,
+      "itemSum": 616.34,
+      "items": [
+        {
+          "supc": "7007376",
+          "name": "Pepper Serrano Util",
+          "qty": 1,
+          "unitPrice": 42.95,
+          "total": 42.95,
+          "category": "Produce"
+        },
+        {
+          "supc": "2037125",
+          "name": "Mint Fresh Herb",
+          "qty": 2,
+          "unitPrice": 7.14,
+          "total": 14.28,
+          "category": "Produce"
+        },
+        {
+          "supc": "9903289",
+          "name": "Cilantro Fresh Iceless",
+          "qty": 1,
+          "unitPrice": 38.95,
+          "total": 38.95,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 2,
+          "unitPrice": 40.36,
+          "total": 80.72,
+          "category": "Dairy"
+        },
+        {
+          "supc": "4676306",
+          "name": "Milk Whole Gallon",
+          "qty": 2,
+          "unitPrice": 15.6,
+          "total": 31.2,
+          "category": "Dairy"
+        },
+        {
+          "supc": "5231238",
+          "name": "Chicken Cvp Breast Boneless-skinless Random Jumbo Marinated",
+          "qty": 1,
+          "unitPrice": 51.36,
+          "total": 51.36,
+          "category": "Protein"
+        },
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 2,
+          "unitPrice": 55.28,
+          "total": 110.56,
+          "category": "Protein"
+        },
+        {
+          "supc": "1803287",
+          "name": "Chicken Cvp Leg Quarter Small Halal",
+          "qty": 1,
+          "unitPrice": 41.22,
+          "total": 41.22,
+          "category": "Protein"
+        },
+        {
+          "supc": "3355757",
+          "name": "Butter-it Alternative Liquid Zero Trans Fat",
+          "qty": 1,
+          "unitPrice": 32,
+          "total": 32,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4119079",
+          "name": "Oil Soybean Vegetable Pure",
+          "qty": 2,
+          "unitPrice": 45.65,
+          "total": 91.3,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "1425982",
+          "name": "Milk Coconut Unsweetened",
+          "qty": 1,
+          "unitPrice": 47.28,
+          "total": 47.28,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 4,
+          "unitPrice": 8.63,
+          "total": 34.52,
+          "category": "Dry & Pantry"
+        }
+      ]
     }
   },
   "imperial": {
@@ -55154,5 +55260,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-09-24T00:02:59.325Z"
+  "lastUpdated": "2026-09-25T00:05:47.123Z"
 }
