@@ -38162,6 +38162,533 @@
           "category": "Protein"
         }
       ]
+    },
+    "2026-09-29_11894": {
+      "invoiceNo": "11894",
+      "date": "2026-09-29",
+      "dateTime": "2026/09/29 1:39 pm",
+      "subTotal": 471.68,
+      "tax": 17.22,
+      "total": 488.9,
+      "items": [
+        {
+          "upc": "84046513303",
+          "desc": "PD MICRO FLWR PRM",
+          "qty": 1,
+          "price": 15.55,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046511033",
+          "desc": "PD MICRO BULL BLD",
+          "qty": 1,
+          "price": 15.05,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "7127035817",
+          "desc": "CHZ PANEER LOAF    5#",
+          "qty": 1,
+          "price": 86.09,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500330",
+          "desc": "JUICE LEMON GAL    4/1GAL",
+          "qty": 1,
+          "price": 36.09,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069502007",
+          "desc": "FZ VEG BROC FLORET 12/2LB",
+          "qty": 1,
+          "price": 24.4,
+          "category": "Frozen"
+        },
+        {
+          "upc": "89951700200",
+          "desc": "PD CUCUMBER SEL 72",
+          "qty": 1,
+          "price": 24.39,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069533782",
+          "desc": "CONT RND BLK 28Z",
+          "qty": 1,
+          "price": 28.99,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069533507",
+          "desc": "CONT SOUP CMB 16Z",
+          "qty": 1,
+          "price": 32.35,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069533507",
+          "desc": "CONT SOUP CMB 16Z",
+          "qty": 1,
+          "price": 32.35,
+          "category": "Supplies"
+        },
+        {
+          "upc": "4900005846",
+          "desc": "COKE CLASSIC       12Z",
+          "qty": 1,
+          "price": 21.49,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900005846",
+          "desc": "COKE CLASSIC       12Z",
+          "qty": 1,
+          "price": 21.49,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900005846",
+          "desc": "COKE CLASSIC       12Z",
+          "qty": 1,
+          "price": 21.49,
+          "category": "Beverages"
+        }
+      ]
+    },
+    "2026-09-29_3587": {
+      "invoiceNo": "3587",
+      "date": "2026-09-29",
+      "dateTime": "2026/09/29 12:05 pm",
+      "subTotal": 1057.4,
+      "tax": 0,
+      "total": 1057.4,
+      "items": [
+        {
+          "upc": "76069502990",
+          "desc": "CRM WHP 40% JF 64Z",
+          "qty": 4,
+          "price": 170.4,
+          "category": "Other"
+        },
+        {
+          "upc": "115537",
+          "desc": "(Coupon) 40% HEAVY CRM 64z ANDERSON",
+          "qty": 24,
+          "price": 0,
+          "category": "Other"
+        },
+        {
+          "upc": "76069501436",
+          "desc": "VINEGAR WHT DST CQ",
+          "qty": 1,
+          "price": 13.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "7911710101",
+          "desc": "MILK WHL GAL GS/AN",
+          "qty": 1,
+          "price": 15.25,
+          "category": "Dairy"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 2,
+          "price": 125.76,
+          "category": "Produce"
+        },
+        {
+          "upc": "20772320000",
+          "desc": "CHX BRST JMB",
+          "qty": 40,
+          "price": 60,
+          "category": "Protein"
+        },
+        {
+          "upc": "20772320000",
+          "desc": "CHX BRST JMB",
+          "qty": 40,
+          "price": 60,
+          "category": "Protein"
+        },
+        {
+          "upc": "20772000000",
+          "desc": "CHX P-WING JMB",
+          "qty": 40,
+          "price": 66,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 65.2,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 65.2,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 65.2,
+          "category": "Protein"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "116189",
+          "desc": "(Coupon) BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": -1,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "116189",
+          "desc": "(Coupon) BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": -1,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.19,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.19,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.19,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.19,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.19,
+          "category": "Dairy"
+        },
+        {
+          "upc": "79680038600",
+          "desc": "FLOUR H&R WINGOLD  25#",
+          "qty": 1,
+          "price": 9.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "79680038600",
+          "desc": "FLOUR H&R WINGOLD  25#",
+          "qty": 1,
+          "price": 9.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "79680038600",
+          "desc": "FLOUR H&R WINGOLD  25#",
+          "qty": 1,
+          "price": 9.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "79680038600",
+          "desc": "FLOUR H&R WINGOLD  25#",
+          "qty": 1,
+          "price": 9.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "885161310170",
+          "desc": "COCONUT MILK AROYD 13.5Z",
+          "qty": 1,
+          "price": 41.79,
+          "category": "Dry & Pantry"
+        }
+      ]
+    },
+    "2026-09-29_3586": {
+      "invoiceNo": "3586",
+      "date": "2026-09-29",
+      "dateTime": "2026/09/29 12:03 pm",
+      "subTotal": 762.99,
+      "tax": 31.86,
+      "total": 794.85,
+      "items": [
+        {
+          "upc": "4801120502",
+          "desc": "PAD SCR HVY DTY    86CC",
+          "qty": 1,
+          "price": 11.25,
+          "category": "Other"
+        },
+        {
+          "upc": "81383101068",
+          "desc": "PD ONI GRN ICELESS",
+          "qty": 1,
+          "price": 12.75,
+          "category": "Produce"
+        },
+        {
+          "upc": "81008518227",
+          "desc": "PDU CUCUMBER HH 3C",
+          "qty": 1,
+          "price": 3.89,
+          "category": "Produce"
+        },
+        {
+          "upc": "81008518227",
+          "desc": "PDU CUCUMBER HH 3C",
+          "qty": 1,
+          "price": 3.89,
+          "category": "Produce"
+        },
+        {
+          "upc": "7127035817",
+          "desc": "CHZ PANEER LOAF    5#",
+          "qty": 1,
+          "price": 86.09,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069501661",
+          "desc": "FOIL ROLL 18X500HD",
+          "qty": 1,
+          "price": 54.19,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069533783",
+          "desc": "CONT RND BLK 24Z",
+          "qty": 1,
+          "price": 27.99,
+          "category": "Supplies"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.95,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "116189",
+          "desc": "(Coupon) BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": -1,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "9437910130",
+          "desc": "ATHENA GRLD EGGPLN",
+          "qty": 1,
+          "price": 54.39,
+          "category": "Other"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "1009746404000",
+          "desc": "TOWEL M/F WHT",
+          "qty": 1,
+          "price": 21.45,
+          "category": "Supplies"
+        },
+        {
+          "upc": "1009746404000",
+          "desc": "TOWEL M/F WHT",
+          "qty": 1,
+          "price": 21.45,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069566701",
+          "desc": "RS GREEN DISH 1G",
+          "qty": 1,
+          "price": 30.79,
+          "category": "Other"
+        },
+        {
+          "upc": "76069566700",
+          "desc": "RS ALL PURPOSE",
+          "qty": 1,
+          "price": 22.99,
+          "category": "Other"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.19,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.19,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069533783",
+          "desc": "CONT RND BLK 24Z",
+          "qty": 1,
+          "price": 27.99,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069533783",
+          "desc": "CONT RND BLK 24Z",
+          "qty": 1,
+          "price": 27.99,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069500330",
+          "desc": "JUICE LEMON GAL    4/1GAL",
+          "qty": 1,
+          "price": 36.09,
+          "category": "Produce"
+        },
+        {
+          "upc": "88264500024",
+          "desc": "PD ONION RED 25#",
+          "qty": 1,
+          "price": 17.1,
+          "category": "Produce"
+        },
+        {
+          "upc": "88264500815",
+          "desc": "PD POTATO 70CT",
+          "qty": 1,
+          "price": 29.05,
+          "category": "Produce"
+        },
+        {
+          "upc": "81008518222",
+          "desc": "PDU PPR SERRANO    5LB",
+          "qty": 1,
+          "price": 11.49,
+          "category": "Produce"
+        },
+        {
+          "upc": "81008518222",
+          "desc": "PDU PPR SERRANO    5LB",
+          "qty": 1,
+          "price": 11.49,
+          "category": "Produce"
+        }
+      ]
     }
   },
   "sysco": {
@@ -57669,5 +58196,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-09-30T00:03:32.388Z"
+  "lastUpdated": "2026-10-01T00:04:12.045Z"
 }
