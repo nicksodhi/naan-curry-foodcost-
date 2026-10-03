@@ -38689,6 +38689,240 @@
           "category": "Produce"
         }
       ]
+    },
+    "2026-10-01_6327": {
+      "invoiceNo": "6327",
+      "date": "2026-10-01",
+      "dateTime": "2026/10/01 11:15 am",
+      "subTotal": 929.53,
+      "tax": 7.86,
+      "total": 937.39,
+      "items": [
+        {
+          "upc": "885161310170",
+          "desc": "COCONUT MILK AROYD 13.5Z",
+          "qty": 1,
+          "price": 41.79,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "7959448965",
+          "desc": "BAG BRN SOS 20# SH",
+          "qty": 1,
+          "price": 29.35,
+          "category": "Supplies"
+        },
+        {
+          "upc": "7959448965",
+          "desc": "BAG BRN SOS 20# SH",
+          "qty": 1,
+          "price": 29.35,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069533791",
+          "desc": "CONT REC BLK 24Z",
+          "qty": 1,
+          "price": 35.15,
+          "category": "Supplies"
+        },
+        {
+          "upc": "7127035817",
+          "desc": "CHZ PANEER LOAF    5#",
+          "qty": 1,
+          "price": 86.09,
+          "category": "Dairy"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 62.88,
+          "category": "Produce"
+        },
+        {
+          "upc": "81009537357",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 89.75,
+          "category": "Protein"
+        },
+        {
+          "upc": "81009537357",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 89.75,
+          "category": "Protein"
+        },
+        {
+          "upc": "4940500507",
+          "desc": "COLORING EGG YELOW",
+          "qty": 1,
+          "price": 29.65,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "2060042513",
+          "desc": "PD GINGER FRSH 28#",
+          "qty": 1,
+          "price": 27.45,
+          "category": "Produce"
+        },
+        {
+          "upc": "4940500509",
+          "desc": "COLORING LEM YELOW",
+          "qty": 1,
+          "price": 30.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.19,
+          "category": "Dairy"
+        },
+        {
+          "upc": "5900041556",
+          "desc": "FLOUR GOLDN TEMPLE 2/20#",
+          "qty": 1,
+          "price": 39.15,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 46.39,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.19,
+          "category": "Dairy"
+        },
+        {
+          "upc": "7929816900",
+          "desc": "EVIAN WATER PET    500ML",
+          "qty": 1,
+          "price": 18.24,
+          "category": "Beverages"
+        },
+        {
+          "upc": "7929816900",
+          "desc": "EVIAN WATER PET    500ML",
+          "qty": 1,
+          "price": 18.24,
+          "category": "Beverages"
+        },
+        {
+          "upc": "7929816900",
+          "desc": "EVIAN WATER PET    500ML",
+          "qty": 1,
+          "price": 18.24,
+          "category": "Beverages"
+        },
+        {
+          "upc": "7929816900",
+          "desc": "EVIAN WATER PET    500ML",
+          "qty": 1,
+          "price": 18.24,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4150873466",
+          "desc": "SAN PELL SPRKL PET 500ML",
+          "qty": 1,
+          "price": 23.49,
+          "category": "Other"
+        },
+        {
+          "upc": "118017",
+          "desc": "(Coupon) SAN PELL 500ml PET",
+          "qty": 1,
+          "price": -3.5,
+          "category": "Other"
+        },
+        {
+          "upc": "4150873466",
+          "desc": "SAN PELL SPRKL PET 500ML",
+          "qty": 1,
+          "price": 23.49,
+          "category": "Other"
+        },
+        {
+          "upc": "118017",
+          "desc": "(Coupon) SAN PELL 500ml PET",
+          "qty": 1,
+          "price": -3.5,
+          "category": "Other"
+        },
+        {
+          "upc": "4150873466",
+          "desc": "SAN PELL SPRKL PET 500ML",
+          "qty": 1,
+          "price": 23.49,
+          "category": "Other"
+        },
+        {
+          "upc": "118017",
+          "desc": "(Coupon) SAN PELL 500ml PET",
+          "qty": 1,
+          "price": -3.5,
+          "category": "Other"
+        },
+        {
+          "upc": "4150873466",
+          "desc": "SAN PELL SPRKL PET 500ML",
+          "qty": 1,
+          "price": 23.49,
+          "category": "Other"
+        },
+        {
+          "upc": "118017",
+          "desc": "(Coupon) SAN PELL 500ml PET",
+          "qty": 1,
+          "price": -3.5,
+          "category": "Other"
+        },
+        {
+          "upc": "4150873466",
+          "desc": "SAN PELL SPRKL PET 500ML",
+          "qty": 1,
+          "price": 23.49,
+          "category": "Other"
+        },
+        {
+          "upc": "118017",
+          "desc": "(Coupon) SAN PELL 500ml PET",
+          "qty": 1,
+          "price": -3.5,
+          "category": "Other"
+        },
+        {
+          "upc": "4150873466",
+          "desc": "SAN PELL SPRKL PET 500ML",
+          "qty": 1,
+          "price": 23.49,
+          "category": "Other"
+        },
+        {
+          "upc": "118017",
+          "desc": "(Coupon) SAN PELL 500ml PET",
+          "qty": 1,
+          "price": -3.5,
+          "category": "Other"
+        },
+        {
+          "upc": "76069502893",
+          "desc": "VEG CLLRD GRN IQF",
+          "qty": 1,
+          "price": 27.05,
+          "category": "Frozen"
+        }
+      ]
     }
   },
   "sysco": {
@@ -58160,6 +58394,136 @@
           "category": "Dry & Pantry"
         }
       ]
+    },
+    "4396606": {
+      "orderNo": "4396606",
+      "location": "St Rose",
+      "locationId": "017-974545",
+      "deliveryDate": "2026-10-02",
+      "total": 655.02,
+      "itemSum": 655.02,
+      "items": [
+        {
+          "supc": "3983194",
+          "name": "Potato Russet #2 6 Oz Minimum-sized Carton",
+          "qty": 1,
+          "unitPrice": 15.95,
+          "total": 15.95,
+          "category": "Produce"
+        },
+        {
+          "supc": "1675925",
+          "name": "Spinach Clipped Fresh",
+          "qty": 1,
+          "unitPrice": 20.81,
+          "total": 20.81,
+          "category": "Produce"
+        },
+        {
+          "supc": "2252013",
+          "name": "Lemon Choice Fresh",
+          "qty": 1,
+          "unitPrice": 43.75,
+          "total": 43.75,
+          "category": "Produce"
+        },
+        {
+          "supc": "2037125",
+          "name": "Mint Fresh Herb",
+          "qty": 2,
+          "unitPrice": 7.36,
+          "total": 14.72,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 3,
+          "unitPrice": 41.57,
+          "total": 124.71,
+          "category": "Dairy"
+        },
+        {
+          "supc": "4676306",
+          "name": "Milk Whole Gallon",
+          "qty": 1,
+          "unitPrice": 16.06,
+          "total": 16.06,
+          "category": "Dairy"
+        },
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 2,
+          "unitPrice": 59.7,
+          "total": 119.4,
+          "category": "Protein"
+        },
+        {
+          "supc": "5231238",
+          "name": "Chicken Cvp Breast Boneless-skinless Random Jumbo Marinated",
+          "qty": 2,
+          "unitPrice": 52.5,
+          "total": 105,
+          "category": "Protein"
+        },
+        {
+          "supc": "1803287",
+          "name": "Chicken Cvp Leg Quarter Small Halal",
+          "qty": 1,
+          "unitPrice": 42.45,
+          "total": 42.45,
+          "category": "Protein"
+        },
+        {
+          "supc": "0496671",
+          "name": "Tilapia Fillet Boneless Skinless Iqf 3-5 Ounce",
+          "qty": 1,
+          "unitPrice": 35.26,
+          "total": 35.26,
+          "category": "Protein"
+        },
+        {
+          "supc": "3960200",
+          "name": "Vegetable Mix 4-way",
+          "qty": 1,
+          "unitPrice": 24.44,
+          "total": 24.44,
+          "category": "Frozen"
+        },
+        {
+          "supc": "3355757",
+          "name": "Butter-it Alternative Liquid Zero Trans Fat",
+          "qty": 1,
+          "unitPrice": 32.96,
+          "total": 32.96,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 3,
+          "unitPrice": 8.89,
+          "total": 26.67,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "2227007",
+          "name": "Carrots Fresh Jumbo",
+          "qty": 1,
+          "unitPrice": 14.49,
+          "total": 14.49,
+          "category": "Produce"
+        },
+        {
+          "supc": "7208098",
+          "name": "Egg Shell Medium White Aa Usda Cage Free",
+          "qty": 1,
+          "unitPrice": 18.35,
+          "total": 18.35,
+          "category": "Other"
+        }
+      ]
     }
   },
   "imperial": {
@@ -58374,5 +58738,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-10-02T00:04:18.597Z"
+  "lastUpdated": "2026-10-03T00:04:18.418Z"
 }
