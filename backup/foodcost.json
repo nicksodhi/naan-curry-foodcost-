@@ -39775,6 +39775,498 @@
           "category": "Dry & Pantry"
         }
       ]
+    },
+    "2026-10-06_3850": {
+      "invoiceNo": "3850",
+      "date": "2026-10-06",
+      "dateTime": "2026/10/06 4:50 pm",
+      "subTotal": 2603.28,
+      "tax": 0,
+      "total": 2603.28,
+      "items": [
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 33.91,
+          "price": 216.35,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 33.91,
+          "price": -3.39,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 43.56,
+          "price": 273.56,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 35.34,
+          "price": 221.94,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 37.21,
+          "price": 233.68,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 42.02,
+          "price": 263.89,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 35.89,
+          "price": 225.39,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 34.46,
+          "price": 216.41,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 44.67,
+          "price": 280.53,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 34.35,
+          "price": 215.72,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 65.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 65.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 65.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 65.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 65.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 65.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 65.6,
+          "category": "Protein"
+        }
+      ]
+    },
+    "2026-10-06_25171": {
+      "invoiceNo": "25171",
+      "date": "2026-10-06",
+      "dateTime": "2026/10/06 12:26 pm",
+      "subTotal": 1024.19,
+      "tax": 0,
+      "total": 1024.19,
+      "items": [
+        {
+          "upc": "84046513269",
+          "desc": "PD MICRO FWR ORCHD",
+          "qty": 1,
+          "price": 11.15,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046513303",
+          "desc": "PD MICRO FLWR PRM",
+          "qty": 1,
+          "price": 15.55,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046511033",
+          "desc": "PD MICRO BULL BLD",
+          "qty": 1,
+          "price": 15.05,
+          "category": "Produce"
+        },
+        {
+          "upc": "64708660460",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 89.75,
+          "category": "Protein"
+        },
+        {
+          "upc": "64708660460",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 89.75,
+          "category": "Protein"
+        },
+        {
+          "upc": "7127035817",
+          "desc": "CHZ PANEER LOAF    5#",
+          "qty": 1,
+          "price": 86.09,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069501223",
+          "desc": "BAG TSHIRT SMLE 12 7X22",
+          "qty": 1,
+          "price": 20.95,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069501223",
+          "desc": "BAG TSHIRT SMLE 12 7X22",
+          "qty": 1,
+          "price": 20.95,
+          "category": "Supplies"
+        },
+        {
+          "upc": "7127035817",
+          "desc": "CHZ PANEER LOAF    5#",
+          "qty": 1,
+          "price": 86.09,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069501223",
+          "desc": "BAG TSHIRT SMLE 12 7X22",
+          "qty": 1,
+          "price": 20.95,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069501223",
+          "desc": "BAG TSHIRT SMLE 12 7X22",
+          "qty": 1,
+          "price": 20.95,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 64.95,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 36.19,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 1,
+          "price": 22.39,
+          "category": "Supplies"
+        }
+      ]
+    },
+    "2026-10-06_6871": {
+      "invoiceNo": "6871",
+      "date": "2026-10-06",
+      "dateTime": "2026/10/06 11:58 am",
+      "subTotal": 631.15,
+      "tax": 0,
+      "total": 631.15,
+      "items": [
+        {
+          "upc": "3022302671",
+          "desc": "PD CILANTRO 1#",
+          "qty": 1,
+          "price": 15.45,
+          "category": "Produce"
+        },
+        {
+          "upc": "3022302671",
+          "desc": "PD CILANTRO 1#",
+          "qty": 1,
+          "price": 15.45,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069501113",
+          "desc": "SPOON SERV BLK 9\"",
+          "qty": 1,
+          "price": 49.79,
+          "category": "Supplies"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 64.95,
+          "category": "Produce"
+        },
+        {
+          "upc": "4161700242",
+          "desc": "BAKING PWD RUMFORD",
+          "qty": 1,
+          "price": 20.75,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "4161700242",
+          "desc": "BAKING PWD RUMFORD",
+          "qty": 1,
+          "price": 20.75,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "4161700242",
+          "desc": "BAKING PWD RUMFORD",
+          "qty": -1,
+          "price": -20.75,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "84046513269",
+          "desc": "PD MICRO FWR ORCHD",
+          "qty": 1,
+          "price": 11.15,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046511033",
+          "desc": "PD MICRO BULL BLD",
+          "qty": 1,
+          "price": 15.05,
+          "category": "Produce"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 4,
+          "price": 89.56,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069533507",
+          "desc": "CONT SOUP CMB 16Z",
+          "qty": 1,
+          "price": 33.49,
+          "category": "Supplies"
+        },
+        {
+          "upc": "76069533507",
+          "desc": "CONT SOUP CMB 16Z",
+          "qty": 1,
+          "price": 33.49,
+          "category": "Supplies"
+        },
+        {
+          "upc": "4900005846",
+          "desc": "COKE CLASSIC       12Z",
+          "qty": 1,
+          "price": 21.49,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900005846",
+          "desc": "COKE CLASSIC       12Z",
+          "qty": 1,
+          "price": 21.49,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900005847",
+          "desc": "DIET COKE          12Z",
+          "qty": 1,
+          "price": 21.8,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900005847",
+          "desc": "DIET COKE          12Z",
+          "qty": 1,
+          "price": 21.8,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900005848",
+          "desc": "SPRITE             12Z",
+          "qty": 1,
+          "price": 21.65,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900005848",
+          "desc": "SPRITE             12Z",
+          "qty": 1,
+          "price": 21.65,
+          "category": "Beverages"
+        },
+        {
+          "upc": "7800080469",
+          "desc": "DR PEPPER 12Z      36PK",
+          "qty": 1,
+          "price": 18.79,
+          "category": "Produce"
+        }
+      ]
     }
   },
   "sysco": {
@@ -60420,5 +60912,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-10-07T00:04:52.994Z"
+  "lastUpdated": "2026-10-08T00:04:25.584Z"
 }
