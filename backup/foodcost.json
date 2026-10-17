@@ -63735,6 +63735,146 @@
         }
       ]
     },
+    "4421104": {
+      "orderNo": "4421104",
+      "location": "Durango (Main)",
+      "locationId": "017-974499",
+      "deliveryDate": "2026-10-14",
+      "total": 1306.77,
+      "itemSum": 33.55,
+      "items": [
+        {
+          "supc": "5652773",
+          "name": "Lamb Shoulder Australian 5050 Boneless",
+          "qty": 5,
+          "unitPrice": 6.71,
+          "total": 33.55,
+          "category": "Protein"
+        }
+      ]
+    },
+    "4422906": {
+      "orderNo": "4422906",
+      "location": "St Rose",
+      "locationId": "017-974545",
+      "deliveryDate": "2026-10-16",
+      "total": 971.25,
+      "itemSum": 971.25,
+      "items": [
+        {
+          "supc": "1094721",
+          "name": "Onion Yellow Jumbo Bag",
+          "qty": 1,
+          "unitPrice": 19.32,
+          "total": 19.32,
+          "category": "Produce"
+        },
+        {
+          "supc": "1094663",
+          "name": "Onion Red Jumbo Bag",
+          "qty": 1,
+          "unitPrice": 13.18,
+          "total": 13.18,
+          "category": "Produce"
+        },
+        {
+          "supc": "3983194",
+          "name": "Potato Russet #2 6 Oz Minimum-sized Carton",
+          "qty": 1,
+          "unitPrice": 16.61,
+          "total": 16.61,
+          "category": "Produce"
+        },
+        {
+          "supc": "1243724",
+          "name": "Cauliflower Cello Wrapped Fresh",
+          "qty": 1,
+          "unitPrice": 38.42,
+          "total": 38.42,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 5,
+          "unitPrice": 45.82,
+          "total": 229.1,
+          "category": "Dairy"
+        },
+        {
+          "supc": "4676306",
+          "name": "Milk Whole Gallon",
+          "qty": 3,
+          "unitPrice": 18.04,
+          "total": 54.12,
+          "category": "Dairy"
+        },
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 2,
+          "unitPrice": 64.18,
+          "total": 128.36,
+          "category": "Protein"
+        },
+        {
+          "supc": "5231238",
+          "name": "Chicken Cvp Breast Boneless-skinless Random Jumbo Marinated",
+          "qty": 2,
+          "unitPrice": 53.47,
+          "total": 106.94,
+          "category": "Protein"
+        },
+        {
+          "supc": "1803287",
+          "name": "Chicken Cvp Leg Quarter Small Halal",
+          "qty": 2,
+          "unitPrice": 36.36,
+          "total": 72.72,
+          "category": "Protein"
+        },
+        {
+          "supc": "2822379",
+          "name": "Cheese Cheddar Jack Fancy Shredded",
+          "qty": 1,
+          "unitPrice": 39.53,
+          "total": 39.53,
+          "category": "Dairy"
+        },
+        {
+          "supc": "4119079",
+          "name": "Oil Soybean Vegetable Pure",
+          "qty": 2,
+          "unitPrice": 45.21,
+          "total": 90.42,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4518403",
+          "name": "Shortening Fry Liquid Clear Zero Trans Fat",
+          "qty": 2,
+          "unitPrice": 43.48,
+          "total": 86.96,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "2638660",
+          "name": "Paste Chili Ground Sambal Oelek",
+          "qty": 1,
+          "unitPrice": 38.36,
+          "total": 38.36,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4073441",
+          "name": "Corn Starch Food Grade",
+          "qty": 1,
+          "unitPrice": 37.21,
+          "total": 37.21,
+          "category": "Dry & Pantry"
+        }
+      ]
+    },
     "4424117": {
       "orderNo": "4424117",
       "location": "Durango (Main)",
@@ -64078,5 +64218,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-10-16T00:04:42.289Z"
+  "lastUpdated": "2026-10-17T00:04:15.176Z"
 }
