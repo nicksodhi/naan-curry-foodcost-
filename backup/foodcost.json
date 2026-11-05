@@ -44490,6 +44490,229 @@
           "category": "Supplies"
         }
       ]
+    },
+    "2026-11-03_7138": {
+      "invoiceNo": "7138",
+      "date": "2026-11-03",
+      "dateTime": "2026/11/03 2:48 pm",
+      "subTotal": 2540.34,
+      "tax": 0,
+      "total": 2540.34,
+      "items": [
+        {
+          "upc": "64708660460",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 94.4,
+          "category": "Protein"
+        },
+        {
+          "upc": "64708660460",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 94.4,
+          "category": "Protein"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.05,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069502990",
+          "desc": "CRM WHP 40% JF 64Z",
+          "qty": 1,
+          "price": 41.15,
+          "category": "Other"
+        },
+        {
+          "upc": "76069502990",
+          "desc": "CRM WHP 40% JF 64Z",
+          "qty": 1,
+          "price": 41.15,
+          "category": "Other"
+        },
+        {
+          "upc": "3022301456",
+          "desc": "PD CILANTRO 1#",
+          "qty": 1,
+          "price": 14.59,
+          "category": "Produce"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 46.47,
+          "price": 316,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 46.47,
+          "price": -5.58,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 43.82,
+          "price": 292.72,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 42.59,
+          "price": 284.5,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 43.51,
+          "price": 290.65,
+          "category": "Protein"
+        },
+        {
+          "upc": "20790420000",
+          "desc": "LAMB LEG BNLS FRZ  AUS",
+          "qty": 44.62,
+          "price": 298.06,
+          "category": "Protein"
+        },
+        {
+          "upc": "3080225687",
+          "desc": "CHX BRST JMB TRIM  10#",
+          "qty": 1,
+          "price": 68.35,
+          "category": "Protein"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 64,
+          "category": "Protein"
+        },
+        {
+          "upc": "85005170518",
+          "desc": "PD GINGER FRSH 28#",
+          "qty": 1,
+          "price": 30.85,
+          "category": "Produce"
+        },
+        {
+          "upc": "85005170518",
+          "desc": "PD GINGER FRSH 28#",
+          "qty": 1,
+          "price": 30.85,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069503348",
+          "desc": "BEAN KIDNEY LT RED",
+          "qty": 1,
+          "price": 27.69,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "7911710101",
+          "desc": "MILK WHL GAL GS/AN",
+          "qty": 1,
+          "price": 15.95,
+          "category": "Dairy"
+        },
+        {
+          "upc": "20776580000",
+          "desc": "CHX LEG MEAT JMB",
+          "qty": 40,
+          "price": 64,
+          "category": "Protein"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 2,
+          "price": 149.76,
+          "category": "Produce"
+        },
+        {
+          "upc": "88264500817",
+          "desc": "PD POTATO 90 CT",
+          "qty": 1,
+          "price": 23.1,
+          "category": "Produce"
+        }
+      ]
+    },
+    "2026-11-03_17480": {
+      "invoiceNo": "17480",
+      "date": "2026-11-03",
+      "dateTime": "2026/11/03 11:12 am",
+      "subTotal": 0,
+      "tax": 0,
+      "total": 0,
+      "items": [
+        {
+          "upc": "1121000003",
+          "desc": "SCE TABASCO        12Z",
+          "qty": 1,
+          "price": 7.29,
+          "category": "Other"
+        },
+        {
+          "upc": "1121000003",
+          "desc": "SCE TABASCO        12Z",
+          "qty": -1,
+          "price": -7.29,
+          "category": "Other"
+        }
+      ]
     }
   },
   "sysco": {
@@ -70491,5 +70714,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-11-04T01:04:07.495Z"
+  "lastUpdated": "2026-11-05T01:03:30.151Z"
 }
