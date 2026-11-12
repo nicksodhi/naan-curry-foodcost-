@@ -71828,6 +71828,128 @@
         }
       ]
     },
+    "4474136": {
+      "orderNo": "4474136",
+      "location": "The Strip",
+      "locationId": "017-974544",
+      "deliveryDate": "2026-11-09",
+      "total": 836.59,
+      "itemSum": 836.59,
+      "items": [
+        {
+          "supc": "1094721",
+          "name": "Onion Yellow Jumbo Bag",
+          "qty": 1,
+          "unitPrice": 16.31,
+          "total": 16.31,
+          "category": "Produce"
+        },
+        {
+          "supc": "1243724",
+          "name": "Cauliflower Cello Wrapped Fresh",
+          "qty": 1,
+          "unitPrice": 38.75,
+          "total": 38.75,
+          "category": "Produce"
+        },
+        {
+          "supc": "9903289",
+          "name": "Cilantro Fresh Iceless",
+          "qty": 1,
+          "unitPrice": 30.01,
+          "total": 30.01,
+          "category": "Produce"
+        },
+        {
+          "supc": "2037125",
+          "name": "Mint Fresh Herb",
+          "qty": 1,
+          "unitPrice": 6.56,
+          "total": 6.56,
+          "category": "Produce"
+        },
+        {
+          "supc": "7410640",
+          "name": "Cucumber Select Fresh",
+          "qty": 1,
+          "unitPrice": 8.59,
+          "total": 8.59,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 5,
+          "unitPrice": 41.47,
+          "total": 207.35,
+          "category": "Dairy"
+        },
+        {
+          "supc": "4676306",
+          "name": "Milk Whole Gallon",
+          "qty": 4,
+          "unitPrice": 17.58,
+          "total": 70.32,
+          "category": "Dairy"
+        },
+        {
+          "supc": "5231238",
+          "name": "Chicken Cvp Breast Boneless-skinless Random Jumbo Marinated",
+          "qty": 1,
+          "unitPrice": 48.89,
+          "total": 48.89,
+          "category": "Protein"
+        },
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 3,
+          "unitPrice": 60.62,
+          "total": 181.86,
+          "category": "Protein"
+        },
+        {
+          "supc": "3355757",
+          "name": "Butter-it Alternative Liquid Zero Trans Fat",
+          "qty": 1,
+          "unitPrice": 38.91,
+          "total": 38.91,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4119079",
+          "name": "Oil Soybean Vegetable Pure",
+          "qty": 1,
+          "unitPrice": 44.4,
+          "total": 44.4,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "2638660",
+          "name": "Paste Chili Ground Sambal Oelek",
+          "qty": 1,
+          "unitPrice": 38.36,
+          "total": 38.36,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 7,
+          "unitPrice": 9.8,
+          "total": 68.6,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4062337",
+          "name": "Bean Garbanzo Fancy No Sulfite",
+          "qty": 1,
+          "unitPrice": 37.68,
+          "total": 37.68,
+          "category": "Dry & Pantry"
+        }
+      ]
+    },
     "4474822": {
       "orderNo": "4474822",
       "location": "Durango (Main)",
@@ -72193,6 +72315,80 @@
           "category": "Other"
         }
       ]
+    },
+    "4478067": {
+      "orderNo": "4478067",
+      "location": "Rhodes Ranch",
+      "locationId": "017-974546",
+      "deliveryDate": "2026-11-10",
+      "total": 519.59,
+      "itemSum": 519.59,
+      "items": [
+        {
+          "supc": "1094663",
+          "name": "Onion Red Jumbo Bag",
+          "qty": 1,
+          "unitPrice": 11.11,
+          "total": 11.11,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 2,
+          "unitPrice": 41.47,
+          "total": 82.94,
+          "category": "Dairy"
+        },
+        {
+          "supc": "4676306",
+          "name": "Milk Whole Gallon",
+          "qty": 1,
+          "unitPrice": 17.58,
+          "total": 17.58,
+          "category": "Dairy"
+        },
+        {
+          "supc": "5231238",
+          "name": "Chicken Cvp Breast Boneless-skinless Random Jumbo Marinated",
+          "qty": 2,
+          "unitPrice": 48.89,
+          "total": 97.78,
+          "category": "Protein"
+        },
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 3,
+          "unitPrice": 60.62,
+          "total": 181.86,
+          "category": "Protein"
+        },
+        {
+          "supc": "2822379",
+          "name": "Cheese Cheddar Jack Fancy Shredded",
+          "qty": 1,
+          "unitPrice": 44.72,
+          "total": 44.72,
+          "category": "Dairy"
+        },
+        {
+          "supc": "4119079",
+          "name": "Oil Soybean Vegetable Pure",
+          "qty": 1,
+          "unitPrice": 44.4,
+          "total": 44.4,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 4,
+          "unitPrice": 9.8,
+          "total": 39.2,
+          "category": "Dry & Pantry"
+        }
+      ]
     }
   },
   "imperial": {
@@ -72407,5 +72603,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-11-11T01:06:36.230Z"
+  "lastUpdated": "2026-11-12T01:03:42.097Z"
 }
