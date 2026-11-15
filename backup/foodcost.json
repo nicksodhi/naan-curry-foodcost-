@@ -73431,6 +73431,24 @@
         }
       ]
     },
+    "4483070": {
+      "orderNo": "4483070",
+      "location": "Rhodes Ranch",
+      "locationId": "017-974546",
+      "deliveryDate": "2026-11-14",
+      "total": 61.56,
+      "itemSum": 61.56,
+      "items": [
+        {
+          "supc": "2523833",
+          "name": "Spinach Chopped Bag",
+          "qty": 1,
+          "unitPrice": 61.56,
+          "total": 61.56,
+          "category": "Frozen"
+        }
+      ]
+    },
     "4484599": {
       "orderNo": "4484599",
       "location": "St Rose",
@@ -73565,6 +73583,104 @@
           "qty": 1,
           "unitPrice": 13.84,
           "total": 13.84,
+          "category": "Dry & Pantry"
+        }
+      ]
+    },
+    "4486504": {
+      "orderNo": "4486504",
+      "location": "Cheyenne",
+      "locationId": "017-974547",
+      "deliveryDate": "2026-11-14",
+      "total": 555.93,
+      "itemSum": 555.93,
+      "items": [
+        {
+          "supc": "1094721",
+          "name": "Onion Yellow Jumbo Bag",
+          "qty": 1,
+          "unitPrice": 16.31,
+          "total": 16.31,
+          "category": "Produce"
+        },
+        {
+          "supc": "1094663",
+          "name": "Onion Red Jumbo Bag",
+          "qty": 1,
+          "unitPrice": 11.11,
+          "total": 11.11,
+          "category": "Produce"
+        },
+        {
+          "supc": "3983194",
+          "name": "Potato Russet #2 6 Oz Minimum-sized Carton",
+          "qty": 1,
+          "unitPrice": 19.92,
+          "total": 19.92,
+          "category": "Produce"
+        },
+        {
+          "supc": "7007376",
+          "name": "Pepper Serrano Util",
+          "qty": 1,
+          "unitPrice": 45.79,
+          "total": 45.79,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 3,
+          "unitPrice": 41.47,
+          "total": 124.41,
+          "category": "Dairy"
+        },
+        {
+          "supc": "4676306",
+          "name": "Milk Whole Gallon",
+          "qty": 3,
+          "unitPrice": 17.58,
+          "total": 52.74,
+          "category": "Dairy"
+        },
+        {
+          "supc": "5231238",
+          "name": "Chicken Cvp Breast Boneless-skinless Random Jumbo Marinated",
+          "qty": 1,
+          "unitPrice": 48.89,
+          "total": 48.89,
+          "category": "Protein"
+        },
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 2,
+          "unitPrice": 60.62,
+          "total": 121.24,
+          "category": "Protein"
+        },
+        {
+          "supc": "4119079",
+          "name": "Oil Soybean Vegetable Pure",
+          "qty": 1,
+          "unitPrice": 44.4,
+          "total": 44.4,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 5,
+          "unitPrice": 9.8,
+          "total": 49,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "5087572",
+          "name": "Sugar Granulated Extra Fine Cane",
+          "qty": 1,
+          "unitPrice": 22.12,
+          "total": 22.12,
           "category": "Dry & Pantry"
         }
       ]
@@ -73782,5 +73898,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-11-14T01:03:23.748Z"
+  "lastUpdated": "2026-11-15T01:03:50.215Z"
 }
