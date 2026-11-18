@@ -46059,6 +46059,490 @@
           "category": "Supplies"
         }
       ]
+    },
+    "2026-11-16_8513": {
+      "invoiceNo": "8513",
+      "date": "2026-11-16",
+      "dateTime": "2026/11/16 1:10 pm",
+      "subTotal": null,
+      "tax": 0,
+      "total": 0,
+      "items": []
+    },
+    "2026-11-16_8492": {
+      "invoiceNo": "8492",
+      "date": "2026-11-16",
+      "dateTime": "2026/11/16 11:16 am",
+      "subTotal": 1190.96,
+      "tax": 16.88,
+      "total": 1207.84,
+      "items": [
+        {
+          "upc": "76069502775",
+          "desc": "KIT PS BLK 4PC",
+          "qty": 9,
+          "price": 201.51,
+          "category": "Supplies"
+        },
+        {
+          "upc": "4900002469",
+          "desc": "COKE DIET          16.9Z",
+          "qty": 1,
+          "price": 17.94,
+          "category": "Beverages"
+        },
+        {
+          "upc": "119791",
+          "desc": "(Coupon) COKE 16.9z",
+          "qty": 1,
+          "price": -1.65,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002469",
+          "desc": "COKE DIET          16.9Z",
+          "qty": 1,
+          "price": 17.94,
+          "category": "Beverages"
+        },
+        {
+          "upc": "119791",
+          "desc": "(Coupon) COKE 16.9z",
+          "qty": 1,
+          "price": -1.65,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002468",
+          "desc": "COKE CLASSIC       16.9Z",
+          "qty": 1,
+          "price": 17.94,
+          "category": "Beverages"
+        },
+        {
+          "upc": "119791",
+          "desc": "(Coupon) COKE 16.9z",
+          "qty": 1,
+          "price": -1.65,
+          "category": "Beverages"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.05,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.05,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.05,
+          "category": "Dairy"
+        },
+        {
+          "upc": "20772320000",
+          "desc": "CHX BRST JMB",
+          "qty": 40,
+          "price": 58,
+          "category": "Protein"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "2060042513",
+          "desc": "PD GINGER FRSH 28#",
+          "qty": 1,
+          "price": 30.09,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060042513",
+          "desc": "PD GINGER FRSH 28#",
+          "qty": 1,
+          "price": 30.09,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060042513",
+          "desc": "PD GINGER FRSH 28#",
+          "qty": 1,
+          "price": 30.09,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 3,
+          "price": 234.87,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060044137",
+          "desc": "PD PPR SERRANO CS",
+          "qty": 1,
+          "price": 39.35,
+          "category": "Produce"
+        },
+        {
+          "upc": "7929816900",
+          "desc": "EVIAN WATER PET    500ML",
+          "qty": 1,
+          "price": 16.29,
+          "category": "Beverages"
+        },
+        {
+          "upc": "120611",
+          "desc": "(Coupon) EVIAN",
+          "qty": 1,
+          "price": -2,
+          "category": "Beverages"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.05,
+          "category": "Dairy"
+        }
+      ]
+    },
+    "2026-11-16_6705": {
+      "invoiceNo": "6705",
+      "date": "2026-11-16",
+      "dateTime": "2026/11/16 9:08 am",
+      "subTotal": 1301.73,
+      "tax": 0,
+      "total": 1301.73,
+      "items": [
+        {
+          "upc": "1990000350",
+          "desc": "BAKING PWD CG",
+          "qty": 1,
+          "price": 16.69,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "84046513269",
+          "desc": "PD MICRO FWR ORCHD",
+          "qty": 1,
+          "price": 11.15,
+          "category": "Produce"
+        },
+        {
+          "upc": "84046511033",
+          "desc": "PD MICRO BULL BLD",
+          "qty": 1,
+          "price": 15.05,
+          "category": "Produce"
+        },
+        {
+          "upc": "74069565165",
+          "desc": "PD LETT ROMAINE HT",
+          "qty": 1,
+          "price": 7.19,
+          "category": "Produce"
+        },
+        {
+          "upc": "74069565165",
+          "desc": "PD LETT ROMAINE HT",
+          "qty": 1,
+          "price": 7.19,
+          "category": "Produce"
+        },
+        {
+          "upc": "74069565165",
+          "desc": "PD LETT ROMAINE HT",
+          "qty": 1,
+          "price": 7.19,
+          "category": "Produce"
+        },
+        {
+          "upc": "64612790014",
+          "desc": "PDU GINGER FR 5LBS",
+          "qty": 1,
+          "price": 7.15,
+          "category": "Produce"
+        },
+        {
+          "upc": "2060044146",
+          "desc": "PD GARLIC PEELED",
+          "qty": 1,
+          "price": 78.29,
+          "category": "Produce"
+        },
+        {
+          "upc": "79625270118",
+          "desc": "CHZ PANEER 4/5#",
+          "qty": 1,
+          "price": 80.89,
+          "category": "Dairy"
+        },
+        {
+          "upc": "851768002252",
+          "desc": "PD MELON CANT",
+          "qty": 1,
+          "price": 31.05,
+          "category": "Produce"
+        },
+        {
+          "upc": "64708660460",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 96.5,
+          "category": "Protein"
+        },
+        {
+          "upc": "76069501045",
+          "desc": "VEG CHOP SPINACH",
+          "qty": 1,
+          "price": 35.55,
+          "category": "Produce"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.05,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.05,
+          "category": "Dairy"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "74504200010",
+          "desc": "BASMATI CHEF SECRT 40LB",
+          "qty": 1,
+          "price": 44.45,
+          "category": "Dry & Pantry"
+        },
+        {
+          "upc": "4900002468",
+          "desc": "COKE CLASSIC       16.9Z",
+          "qty": 1,
+          "price": 17.94,
+          "category": "Beverages"
+        },
+        {
+          "upc": "119791",
+          "desc": "(Coupon) COKE 16.9z",
+          "qty": 1,
+          "price": -1.65,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002468",
+          "desc": "COKE CLASSIC       16.9Z",
+          "qty": 1,
+          "price": 17.94,
+          "category": "Beverages"
+        },
+        {
+          "upc": "119791",
+          "desc": "(Coupon) COKE 16.9z",
+          "qty": 1,
+          "price": -1.65,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002468",
+          "desc": "COKE CLASSIC       16.9Z",
+          "qty": 1,
+          "price": 17.94,
+          "category": "Beverages"
+        },
+        {
+          "upc": "119791",
+          "desc": "(Coupon) COKE 16.9z",
+          "qty": 1,
+          "price": -1.65,
+          "category": "Beverages"
+        },
+        {
+          "upc": "4900002469",
+          "desc": "COKE DIET          16.9Z",
+          "qty": 1,
+          "price": 17.94,
+          "category": "Beverages"
+        },
+        {
+          "upc": "119791",
+          "desc": "(Coupon) COKE 16.9z",
+          "qty": 1,
+          "price": -1.65,
+          "category": "Beverages"
+        },
+        {
+          "upc": "7929816900",
+          "desc": "EVIAN WATER PET    500ML",
+          "qty": 1,
+          "price": 16.29,
+          "category": "Beverages"
+        },
+        {
+          "upc": "7929816900",
+          "desc": "EVIAN WATER PET    500ML",
+          "qty": 1,
+          "price": 16.29,
+          "category": "Beverages"
+        },
+        {
+          "upc": "64708660460",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 96.5,
+          "category": "Protein"
+        },
+        {
+          "upc": "64708660460",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 96.5,
+          "category": "Protein"
+        },
+        {
+          "upc": "64708660460",
+          "desc": "GOAT CUBE B/I 15#",
+          "qty": 1,
+          "price": 96.5,
+          "category": "Protein"
+        },
+        {
+          "upc": "20770880000",
+          "desc": "CHX LEG QTR SMALL",
+          "qty": 40,
+          "price": 31.6,
+          "category": "Protein"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.05,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.05,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.05,
+          "category": "Dairy"
+        },
+        {
+          "upc": "76069500575",
+          "desc": "YOGURT PLN JF 32#",
+          "qty": 1,
+          "price": 37.05,
+          "category": "Dairy"
+        }
+      ]
     }
   },
   "sysco": {
@@ -73945,6 +74429,176 @@
         }
       ]
     },
+    "4488537": {
+      "orderNo": "4488537",
+      "location": "The Strip",
+      "locationId": "017-974544",
+      "deliveryDate": "2026-11-16",
+      "total": 1108.68,
+      "itemSum": 1108.68,
+      "items": [
+        {
+          "supc": "1094721",
+          "name": "Onion Yellow Jumbo Bag",
+          "qty": 2,
+          "unitPrice": 15.09,
+          "total": 30.18,
+          "category": "Produce"
+        },
+        {
+          "supc": "1094663",
+          "name": "Onion Red Jumbo Bag",
+          "qty": 1,
+          "unitPrice": 10.64,
+          "total": 10.64,
+          "category": "Produce"
+        },
+        {
+          "supc": "3983194",
+          "name": "Potato Russet #2 6 Oz Minimum-sized Carton",
+          "qty": 1,
+          "unitPrice": 19.81,
+          "total": 19.81,
+          "category": "Produce"
+        },
+        {
+          "supc": "1243724",
+          "name": "Cauliflower Cello Wrapped Fresh",
+          "qty": 1,
+          "unitPrice": 47.77,
+          "total": 47.77,
+          "category": "Produce"
+        },
+        {
+          "supc": "7350788",
+          "name": "Onion Green Iceless",
+          "qty": 1,
+          "unitPrice": null,
+          "total": 3.82,
+          "category": "Produce"
+        },
+        {
+          "supc": "9903289",
+          "name": "Cilantro Fresh Iceless",
+          "qty": 1,
+          "unitPrice": 30.02,
+          "total": 30.02,
+          "category": "Produce"
+        },
+        {
+          "supc": "2037125",
+          "name": "Mint Fresh Herb",
+          "qty": 2,
+          "unitPrice": 6.97,
+          "total": 13.94,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 5,
+          "unitPrice": 41.45,
+          "total": 207.25,
+          "category": "Dairy"
+        },
+        {
+          "supc": "4676306",
+          "name": "Milk Whole Gallon",
+          "qty": 4,
+          "unitPrice": 17.58,
+          "total": 70.32,
+          "category": "Dairy"
+        },
+        {
+          "supc": "6344790",
+          "name": "Chicken Cvp Wings 1st And 2nd Joints Jumbo",
+          "qty": 1,
+          "unitPrice": 57.17,
+          "total": 57.17,
+          "category": "Protein"
+        },
+        {
+          "supc": "1803287",
+          "name": "Chicken Cvp Leg Quarter Small Halal",
+          "qty": 1,
+          "unitPrice": 34.51,
+          "total": 34.51,
+          "category": "Protein"
+        },
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 4,
+          "unitPrice": 60.2,
+          "total": 240.8,
+          "category": "Protein"
+        },
+        {
+          "supc": "5231238",
+          "name": "Chicken Cvp Breast Boneless-skinless Random Jumbo Marinated",
+          "qty": 1,
+          "unitPrice": 49.76,
+          "total": 49.76,
+          "category": "Protein"
+        },
+        {
+          "supc": "5106388",
+          "name": "Shrimp White Peeled And Deveined Tail-off 16/20 Count",
+          "qty": 1,
+          "unitPrice": 62.2,
+          "total": 62.2,
+          "category": "Protein"
+        },
+        {
+          "supc": "3355757",
+          "name": "Butter-it Alternative Liquid Zero Trans Fat",
+          "qty": 1,
+          "unitPrice": 38.87,
+          "total": 38.87,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4119079",
+          "name": "Oil Soybean Vegetable Pure",
+          "qty": 1,
+          "unitPrice": 43.78,
+          "total": 43.78,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4518403",
+          "name": "Shortening Fry Liquid Clear Zero Trans Fat",
+          "qty": 1,
+          "unitPrice": 40.79,
+          "total": 40.79,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 5,
+          "unitPrice": 9.45,
+          "total": 47.25,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4062337",
+          "name": "Bean Garbanzo Fancy No Sulfite",
+          "qty": 1,
+          "unitPrice": 37.68,
+          "total": 37.68,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "5087572",
+          "name": "Sugar Granulated Extra Fine Cane",
+          "qty": 1,
+          "unitPrice": 22.12,
+          "total": 22.12,
+          "category": "Dry & Pantry"
+        }
+      ]
+    },
     "4489015": {
       "orderNo": "4489015",
       "location": "Durango (Main)",
@@ -74260,6 +74914,184 @@
           "category": "Other"
         }
       ]
+    },
+    "4490987": {
+      "orderNo": "4490987",
+      "location": "Cheyenne",
+      "locationId": "017-974547",
+      "deliveryDate": "2026-11-17",
+      "total": 996.11,
+      "itemSum": 1003.08,
+      "items": [
+        {
+          "supc": "2037125",
+          "name": "Mint Fresh Herb",
+          "qty": 1,
+          "unitPrice": 6.97,
+          "total": 6.97,
+          "category": "Produce"
+        },
+        {
+          "supc": "3983194",
+          "name": "Potato Russet #2 6 Oz Minimum-sized Carton",
+          "qty": 1,
+          "unitPrice": 19.81,
+          "total": 19.81,
+          "category": "Produce"
+        },
+        {
+          "supc": "1243724",
+          "name": "Cauliflower Cello Wrapped Fresh",
+          "qty": 1,
+          "unitPrice": 47.77,
+          "total": 47.77,
+          "category": "Produce"
+        },
+        {
+          "supc": "7350788",
+          "name": "Onion Green Iceless",
+          "qty": 1,
+          "unitPrice": null,
+          "total": 3.82,
+          "category": "Produce"
+        },
+        {
+          "supc": "8474538",
+          "name": "Spinach Baby Fresh",
+          "qty": 1,
+          "unitPrice": 10.75,
+          "total": 10.75,
+          "category": "Produce"
+        },
+        {
+          "supc": "1910231",
+          "name": "Pepper Green Bell Choice Fresh",
+          "qty": 1,
+          "unitPrice": 24.02,
+          "total": 24.02,
+          "category": "Produce"
+        },
+        {
+          "supc": "9903289",
+          "name": "Cilantro Fresh Iceless",
+          "qty": 1,
+          "unitPrice": 30.02,
+          "total": 30.02,
+          "category": "Produce"
+        },
+        {
+          "supc": "6935464",
+          "name": "Cream Heavy 40% Extended Shelf Life Stabilized",
+          "qty": 3,
+          "unitPrice": 41.45,
+          "total": 124.35,
+          "category": "Dairy"
+        },
+        {
+          "supc": "4676306",
+          "name": "Milk Whole Gallon",
+          "qty": 2,
+          "unitPrice": 17.58,
+          "total": 35.16,
+          "category": "Dairy"
+        },
+        {
+          "supc": "5231238",
+          "name": "Chicken Cvp Breast Boneless-skinless Random Jumbo Marinated",
+          "qty": 2,
+          "unitPrice": 49.76,
+          "total": 99.52,
+          "category": "Protein"
+        },
+        {
+          "supc": "0868459",
+          "name": "Chicken Cvp Leg Meat Boneless Skinless",
+          "qty": 2,
+          "unitPrice": 60.2,
+          "total": 120.4,
+          "category": "Protein"
+        },
+        {
+          "supc": "6344790",
+          "name": "Chicken Cvp Wings 1st And 2nd Joints Jumbo",
+          "qty": 1,
+          "unitPrice": 57.17,
+          "total": 57.17,
+          "category": "Protein"
+        },
+        {
+          "supc": "1803287",
+          "name": "Chicken Cvp Leg Quarter Small Halal",
+          "qty": 1,
+          "unitPrice": 34.51,
+          "total": 34.51,
+          "category": "Protein"
+        },
+        {
+          "supc": "5106388",
+          "name": "Shrimp White Peeled And Deveined Tail-off 16/20 Count",
+          "qty": 1,
+          "unitPrice": 62.2,
+          "total": 62.2,
+          "category": "Protein"
+        },
+        {
+          "supc": "3355757",
+          "name": "Butter-it Alternative Liquid Zero Trans Fat",
+          "qty": 1,
+          "unitPrice": 38.87,
+          "total": 38.87,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4518403",
+          "name": "Shortening Fry Liquid Clear Zero Trans Fat",
+          "qty": 2,
+          "unitPrice": 40.79,
+          "total": 81.58,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "1425982",
+          "name": "Milk Coconut Unsweetened",
+          "qty": 1,
+          "unitPrice": 46.61,
+          "total": 46.61,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8379251",
+          "name": "Flour All Purpose Hotel & Restaurant Bleached",
+          "qty": 7,
+          "unitPrice": 9.45,
+          "total": 66.15,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "4564894",
+          "name": "Salt Granulated Plain",
+          "qty": 1,
+          "unitPrice": 13.84,
+          "total": 13.84,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "9903790",
+          "name": "Ketchup Jug Red In Plastic Bottle With Pump",
+          "qty": 1,
+          "unitPrice": 42.81,
+          "total": 42.81,
+          "category": "Dry & Pantry"
+        },
+        {
+          "supc": "8461087",
+          "name": "Detergent Pot And Pan Liquid Pink Ready To Use",
+          "qty": 1,
+          "unitPrice": 36.75,
+          "total": 36.75,
+          "category": "Other"
+        }
+      ]
     }
   },
   "imperial": {
@@ -74474,5 +75306,5 @@
       "status": "open"
     }
   },
-  "lastUpdated": "2026-11-17T01:03:49.275Z"
+  "lastUpdated": "2026-11-18T01:04:27.969Z"
 }
